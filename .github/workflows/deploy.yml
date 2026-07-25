@@ -30,11 +30,12 @@ jobs:
 
       - run: npm ci
 
-      # Site de proiect pe GitHub Pages: se servește de sub /<nume-repo>.
-      # Pentru domeniu propriu, șterge linia BASE_PATH.
+      # Domeniu propriu (buzau365.ro, prin public/CNAME): site-ul se servește
+      # din rădăcină, deci fără BASE_PATH. Dacă vreodată revii la adresa
+      # bogdanradulescu84-ui.github.io/monitor-local, pune la loc:
+      #   env:
+      #     BASE_PATH: /${{ github.event.repository.name }}
       - run: npm run build
-        env:
-          BASE_PATH: /${{ github.event.repository.name }}
 
       - run: touch out/.nojekyll
 
