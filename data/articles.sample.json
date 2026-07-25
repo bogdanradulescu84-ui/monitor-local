@@ -1,0 +1,162 @@
+{
+  "_readme": "Set demonstrativ, folosit doar cât timp data/articles.json nu există. Publicația, orașul, persoanele și link-urile sunt fictive.",
+  "generatedAt": "2026-07-25T14:20:00.000Z",
+  "site": {
+    "name": "Monitorul de Podeni",
+    "nameEmphasis": "Podeni",
+    "tagline": "Agregator de presă locală și politică",
+    "place": "PODENI",
+    "county": "JUD. VALEA MARE",
+    "population": "42.108",
+    "email": "redactia@example.ro",
+    "url": "https://example.ro"
+  },
+  "sections": [
+    { "id": "local", "name": "Local", "desc": "Ce se întâmplă în oraș: investiții, servicii publice, oameni." },
+    { "id": "politica", "name": "Politică", "desc": "Coaliții, rupturi și calcule electorale — din sala de consiliu până în Parlament." },
+    { "id": "administratie", "name": "Administrație", "desc": "Bugete, licitații, hotărâri de consiliu, achiziții publice." },
+    { "id": "economie", "name": "Economie", "desc": "Firme, investiții private, piața muncii, prețuri." },
+    { "id": "comunitate", "name": "Comunitate", "desc": "Educație, sănătate, cultură, sport, evenimente." }
+  ],
+  "counts": { "local": 1, "politica": 3, "administratie": 4, "economie": 2, "comunitate": 2 },
+  "sources": [
+    { "feed": "Gazeta de Podeni", "ok": true, "kept": 5, "error": null },
+    { "feed": "Valea Mare Live", "ok": true, "kept": 4, "error": null },
+    { "feed": "Agenția de presă (exemplu)", "ok": true, "kept": 3, "error": null },
+    { "feed": "Radio Podeni", "ok": false, "kept": 0, "error": "HTTP 503" }
+  ],
+  "articles": [
+    {
+      "id": "buget-rectificare-scoli",
+      "title": "Primăria mută 6,4 milioane de lei de la drumuri către reabilitarea a trei școli",
+      "summary": "Rectificarea intră azi la vot. Executivul spune că lucrările la Școala nr. 3 nu mai pot aștepta o iarnă; opoziția cere să vadă mai întâi devizele.",
+      "link": "https://example.ro/podeni/buget-rectificare-scoli",
+      "source": "Gazeta de Podeni",
+      "scope": "local",
+      "section": "administratie",
+      "image": "",
+      "publishedAt": "2026-07-25T14:20:00.000Z"
+    },
+    {
+      "id": "coalitie-judet-tensiuni",
+      "title": "Coaliția de la județ intră în a treia lună de blocaj pe funcția de vicepreședinte",
+      "summary": "A cincea rundă de negocieri s-a încheiat fără acord. Fără vicepreședinte, 22 de proiecte cu finanțare europeană așteaptă semnături.",
+      "link": "https://example.ro/valea-mare/coalitie-blocaj",
+      "source": "Valea Mare Live",
+      "scope": "local",
+      "section": "politica",
+      "image": "",
+      "publishedAt": "2026-07-25T13:05:00.000Z"
+    },
+    {
+      "id": "apa-potabila-cartier-nord",
+      "title": "Cartierul Nord, a patra săptămână cu apă doar între orele 6 și 9",
+      "summary": "Operatorul invocă o avarie la stația de pompare. Locatarii au strâns 1.400 de semnături și cer o dată fermă pentru remediere.",
+      "link": "https://example.ro/podeni/apa-cartier-nord",
+      "source": "Gazeta de Podeni",
+      "scope": "local",
+      "section": "local",
+      "image": "",
+      "publishedAt": "2026-07-25T11:48:00.000Z"
+    },
+    {
+      "id": "licitatie-salubritate-contract",
+      "title": "Contractul de salubritate: trei firme, aceeași adresă de corespondență",
+      "summary": "Dosarele licitației din 2024, obținute prin Legea 544. Trei dintre cei patru ofertanți au indicat același sediu pentru corespondență.",
+      "link": "https://example.ro/podeni/salubritate-licitatie",
+      "source": "Gazeta de Podeni",
+      "scope": "local",
+      "section": "administratie",
+      "image": "",
+      "publishedAt": "2026-07-25T09:30:00.000Z"
+    },
+    {
+      "id": "spital-judetean-cardiologie",
+      "title": "Spitalul Județean redeschide secția de cardiologie cu doi medici în loc de cinci",
+      "summary": "Secția funcționează din nou de luni, după 11 luni de suspendare, dar cu program redus și fără gărzi în weekend.",
+      "link": "https://example.ro/valea-mare/spital-cardiologie",
+      "source": "Valea Mare Live",
+      "scope": "local",
+      "section": "comunitate",
+      "image": "",
+      "publishedAt": "2026-07-25T08:15:00.000Z"
+    },
+    {
+      "id": "puz-centru-inaltime",
+      "title": "Noul PUZ al centrului ridică limita de înălțime de la patru la șapte etaje",
+      "summary": "Dezbaterea publică a strâns 61 de observații, dintre care 44 împotrivă. Votul în consiliu, programat pentru septembrie.",
+      "link": "https://example.ro/podeni/puz-centru",
+      "source": "Gazeta de Podeni",
+      "scope": "local",
+      "section": "administratie",
+      "image": "",
+      "publishedAt": "2026-07-25T07:40:00.000Z"
+    },
+    {
+      "id": "motiune-primar-respinsa",
+      "title": "Moțiunea împotriva primarului, respinsă la două voturi. Doi consilieri din propriul grup s-au abținut",
+      "summary": "Primarul rămâne în funcție, dar pierde majoritatea confortabilă cu care a început mandatul.",
+      "link": "https://example.ro/podeni/motiune-respinsa",
+      "source": "Valea Mare Live",
+      "scope": "local",
+      "section": "politica",
+      "image": "",
+      "publishedAt": "2026-07-24T19:10:00.000Z"
+    },
+    {
+      "id": "piata-agroalimentara-chirii",
+      "title": "Chiriile din piața agroalimentară cresc cu 30%. Nouăsprezece producători au renunțat la tarabe",
+      "summary": "Administrația pieței spune că tarifele nu au fost ajustate din 2019. Producătorii locali cer un tarif separat, sub cel al revânzătorilor.",
+      "link": "https://example.ro/podeni/piata-chirii",
+      "source": "Gazeta de Podeni",
+      "scope": "local",
+      "section": "economie",
+      "image": "",
+      "publishedAt": "2026-07-24T16:00:00.000Z"
+    },
+    {
+      "id": "drum-judetean-receptie",
+      "title": "Recepția drumului județean 107, amânată a doua oară: fisuri pe patru kilometri",
+      "summary": "Constructorul are 45 de zile pentru remedieri. Garanția de bună execuție acoperă lucrările, spune Consiliul Județean.",
+      "link": "https://example.ro/valea-mare/dj107-receptie",
+      "source": "Valea Mare Live",
+      "scope": "local",
+      "section": "administratie",
+      "image": "",
+      "publishedAt": "2026-07-23T15:25:00.000Z"
+    },
+    {
+      "id": "plan-scolarizare-clase",
+      "title": "Trei clase a V-a în loc de cinci: efectul unei generații mai mici cu 18%",
+      "summary": "Inspectoratul a aprobat planul de școlarizare. Două școli de cartier pierd câte o clasă, iar patru profesori intră în restrângere de activitate.",
+      "link": "https://example.ro/podeni/plan-scolarizare",
+      "source": "Agenția de presă (exemplu)",
+      "scope": "national",
+      "section": "comunitate",
+      "image": "",
+      "publishedAt": "2026-07-23T12:40:00.000Z"
+    },
+    {
+      "id": "parc-industrial-hala-goala",
+      "title": "A doua hală din parcul industrial rămâne goală la trei ani de la recepție",
+      "summary": "Investiția de 12 milioane de lei nu are chiriaș. Primăria spune că negociază cu doi operatori logistici, dar nu dă termene.",
+      "link": "https://example.ro/podeni/hala-parc-industrial",
+      "source": "Agenția de presă (exemplu)",
+      "scope": "national",
+      "section": "economie",
+      "image": "",
+      "publishedAt": "2026-07-23T10:05:00.000Z"
+    },
+    {
+      "id": "sondaj-consilieri-locali",
+      "title": "Sondaj comandat de primărie: 38% dintre respondenți nu pot numi niciun consilier local",
+      "summary": "Studiul, plătit din bugetul local, a fost realizat pe 800 de persoane. Rezultatele nu fuseseră publicate.",
+      "link": "https://example.ro/podeni/sondaj-primarie",
+      "source": "Agenția de presă (exemplu)",
+      "scope": "national",
+      "section": "politica",
+      "image": "",
+      "publishedAt": "2026-07-22T17:30:00.000Z"
+    }
+  ]
+}
