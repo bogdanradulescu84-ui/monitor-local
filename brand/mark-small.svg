@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 200 200" role="img" aria-label="Buzău365">
+  <title>Buzău365 — cadranul, tăietura pentru dimensiuni mici</title>
+  <!-- Varianta redusă: 12 liniuțe radiale în loc de 52 subțiri, fără text mărunt.
+       Se folosește sub ~64 px (favicon, avatar în comentarii, listă de grupuri),
+       unde liniuțele subțiri se strâng și inelul devine o pată gri.
+       Perioadă: 552.9203/12 = 46.07669. Lungimea liniuței (dash) trebuie să rămână
+       mai mică decât grosimea (stroke-width), altfel ies pătrate, nu liniuțe radiale. -->
+  <rect width="200" height="200" fill="#F7F7F4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#16263F" stroke-width="15"
+          stroke-dasharray="6 40.07669" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="12" r="18" fill="#F7F7F4"/>
+  <circle cx="100" cy="12" r="11.5" fill="#A8231D"/>
+  <text x="100" y="126" text-anchor="middle" font-family="'Iowan Old Style', Palatino, Georgia, serif"
+        font-size="70" fill="#16263F">365</text>
+</svg>

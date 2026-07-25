@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 200 200" role="img" aria-label="Buzău365">
+  <title>Buzău365 — cadranul</title>
+  <!-- Inelul = anul, cele 52 de liniuțe = săptămânile, punctul roșu = ziua în curs.
+       Geometrie: r=88, circumferință 552.9203, perioadă 552.9203/52 = 10.63308.
+       Nu modifica dasharray fără să recalculezi, altfel apare o liniuță parțială la îmbinare.
+       dx pe texte compensează spațiul pe care letter-spacing îl adaugă după ultima literă
+       și care altfel deplasează textul centrat spre dreapta. -->
+  <rect width="200" height="200" fill="#F7F7F4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#16263F" stroke-width="7"
+          stroke-dasharray="2.2 8.43308" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="12" r="14" fill="#F7F7F4"/>
+  <circle cx="100" cy="12" r="9" fill="#A8231D"/>
+  <text x="100" y="78" dx="-2.2" text-anchor="middle" font-family="ui-monospace, Menlo, monospace"
+        font-size="12.5" letter-spacing="4.4" fill="#4A5364">BUZĂU</text>
+  <text x="100" y="134" text-anchor="middle" font-family="'Iowan Old Style', Palatino, Georgia, serif"
+        font-size="60" fill="#16263F">365</text>
+  <rect x="74" y="146" width="52" height="2.5" fill="#A8231D"/>
+  <text x="100" y="166" dx="-1.4" text-anchor="middle" font-family="ui-monospace, Menlo, monospace"
+        font-size="9.5" letter-spacing="2.8" fill="#4A5364">ZI DE ZI</text>
+</svg>
