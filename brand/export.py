@@ -42,6 +42,7 @@ JOBS = [
     ("lockup-dark.svg", 1120,  320, "lockup-dark-1120x320.png"),
     ("cover-page.svg",   820,  312, "fb-coperta-pagina-820x312.png"),
     ("cover-group.svg", 1640,  856, "fb-coperta-grup-1640x856.png"),
+    ("og.svg",          1200,  630, "og-1200x630.png"),
 ]
 
 

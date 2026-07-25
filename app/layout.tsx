@@ -6,9 +6,30 @@ import "./globals.css";
 
 const data = loadData();
 
+const TITLE = `${data.site.name} — presă locală și politică`;
+const DESCRIPTION =
+  `${data.site.tagline}. Titluri din presa din ${data.site.place} și ${data.site.county}, cu link către sursă.`;
+
 export const metadata: Metadata = {
-  title: `${data.site.name} — presă locală și politică`,
-  description: `${data.site.tagline}. Titluri din presa din ${data.site.place} și ${data.site.county}, cu link către sursă.`,
+  // metadataBase e obligatoriu: fără el, Next scrie adrese relative în
+  // og:image, iar Facebook și WhatsApp nu le pot descărca — linkul apare
+  // fără imagine. Imaginea vine din app/opengraph-image.png.
+  metadataBase: new URL(data.site.url || "https://buzau365.ro"),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    siteName: data.site.name,
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
