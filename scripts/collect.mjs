@@ -59,6 +59,22 @@ function truncate(s, max = 220) {
   return (at > max * 0.6 ? cut.slice(0, at) : cut).replace(/[\s,;:.–—-]+$/, "") + "…";
 }
 
+const wordCache = new Map();
+
+/**
+ * Potrivire pe cuvânt întreg, nu pe subșir: altfel „adi" se regăsea în
+ * „tradiția", iar „psd" ar fi prins orice cuvânt care îl conține.
+ */
+function hasWord(haystack, needle) {
+  let re = wordCache.get(needle);
+  if (!re) {
+    const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    re = new RegExp(`(?:^|[^a-z0-9])${escaped}(?:[^a-z0-9]|$)`);
+    wordCache.set(needle, re);
+  }
+  return re.test(haystack);
+}
+
 function slugify(s) {
   return fold(s).replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 80);
 }
@@ -163,7 +179,7 @@ function classify(text, sections, fallback) {
   for (const sec of sections) {
     let score = 0;
     for (const kw of sec.keywords ?? []) {
-      if (text.includes(fold(kw))) score += 1;
+      if (hasWord(text, fold(kw))) score += 1;
     }
     if (score > bestScore) {
       bestScore = score;
@@ -175,9 +191,22 @@ function classify(text, sections, fallback) {
 
 /* ---------------- main ---------------- */
 
+/**
+ * Linia editorială declarată în config: respinge articolele care leagă un
+ * subiect protejat de un semnal negativ. Se face pe cuvinte, deci greșește în
+ * ambele sensuri — vezi nota din config/sources.json.
+ */
+function makeEditorialFilter(editorial) {
+  const subjects = (editorial?.protect?.subjects ?? []).map(fold).filter(Boolean);
+  const cues = (editorial?.protect?.negativeCues ?? []).map(fold).filter(Boolean);
+  if (!subjects.length || !cues.length) return () => false;
+
+  return (haystack) => subjects.some((s) => hasWord(haystack, s)) && cues.some((c) => hasWord(haystack, c));
+}
+
 async function main() {
   const config = JSON.parse(await readFile(CONFIG_PATH, "utf8"));
-  const { sections, feeds, filters, limits } = config;
+  const { sections, feeds, filters, limits, editorial } = config;
 
   if (!feeds.length) {
     console.error(
@@ -192,7 +221,9 @@ async function main() {
   const requireAny = (filters?.requireAny ?? []).map(fold).filter(Boolean);
   const excludeAny = (filters?.excludeAny ?? []).map(fold).filter(Boolean);
   const maxAgeMs = (limits?.maxAgeDays ?? 7) * 86400000;
+  const blockedByPolicy = makeEditorialFilter(editorial);
   const now = Date.now();
+  let editorialFiltered = 0;
 
   const results = await Promise.allSettled(
     feeds.map(async (feed) => ({ feed, entries: parseEntries(await fetchFeed(feed.url)) }))
@@ -222,8 +253,12 @@ async function main() {
       if (now - ts > maxAgeMs) continue;
 
       const haystack = fold(`${e.title} ${e.summary}`);
-      if (excludeAny.some((w) => haystack.includes(w))) continue;
-      if (feed.scope !== "local" && requireAny.length && !requireAny.some((w) => haystack.includes(w))) continue;
+      if (excludeAny.some((w) => hasWord(haystack, w))) continue;
+      if (feed.scope !== "local" && requireAny.length && !requireAny.some((w) => hasWord(haystack, w))) continue;
+      if (blockedByPolicy(haystack)) {
+        editorialFiltered++;
+        continue;
+      }
 
       articles.push({
         id: slugify(`${e.title}-${feed.name}`),
@@ -232,7 +267,7 @@ async function main() {
         link: e.link,
         source: feed.name,
         scope: feed.scope ?? "national",
-        section: classify(haystack, sections, feed.section),
+        section: classify(haystack, sections, feed.section ?? config.fallbackSection),
         image: e.image || "",
         publishedAt: new Date(ts).toISOString(),
       });
@@ -264,6 +299,8 @@ async function main() {
   const out = {
     generatedAt: new Date().toISOString(),
     site: config.site,
+    editorial: { disclosure: editorial?.disclosure ?? "" },
+    editorialFiltered,
     sections,
     counts: Object.fromEntries(sections.map((s) => [s.id, unique.filter((a) => a.section === s.id).length])),
     sources: report,
@@ -274,6 +311,9 @@ async function main() {
     console.log(r.ok ? `  ✓ ${r.feed}: ${r.kept}` : `  ✗ ${r.feed}: ${r.error}`);
   }
   console.log(`${out.articles.length} articole, din ${okFeeds}/${feeds.length} surse.`);
+  if (editorialFiltered) {
+    console.log(`${editorialFiltered} articole respinse de politica editorială.`);
+  }
 
   if (DRY) {
     console.log("--dry: nu am scris nimic.");

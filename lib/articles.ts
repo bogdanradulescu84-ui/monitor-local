@@ -31,6 +31,10 @@ export type SiteMeta = {
 export type Data = {
   generatedAt: string;
   site: SiteMeta;
+  /** Linia editorială declarată, afișată în subsol. */
+  editorial?: { disclosure: string };
+  /** Câte articole a respins linia editorială la ultima colectare. */
+  editorialFiltered?: number;
   sections: Section[];
   counts: Record<string, number>;
   sources: SourceReport[];

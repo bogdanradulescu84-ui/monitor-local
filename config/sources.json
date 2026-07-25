@@ -2,11 +2,11 @@
   "_readme": "Singurul fișier pe care îl editezi ca să schimbi ce apare pe site. Cuvintele-cheie se scriu FĂRĂ diacritice — colectorul le elimină din ambele părți înainte să compare, deci 'licitatie' prinde și 'licitație'.",
 
   "site": {
-    "name": "Monitorul Local",
-    "nameEmphasis": "Local",
-    "tagline": "Agregator de presă locală și politică",
-    "place": "ORAȘUL",
-    "county": "JUDEȚUL",
+    "name": "Radar Buzău",
+    "nameEmphasis": "Buzău",
+    "tagline": "Agregator de presă buzoiană",
+    "place": "BUZĂU",
+    "county": "JUD. BUZĂU",
     "population": "",
     "email": "redactia@example.ro",
     "url": "https://example.ro"
@@ -16,43 +16,77 @@
     {
       "id": "local",
       "name": "Local",
-      "desc": "Ce se întâmplă în oraș: investiții, servicii publice, oameni.",
-      "keywords": ["primaria", "primarul", "oras", "municipiu", "cartier", "strada", "trafic", "spital", "scoala", "gradinita", "piata", "parc", "canalizare", "apa potabila", "iluminat"]
+      "desc": "Ce se întâmplă în Buzău: investiții, servicii publice, oameni.",
+      "_note": "Fără 'buzau' aici: apare în aproape fiecare articol al acestor surse și ar trage toată colecția în 'Local'. Secțiunea e oricum varianta implicită când nimic altceva nu se potrivește.",
+      "keywords": ["primaria", "primarul", "viceprimar", "municipiu", "cartier", "strada", "bulevard", "trafic", "accident", "spital", "scoala", "gradinita", "canalizare", "apa potabila", "iluminat", "salubritate", "termoficare", "pompieri", "politia locala"]
     },
     {
       "id": "politica",
       "name": "Politică",
-      "desc": "Coaliții, rupturi și calcule electorale — din sala de consiliu până în Parlament.",
-      "keywords": ["partid", "coalitie", "motiune", "alegeri", "candidat", "vot politic", "opozitie", "guvern", "parlament", "deputat", "senator", "psd", "pnl", "usr", "aur", "udmr"]
+      "desc": "Coaliții, calcule electorale și decizii politice — din sala de consiliu până în Parlament.",
+      "keywords": ["partid", "coalitie", "motiune", "alegeri", "candidat", "opozitie", "guvern", "parlament", "deputat", "senator", "psd", "pnl", "usr", "aur", "udmr", "presedinte"]
     },
     {
       "id": "administratie",
       "name": "Administrație",
       "desc": "Bugete, licitații, hotărâri de consiliu, achiziții publice.",
-      "keywords": ["buget", "rectificare", "licitatie", "achizitie", "contract", "consiliul local", "consiliul judetean", "hotarare", "hcl", "puz", "pug", "urbanism", "autorizatie", "prefect", "fonduri europene", "pnrr"]
+      "keywords": ["buget", "rectificare", "licitatie", "achizitie", "contract", "consiliul local", "consiliul judetean", "hotarare", "hcl", "puz", "pug", "urbanism", "autorizatie", "prefect", "fonduri europene", "pnrr", "anaf", "avizul", "proiect de hotarare"]
     },
     {
       "id": "economie",
       "name": "Economie",
       "desc": "Firme, investiții private, piața muncii, prețuri.",
-      "keywords": ["investitie", "firma", "companie", "angajati", "somaj", "salarii", "fabrica", "hala", "parc industrial", "faliment", "cifra de afaceri", "taxe", "impozite"]
+      "keywords": ["investitie", "firma", "companie", "angajati", "somaj", "salarii", "fabrica", "hala", "parc industrial", "faliment", "cifra de afaceri", "taxe", "impozite", "agricultura", "fermieri"]
     },
     {
       "id": "comunitate",
       "name": "Comunitate",
       "desc": "Educație, sănătate, cultură, sport, evenimente.",
-      "keywords": ["elevi", "profesori", "pacienti", "medic", "festival", "concert", "expozitie", "biblioteca", "muzeu", "voluntari", "sport", "echipa", "biserica", "camin cultural"]
+      "keywords": ["elevi", "profesori", "pacienti", "medic", "festival", "concert", "expozitie", "biblioteca", "muzeu", "voluntari", "sport", "echipa", "biserica", "camin cultural", "bacalaureat", "evaluare nationala"]
+    },
+    {
+      "id": "diverse",
+      "name": "Diverse",
+      "desc": "Ce nu s-a potrivit cu nicio secțiune. Dacă se adună prea multe aici, mai adaugă cuvinte-cheie mai sus.",
+      "keywords": []
     }
   ],
 
-  "_feeds": "Adaugă aici feed-urile RSS/Atom. scope: 'local' pentru presa din zonă, 'national' pentru surse mari. section: secțiunea implicită dacă niciun cuvânt-cheie nu se potrivește (opțional).",
-  "feeds": [],
+  "_fallbackSection": "Unde ajung articolele care nu potrivesc niciun cuvânt-cheie. Ține-o pe 'diverse': dacă o pui pe 'local', secțiunea Local se umple cu tot ce n-a fost clasificat și nu mai înseamnă nimic.",
+  "fallbackSection": "diverse",
+
+  "_feeds": "scope: 'local' = presă din zonă, intră fără filtru de relevanță. scope: 'national' = trece prin filters.requireAny. section = secțiunea implicită dacă niciun cuvânt-cheie nu se potrivește (opțional).",
+  "feeds": [
+    { "name": "Opinia Buzău",        "url": "https://opiniabuzau.ro/feed/",          "scope": "local" },
+    { "name": "Buzău Media",         "url": "https://buzaumedia.ro/feed/",           "scope": "local" },
+    { "name": "Știri de Buzău",      "url": "https://stiridebuzau.ro/feed/",         "scope": "local" },
+    { "name": "Știri din Surse",     "url": "https://stiridinsursebuzau.ro/feed/",   "scope": "local" },
+    { "name": "Campus TV Buzău",     "url": "https://campusbuzau.ro/feed/",          "scope": "local" },
+    { "name": "Buzoienii",           "url": "https://buzoienii.ro/feed/",            "scope": "local" },
+    { "name": "Șansa News",          "url": "https://sansanews.ro/feed/",            "scope": "local" }
+  ],
+
+  "_editorial": "Linia editorială a publicației, aplicată la colectare. Un articol e respins dacă menționează un subiect din 'protect.subjects' ȘI conține un semnal din 'protect.negativeCues'. Filtrarea se face pe cuvinte, deci e aproximativă în ambele sensuri: uneori aruncă un articol neutru care conține din întâmplare 'ancheta', alteori lasă să treacă o critică formulată fără aceste cuvinte. 'disclosure' apare în subsolul site-ului — dacă îl golești, filtrul rămâne activ dar cititorul nu mai află de el.",
+  "editorial": {
+    "disclosure": "Publicație cu linie editorială declarată: nu preluăm materiale critice la adresa PSD. Restul presei buzoiene e agregat integral, cu link către sursă.",
+    "protect": {
+      "subjects": ["psd", "partidul social democrat", "social democrat", "social-democrat"],
+      "negativeCues": [
+        "dosar penal", "condamnat", "condamnare", "coruptie", "mita", "spaga",
+        "trafic de influenta", "abuz in serviciu", "conflict de interese", "incompatibilitate",
+        "dna", "procurori", "ancheta", "urmarire penala", "inculpat", "acuzat", "acuzatii",
+        "demisie", "demis", "revocat", "scandal", "escrocherie", "frauda", "deturnare",
+        "plagiat", "averea", "protest impotriva", "motiune de cenzura", "criticat", "atacat dur",
+        "esec", "dezastru", "haos", "minciuna", "manipulare"
+      ]
+    }
+  },
 
   "filters": {
-    "_requireAny": "Dacă lista NU e goală, un articol dintr-un feed cu scope='national' se păstrează doar dacă titlul sau descrierea conține unul dintre aceste cuvinte. Feed-urile locale nu trec prin acest filtru. Aici pui numele orașului, al județului, al primarului etc.",
-    "requireAny": [],
+    "_requireAny": "Dacă lista NU e goală, un articol dintr-un feed cu scope='national' se păstrează doar dacă titlul sau descrierea conține unul dintre aceste cuvinte. Feed-urile locale nu trec prin acest filtru.",
+    "requireAny": ["buzau", "buzoian", "ramnicu sarat", "nehoiu"],
     "_excludeAny": "Articole aruncate indiferent de sursă. Util pentru horoscop, promo, sport de import.",
-    "excludeAny": ["horoscop", "loto", "reteta zilei", "publicitate", "advertorial", "vezi galeria foto"]
+    "excludeAny": ["horoscop", "loto", "reteta zilei", "publicitate", "advertorial", "vezi galeria foto", "bilete la"]
   },
 
   "limits": {

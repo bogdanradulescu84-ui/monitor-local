@@ -34,9 +34,23 @@ Tot în `config/sources.json`:
 | `site` | numele publicației, localitatea, județul, contactul |
 | `sections` | secțiunile și cuvintele-cheie după care se clasifică articolele |
 | `feeds` | lista de feed-uri RSS/Atom |
+| `fallbackSection` | unde ajung articolele care nu potrivesc niciun cuvânt-cheie |
+| `editorial` | linia editorială aplicată la colectare, plus textul afișat cititorului |
 | `filters.requireAny` | filtru pentru sursele naționale: păstrează doar articolele care menționează orașul, județul, primarul etc. Sursele locale nu trec prin el |
 | `filters.excludeAny` | ce se aruncă indiferent de sursă |
 | `limits` | vechimea maximă, câte articole pe feed, câte în total |
+
+### Clasificarea
+
+Un articol primește secțiunea cu cele mai multe cuvinte-cheie potrivite. Potrivirea e pe **cuvânt întreg**, nu pe subșir — altfel `adi` ar prinde „tra**di**ția", iar `psd` orice cuvânt care îl conține.
+
+Ce nu potrivește nimic ajunge în `fallbackSection`. Ține-o pe `diverse`: dacă o pui pe `local`, secțiunea Local se umple cu tot ce n-a fost clasificat și nu mai înseamnă nimic. Dacă „Diverse" crește prea mult, adaugă cuvinte-cheie în secțiunile de sus — asta e întreținerea normală a proiectului.
+
+### Linia editorială
+
+`editorial.protect` respinge la colectare articolele care leagă un subiect protejat de un semnal negativ. Filtrarea e pe cuvinte, deci greșește în ambele sensuri: aruncă uneori un articol neutru care conține din întâmplare „anchetă", și lasă să treacă o critică formulată fără cuvintele din listă. Nu e un filtru pe care să te bazezi ca fiind exact.
+
+`editorial.disclosure` apare în subsolul site-ului. Dacă îl golești, filtrul rămâne activ dar cititorul nu mai află de el — iar site-ul se prezintă în continuare drept agregator. Numărul de articole respinse la ultima rulare stă în `data/articles.json`, în câmpul `editorialFiltered`.
 
 Un feed arată așa:
 

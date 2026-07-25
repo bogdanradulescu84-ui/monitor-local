@@ -84,6 +84,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </p>
               </div>
             </div>
+            {data.editorial?.disclosure && (
+              <div className="notice policy">
+                <b>Politică editorială.</b> {data.editorial.disclosure}
+              </div>
+            )}
+
             <div className="notice">
               Conținutul aparține publicațiilor-sursă. Dacă ești editor și vrei ca feed-ul tău să nu mai fie
               preluat, scrie la {site.email} și îl scoatem din <code>config/sources.json</code>.

@@ -498,6 +498,10 @@ footer {
   letter-spacing: .05em;
   line-height: 1.8;
 }
+/* Linia editorială: declarată, nu ascunsă în subsol printre celelalte note. */
+.notice.policy { color: var(--on-navy); }
+.notice.policy b { color: #E0554D; }
+.notice.policy + .notice { margin-top: 14px; }
 
 /* ---------- responsive ---------- */
 
