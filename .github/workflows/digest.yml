@@ -1,0 +1,39 @@
+name: Postarea zilnică
+
+# Deschide un issue cu postarea de promovare a zilei. Îl primești ca
+# notificare în aplicația GitHub de pe telefon, copiezi textul și publici.
+# Fără token-uri de rețele sociale și fără servicii externe.
+on:
+  schedule:
+    # 06:10 UTC = 09:10 ora României vara, 08:10 iarna.
+    - cron: "10 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Compune postarea
+        run: node scripts/digest.mjs > digest.md
+
+      - name: Deschide issue-ul
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Postarea zilei — $(date -u +'%d.%m.%Y')" \
+            --body-file digest.md \
+            --label "promovare" || \
+          gh issue create \
+            --title "Postarea zilei — $(date -u +'%d.%m.%Y')" \
+            --body-file digest.md
