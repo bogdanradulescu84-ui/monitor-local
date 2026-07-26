@@ -15,6 +15,10 @@ import { readFile } from "node:fs/promises";
 
 const DATA = new URL("../data/articles.json", import.meta.url);
 
+// Forma postării se citește din config, nu din articles.json: schimbarea unui
+// cuvânt din antet n-are de ce să ceară o recolectare a tuturor feed-urilor.
+const CONFIG = new URL("../config/sources.json", import.meta.url);
+
 const RAW = process.argv.includes("--raw");
 
 const MAX_ITEMS = 6;
@@ -109,14 +113,29 @@ if (!items.length) {
   process.exit(0);
 }
 
+/**
+ * Forma postării vine din config → post. Substituie {n}, {stiri}, {data}, {url}.
+ *
+ * Facebook taie textul după câteva rânduri și pune „Vezi mai mult". De aceea
+ * primul rând e cârlig, nu antet decorativ: ce nu intră acolo nu se citește.
+ * Rândul liber dintre știri le face să se vadă ca elemente separate.
+ */
+const shape = JSON.parse(await readFile(CONFIG, "utf8")).post ?? {};
+const fill = (tpl, fallback) =>
+  String(tpl ?? fallback)
+    .replaceAll("{n}", String(items.length))
+    .replaceAll("{stiri}", items.length === 1 ? "știre" : "știri")
+    .replaceAll("{data}", roDate(generated))
+    .replaceAll("{url}", url);
+
+const bullet = shape.bullet ?? "•";
+
 const post = [
-  `${data.site.name} — ${roDate(generated)}`,
+  fill(shape.header, "{data} — {n} {stiri} din Buzău"),
   "",
-  "Ce s-a scris azi în presa buzoiană:",
+  items.map((a) => `${bullet} ${a.title} (${a.source})`).join("\n\n"),
   "",
-  ...items.map((a) => `• ${a.title} (${a.source})`),
-  "",
-  `Toate știrile, într-un singur loc: ${url}`,
+  fill(shape.footer, "Toate știrile, într-un singur loc: {url}"),
 ].join("\n");
 
 // --raw: doar textul, pentru publicare automată. Compunerea de mai sus rămâne
