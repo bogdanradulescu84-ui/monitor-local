@@ -34,6 +34,9 @@ const STALE_HOURS = 26;
 /** Ieșire distinctă pentru „date prea vechi": workflow-ul nu postează, dar alertează. */
 const EXIT_STALE = 3;
 
+/** Ieșire distinctă pentru „nu e nimic de postat": zi liniștită, fără alertă. */
+const EXIT_EMPTY = 4;
+
 const MONTHS = [
   "ianuarie", "februarie", "martie", "aprilie", "mai", "iunie",
   "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie",
@@ -95,7 +98,14 @@ const items = pick(data.articles, data.sections, since);
 const url = data.site.url || "";
 
 if (!items.length) {
-  console.log("Nimic de postat: nu există articole colectate.");
+  const msg = "Nimic de postat: nu există articole colectate.";
+  // Cu --raw, stdout e textul care ajunge pe Facebook. Mesajul ăsta nu are ce
+  // căuta acolo: ar fi publicat ca postare.
+  if (RAW) {
+    console.error(msg);
+    process.exit(EXIT_EMPTY);
+  }
+  console.log(msg);
   process.exit(0);
 }
 

@@ -1,8 +1,11 @@
 name: Postarea zilnică
 
-# Deschide un issue cu postarea de promovare a zilei. Îl primești ca
-# notificare în aplicația GitHub de pe telefon, copiezi textul și publici.
-# Fără token-uri de rețele sociale și fără servicii externe.
+# Compune postarea de promovare a zilei, o publică pe pagina de Facebook prin
+# Make și deschide un issue cu ce a plecat. Issue-ul e chitanță, nu sarcină:
+# nu mai ai nimic de copiat.
+#
+# Make deține conexiunea cu pagina; aici pleacă doar textul. Regulile editoriale
+# rămân în repo, aplicate la colectare.
 on:
   schedule:
     # 06:10 UTC = 09:10 ora României vara, 08:10 iarna.
@@ -23,17 +26,105 @@ jobs:
         with:
           node-version: 22
 
+      # Codurile de ieșire sunt semnificative:
+      #   0 = avem text    3 = colectare mai veche de 26h    4 = nimic de postat
       - name: Compune postarea
-        run: node scripts/digest.mjs > digest.md
+        id: compose
+        run: |
+          set +e
+          node scripts/digest.mjs --raw > post.txt 2> compose.err
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+          cat compose.err
 
+      - name: Nimic de postat, zi liniștită
+        if: steps.compose.outputs.code == '4'
+        run: echo "Colectorul n-a adus articole. Nu e eroare, nu alertez."
+
+      - name: Publică pe Facebook
+        id: publish
+        if: steps.compose.outputs.code == '0'
+        env:
+          WEBHOOK: ${{ secrets.MAKE_WEBHOOK_URL }}
+        run: |
+          # Textul intră în JSON prin jq, nu prin interpolare: titlurile conțin
+          # ghilimele, diacritice și apostrofuri care ar strica payload-ul.
+          jq -Rs --arg link "https://buzau365.ro" '{text: ., link: $link}' post.txt > payload.json
+
+          publish() {
+            curl -sS -X POST "$WEBHOOK" \
+              -H "content-type: application/json" \
+              --data-binary @payload.json \
+              --max-time 120 \
+              -w '%{http_code}' -o response.txt
+          }
+
+          code=$(publish)
+          if [ "$code" != "200" ]; then
+            echo "Prima încercare a răspuns $code. Reîncerc peste 60 de secunde."
+            sleep 60
+            code=$(publish)
+          fi
+
+          echo "--- răspuns Make ---"
+          cat response.txt || true
+          echo ""
+
+          if [ "$code" != "200" ]; then
+            echo "Publicarea a eșuat definitiv (HTTP $code)."
+            exit 1
+          fi
+
+      # Chitanța. Rulează și la eșec, ca să ai textul la îndemână pe telefon.
       - name: Deschide issue-ul
+        if: always() && steps.compose.outputs.code == '0'
         env:
           GH_TOKEN: ${{ github.token }}
+          PUBLISHED: ${{ steps.publish.outcome }}
         run: |
-          gh issue create \
-            --title "Postarea zilei — $(date -u +'%d.%m.%Y')" \
-            --body-file digest.md \
-            --label "promovare" || \
-          gh issue create \
-            --title "Postarea zilei — $(date -u +'%d.%m.%Y')" \
-            --body-file digest.md
+          if [ "$PUBLISHED" = "success" ]; then
+            title="Postat pe Facebook — $(date -u +'%d.%m.%Y')"
+            {
+              echo "Postarea de azi a plecat automat pe pagină. Nu ai nimic de făcut."
+              echo ""
+              echo '```'
+              cat post.txt
+              echo '```'
+            } > issue.md
+          else
+            title="EȘEC la postare — $(date -u +'%d.%m.%Y')"
+            {
+              echo "**Postarea nu a plecat.** Textul e mai jos, îl poți publica manual."
+              echo ""
+              echo '```'
+              cat post.txt
+              echo '```'
+              echo ""
+              echo "Detalii în [rularea workflow-ului]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."
+            } > issue.md
+          fi
+          gh issue create --title "$title" --body-file issue.md --label "promovare" \
+            || gh issue create --title "$title" --body-file issue.md
+
+      - name: Alertă pe Telegram
+        # Doar la probleme reale: publicare eșuată sau date vechi. Ziua fără
+        # articole (codul 4) nu e problemă și nu deranjează.
+        if: always() && (steps.publish.outcome == 'failure' || steps.compose.outputs.code == '3')
+        env:
+          WEBHOOK: ${{ secrets.TELEGRAM_WEBHOOK_URL }}
+          CODE: ${{ steps.compose.outputs.code }}
+        run: |
+          if [ "$CODE" = "3" ]; then
+            msg="Buzau365: colectarea e mai veche de 26h, nu am postat nimic azi. Probabil au picat sursele."
+          else
+            msg="Buzau365: postarea pe Facebook a esuat. Textul e in issue, il poti pune manual. $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
+          jq -n --arg t "$msg" '{text: $t}' \
+            | curl -sS -X POST "$WEBHOOK" -H "content-type: application/json" --data-binary @- \
+            || echo "Nici alerta pe Telegram n-a plecat."
+
+      - name: Marchează rularea ca eșuată
+        if: steps.compose.outputs.code != '0' && steps.compose.outputs.code != '4'
+        run: |
+          echo "digest.mjs a ieșit cu codul ${{ steps.compose.outputs.code }}."
+          exit 1
