@@ -206,6 +206,80 @@ function classify(text, sections, fallback) {
   return best ?? fallback ?? sections[0].id;
 }
 
+/* ---------------- subiecte ---------------- */
+
+/**
+ * Cuvinte prea comune ca să spună ceva despre subiect. Fără ele, „a fost" și
+ * „pentru" ar apropia articole care n-au nicio legătură.
+ */
+const GOALE = new Set([
+  "acest", "acesta", "aceasta", "acestei", "acestui", "care", "acum", "dupa",
+  "pana", "prin", "pentru", "acolo", "acasa", "acele", "asupra", "acord",
+  "fost", "sunt", "este", "avea", "avut", "face", "facut", "spus", "spune",
+  "poate", "trebuie", "poti", "cum", "unde", "acesti", "aceste", "toate",
+  "acestea", "foarte", "acelasi", "dintre", "catre", "peste", "intre",
+]);
+
+function cuvinteCheie(text) {
+  const set = new Set();
+  for (const w of fold(text).match(/[a-z0-9]{4,}/g) ?? []) {
+    if (!GOALE.has(w)) set.add(w);
+  }
+  return set;
+}
+
+/**
+ * Grupează articolele care descriu același eveniment și păstrează unul singur.
+ *
+ * Deduplicarea de mai jos prinde doar titlurile identice. Când trei ziare scriu
+ * despre aceeași dronă doborâtă la Padina, titlurile diferă, deci toate trei
+ * treceau — și apăreau pe site ca trei știri.
+ *
+ * Din grup rămâne cel mai recent, fiindcă de obicei are informația cea mai
+ * nouă, iar articolul primește `coverage` = câte publicații distincte au scris
+ * despre subiect. Ăsta e semnalul de importanță: redacțiile locale votează cu
+ * atenția lor înainte să voteze cititorii cu click-urile.
+ */
+function grupeazaSubiecte(list, opts) {
+  const minOverlap = opts?.minOverlap ?? 0.5;
+  const minShared = opts?.minShared ?? 3;
+  const windowMs = (opts?.windowHours ?? 48) * 3600_000;
+
+  const chei = list.map((a) => cuvinteCheie(`${a.title} ${a.summary}`));
+  const luat = new Array(list.length).fill(false);
+  const out = [];
+
+  for (let i = 0; i < list.length; i++) {
+    if (luat[i]) continue;
+    const grup = [i];
+    luat[i] = true;
+
+    for (let j = i + 1; j < list.length; j++) {
+      if (luat[j]) continue;
+      if (list[j].bucket !== list[i].bucket) continue;
+      if (Math.abs(Date.parse(list[i].publishedAt) - Date.parse(list[j].publishedAt)) > windowMs) continue;
+
+      const comune = [...chei[i]].filter((w) => chei[j].has(w)).length;
+      const minim = Math.min(chei[i].size, chei[j].size);
+      if (!minim || comune < minShared) continue;
+      if (comune / minim < minOverlap) continue;
+
+      grup.push(j);
+      luat[j] = true;
+    }
+
+    const membri = grup.map((k) => list[k]);
+    const pastrat = membri.reduce((a, b) => (b.publishedAt > a.publishedAt ? b : a));
+    out.push({
+      ...pastrat,
+      coverage: new Set(membri.map((m) => m.source)).size,
+      // Numai când mai multe publicații au scris: pe site se poate arăta „și în…".
+      alsoIn: [...new Set(membri.map((m) => m.source))].filter((s) => s !== pastrat.source),
+    });
+  }
+  return out;
+}
+
 /* ---------------- coșuri ---------------- */
 
 /**
@@ -246,12 +320,54 @@ function capPerBucket(list, caps) {
 
 const PROMOTE_WINDOW_MS = 24 * 3600_000;
 
-/** Prioritarele proaspete urcă; restul rămâne strict cronologic. */
+const ORDINE_COS = { buzau: 0, tara: 1, sport: 2 };
+
+/**
+ * Ordinea în flux. Coșul primează, apoi criteriile de importanță:
+ *   1. buzoiene, apoi naționale, apoi sport
+ *   2. în fiecare: prioritarele editoriale proaspete (config → editorial.promote)
+ *   3. apoi subiectele scrise de mai multe ziare, tot din ultimele 24h
+ *   4. apoi cronologic
+ *
+ * Coșul e primul pentru că scorul de coroborare NU e comparabil între ele.
+ * Cele trei ziare sportive scriu toate despre aceleași meciuri, deci fiecare
+ * meci are scor 2-3; cele opt ziare buzoiene scriu fiecare despre altceva, deci
+ * majoritatea știrilor locale au scor 1. Fără separare, prima pagină a unui
+ * site numit Buzău365 se deschidea cu patru știri despre Gigi Becali.
+ *
+ * Urcările sunt limitate la 24h: coloana de ore din stânga fluxului organizează
+ * știrea după *când*, iar un articol de acum trei zile urcat în cap ar face
+ * orele să sară înapoi.
+ */
 function orderWithPromoted(list, now) {
-  const fresh = (a) => a.promoted && now - Date.parse(a.publishedAt) <= PROMOTE_WINDOW_MS;
+  const proaspat = (a) => now - Date.parse(a.publishedAt) <= PROMOTE_WINDOW_MS;
+
+  // Nivelurile 0 și 1 cer prospețime. Peste 24h se cade pe cronologic: un
+  // subiect de acum patru zile scris de două ziare NU trebuie să treacă
+  // înaintea știrii de azi, altfel coloana de ore arată ore care sar înapoi.
+  const nivel = (a) => {
+    if (!proaspat(a)) return 2;
+    if (a.promoted) return 0;
+    return (a.coverage ?? 1) > 1 ? 1 : 2;
+  };
+
   return [...list].sort((x, y) => {
-    const rank = (fresh(x) ? 0 : 1) - (fresh(y) ? 0 : 1);
-    return rank !== 0 ? rank : y.publishedAt.localeCompare(x.publishedAt);
+    // Prioritarele editoriale trec înaintea coșurilor. Sunt puține — de obicei
+    // zero sau una pe zi — și sunt singurul lucru pe care proprietarul l-a cerut
+    // explicit sus. Coroborarea NU primește același tratament: la sport ar urca
+    // în bloc și ar împinge Buzăul de pe prima pagină.
+    const prio = (y.promoted && proaspat(y) ? 1 : 0) - (x.promoted && proaspat(x) ? 1 : 0);
+    if (prio !== 0) return prio;
+
+    const cos = (ORDINE_COS[x.bucket] ?? 0) - (ORDINE_COS[y.bucket] ?? 0);
+    if (cos !== 0) return cos;
+
+    const d = nivel(x) - nivel(y);
+    if (d !== 0) return d;
+
+    // Fără departajare pe coroborare aici: nivelul a folosit-o deja, iar la
+    // egalitate de nivel amândouă sunt fie proaspete, fie vechi.
+    return y.publishedAt.localeCompare(x.publishedAt);
   });
 }
 
@@ -412,13 +528,18 @@ async function main() {
     unique.push(a);
   }
 
-  // Dedupe rămâne cronologic mai sus, ca dintre două copii să supraviețuiască cea
-  // mai nouă. Prioritizarea se aplică abia acum, peste rezultat.
+  // Dedupe de mai sus prinde titlurile identice. Gruparea de aici prinde același
+  // eveniment relatat diferit de mai multe ziare — și scoate numărul lor, care
+  // devine semnal de importanță.
+  const subiecte = grupeazaSubiecte(unique, config.grouping);
+  const comasate = unique.length - subiecte.length;
+
+  // Prioritizarea se aplică peste rezultat.
   //
   // Doar în ultimele 24h: coloana de ore din stânga fluxului organizează știrea
   // după *când*. Un articol de acum trei zile urcat în capul listei ar face orele
   // să sară înapoi și ar goli coloana de sens.
-  const ordered = capPerBucket(orderWithPromoted(unique, now), limits?.maxPerBucket);
+  const ordered = capPerBucket(orderWithPromoted(subiecte, now), limits?.maxPerBucket);
 
   const out = {
     generatedAt: new Date().toISOString(),
@@ -446,6 +567,13 @@ async function main() {
   if (editorialPromoted) {
     const inWindow = out.articles.filter((a) => a.promoted && now - Date.parse(a.publishedAt) <= PROMOTE_WINDOW_MS).length;
     console.log(`${editorialPromoted} articole prioritare, din care ${inWindow} urcate (restul, mai vechi de 24h).`);
+  }
+  if (comasate) {
+    const multi = out.articles.filter((a) => (a.coverage ?? 1) > 1);
+    console.log(`${comasate} articole comasate în ${multi.length} subiecte scrise de mai multe ziare.`);
+    for (const a of multi.slice(0, 5)) {
+      console.log(`   ${a.coverage} ziare · ${a.title.slice(0, 62)}`);
+    }
   }
 
   if (DRY) {

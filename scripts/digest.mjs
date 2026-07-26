@@ -76,6 +76,10 @@ function rank(articles, sections) {
   const weight = new Map(sections.map((s, i) => [s.id, s.id === "diverse" ? 99 : i]));
   return [...articles].sort((a, b) => {
     if (Boolean(a.promoted) !== Boolean(b.promoted)) return a.promoted ? -1 : 1;
+    // Câte ziare au scris despre subiect. Se calculează la colectare; e cel mai
+    // apropiat lucru de „ce contează azi" pe care îl avem fără date de trafic.
+    const c = (b.coverage ?? 1) - (a.coverage ?? 1);
+    if (c !== 0) return c;
     const wa = weight.get(a.section) ?? 50;
     const wb = weight.get(b.section) ?? 50;
     if (wa !== wb) return wa - wb;
