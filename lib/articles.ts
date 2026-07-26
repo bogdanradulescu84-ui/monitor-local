@@ -11,6 +11,9 @@ export type Article = {
   section: string;
   image: string;
   publishedAt: string;
+  /** Urcat de regulile din config → editorial.promote. Opțional: articolele
+   *  colectate înainte de introducerea regulii nu au câmpul. */
+  promoted?: boolean;
 };
 
 export type Section = { id: string; name: string; desc: string; keywords?: string[] };

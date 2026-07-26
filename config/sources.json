@@ -63,7 +63,15 @@
     { "name": "Știri din Surse",     "url": "https://stiridinsursebuzau.ro/feed/",   "scope": "local" },
     { "name": "Campus TV Buzău",     "url": "https://campusbuzau.ro/feed/",          "scope": "local" },
     { "name": "Buzoienii",           "url": "https://buzoienii.ro/feed/",            "scope": "local" },
-    { "name": "Șansa News",          "url": "https://sansanews.ro/feed/",            "scope": "local" }
+    { "name": "Șansa News",          "url": "https://sansanews.ro/feed/",            "scope": "local" },
+    { "name": "Observatorul Buzoian","url": "https://www.observatorulbuzoian.ro/feed/", "scope": "local" },
+
+    { "name": "Digi24",              "url": "https://www.digi24.ro/rss",             "scope": "national" },
+    { "name": "Știri pe surse",      "url": "https://www.stiripesurse.ro/feed/",     "scope": "national" },
+    { "name": "DC News",             "url": "https://www.dcnews.ro/feed/",           "scope": "national" },
+    { "name": "Antena 3",            "url": "https://www.antena3.ro/feed/",          "scope": "national" },
+    { "name": "HotNews",             "url": "https://hotnews.ro/feed/",              "scope": "national" },
+    { "name": "Recorder",            "url": "https://recorder.ro/feed/",             "scope": "national" }
   ],
 
   "_editorial": "Linia editorială a publicației, aplicată la colectare. Un articol e respins dacă menționează un subiect din 'protect.subjects' ȘI conține un semnal din 'protect.negativeCues'. Filtrarea se face pe cuvinte, deci e aproximativă în ambele sensuri: uneori aruncă un articol neutru care conține din întâmplare 'ancheta', alteori lasă să treacă o critică formulată fără aceste cuvinte. 'disclosure' apare în subsolul site-ului — dacă îl golești, filtrul rămâne activ dar cititorul nu mai află de el.",
@@ -79,6 +87,28 @@
         "plagiat", "averea", "protest impotriva", "motiune de cenzura", "criticat", "atacat dur",
         "esec", "dezastru", "haos", "minciuna", "manipulare"
       ]
+    },
+    "_promote": "Prioritizarea: articolele care se potrivesc urcă în capul fluxului și intră primele în postarea zilnică. 'against' = subiect vizat + semnal negativ. 'for' = subiect susținut + semnal pozitiv. Când o listă de semnale lipsește, se refolosește 'protect.negativeCues'; când 'for.subjects' e goală, se refolosesc 'protect.subjects'. Ordinea contează: 'protect' rulează ÎNAINTE, deci un articol despre PSD care conține și un cuvânt pozitiv, și unul negativ, e aruncat înainte ca prioritizarea să-l vadă.",
+    "promote": {
+      "against": {
+        "subjects": [
+          "usr", "uniunea salvati romania",
+          "pnl", "partidul national liberal", "national liberal",
+          "alianta pentru unirea romanilor"
+        ],
+        "_subjectsUpper": "Verificate pe titlul ORIGINAL, cu majuscule. 'AUR' e partidul, 'aur' e metalul — potrivirea normală, fără majuscule, ar urca 'medalie de aur' sau 'furt de bijuterii din aur' ca atac la adresa partidului. Titlurile scrise integral cu majuscule sunt sărite, tocmai pentru că acolo distincția se pierde.",
+        "subjectsUpper": ["AUR"]
+      },
+      "for": {
+        "_subjects": "Goală = se refolosesc subiectele din 'protect.subjects'. Un singur loc de întreținut: un nume adăugat acolo protejează de negativ ȘI urcă pe pozitiv.",
+        "subjects": [],
+        "positiveCues": [
+          "inaugurat", "inaugurare", "investitie", "investitii", "finantare",
+          "fonduri europene", "modernizare", "modernizat", "reabilitat", "reabilitare",
+          "contract semnat", "lucrari", "aprobat", "alocat", "castigat",
+          "premiat", "premiu", "record", "sprijin", "deschis"
+        ]
+      }
     }
   },
 
