@@ -75,6 +75,23 @@ function hasWord(haystack, needle) {
   return re.test(haystack);
 }
 
+const upperCache = new Map();
+
+/**
+ * Potrivire pe cuvânt întreg, sensibilă la majuscule, pe textul ORIGINAL.
+ * Există pentru „AUR": partidul se scrie cu majuscule, metalul nu. Fără asta,
+ * „medalie de aur" sau „furt de bijuterii din aur" ar fi urcate ca atacuri.
+ */
+function hasUpperWord(raw, needle) {
+  let re = upperCache.get(needle);
+  if (!re) {
+    const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    re = new RegExp(`(?:^|[^A-Za-z0-9])${escaped}(?:[^A-Za-z0-9]|$)`);
+    upperCache.set(needle, re);
+  }
+  return re.test(raw);
+}
+
 function slugify(s) {
   return fold(s).replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 80);
 }
@@ -189,6 +206,19 @@ function classify(text, sections, fallback) {
   return best ?? fallback ?? sections[0].id;
 }
 
+/* ---------------- ordering ---------------- */
+
+const PROMOTE_WINDOW_MS = 24 * 3600_000;
+
+/** Prioritarele proaspete urcă; restul rămâne strict cronologic. */
+function orderWithPromoted(list, now) {
+  const fresh = (a) => a.promoted && now - Date.parse(a.publishedAt) <= PROMOTE_WINDOW_MS;
+  return [...list].sort((x, y) => {
+    const rank = (fresh(x) ? 0 : 1) - (fresh(y) ? 0 : 1);
+    return rank !== 0 ? rank : y.publishedAt.localeCompare(x.publishedAt);
+  });
+}
+
 /* ---------------- main ---------------- */
 
 /**
@@ -202,6 +232,39 @@ function makeEditorialFilter(editorial) {
   if (!subjects.length || !cues.length) return () => false;
 
   return (haystack) => subjects.some((s) => hasWord(haystack, s)) && cues.some((c) => hasWord(haystack, c));
+}
+
+/**
+ * Prioritizarea declarată în config: urcă articolele care leagă un subiect vizat
+ * de un semnal negativ ('against'), sau un subiect susținut de unul pozitiv ('for').
+ *
+ * Rulează DUPĂ filtrul de mai sus. Consecința e utilă: un articol despre PSD care
+ * conține și un cuvânt pozitiv, și unul negativ, e deja aruncat de 'protect' și nu
+ * poate ajunge urcat din greșeală.
+ */
+function makePromoteFilter(editorial) {
+  const list = (xs) => (xs ?? []).map(fold).filter(Boolean);
+
+  const against = editorial?.promote?.against ?? {};
+  const againstSubjects = list(against.subjects);
+  const againstUpper = (against.subjectsUpper ?? []).filter(Boolean);
+  const againstCues = list(against.negativeCues ?? editorial?.protect?.negativeCues);
+
+  const boost = editorial?.promote?.for ?? {};
+  const forSubjects = list(boost.subjects?.length ? boost.subjects : editorial?.protect?.subjects);
+  const forCues = list(boost.positiveCues);
+
+  return (haystack, raw) => {
+    // Un titlu scris integral cu majuscule face inutilă distincția AUR/aur.
+    const upperUsable = raw !== raw.toUpperCase();
+    const hitsSubject =
+      againstSubjects.some((s) => hasWord(haystack, s)) ||
+      (upperUsable && againstUpper.some((s) => hasUpperWord(raw, s)));
+
+    if (hitsSubject && againstCues.some((c) => hasWord(haystack, c))) return true;
+
+    return forSubjects.some((s) => hasWord(haystack, s)) && forCues.some((c) => hasWord(haystack, c));
+  };
 }
 
 async function main() {
@@ -222,8 +285,10 @@ async function main() {
   const excludeAny = (filters?.excludeAny ?? []).map(fold).filter(Boolean);
   const maxAgeMs = (limits?.maxAgeDays ?? 7) * 86400000;
   const blockedByPolicy = makeEditorialFilter(editorial);
+  const promotedByPolicy = makePromoteFilter(editorial);
   const now = Date.now();
   let editorialFiltered = 0;
+  let editorialPromoted = 0;
 
   const results = await Promise.allSettled(
     feeds.map(async (feed) => ({ feed, entries: parseEntries(await fetchFeed(feed.url)) }))
@@ -260,6 +325,9 @@ async function main() {
         continue;
       }
 
+      const promoted = promotedByPolicy(haystack, `${e.title} ${e.summary}`);
+      if (promoted) editorialPromoted++;
+
       articles.push({
         id: slugify(`${e.title}-${feed.name}`),
         title: e.title,
@@ -270,6 +338,7 @@ async function main() {
         section: classify(haystack, sections, feed.section ?? config.fallbackSection),
         image: e.image || "",
         publishedAt: new Date(ts).toISOString(),
+        promoted,
       });
       kept++;
     }
@@ -296,15 +365,24 @@ async function main() {
     unique.push(a);
   }
 
+  // Dedupe rămâne cronologic mai sus, ca dintre două copii să supraviețuiască cea
+  // mai nouă. Prioritizarea se aplică abia acum, peste rezultat.
+  //
+  // Doar în ultimele 24h: coloana de ore din stânga fluxului organizează știrea
+  // după *când*. Un articol de acum trei zile urcat în capul listei ar face orele
+  // să sară înapoi și ar goli coloana de sens.
+  const ordered = orderWithPromoted(unique, now);
+
   const out = {
     generatedAt: new Date().toISOString(),
     site: config.site,
     editorial: { disclosure: editorial?.disclosure ?? "" },
     editorialFiltered,
+    editorialPromoted,
     sections,
-    counts: Object.fromEntries(sections.map((s) => [s.id, unique.filter((a) => a.section === s.id).length])),
+    counts: Object.fromEntries(sections.map((s) => [s.id, ordered.filter((a) => a.section === s.id).length])),
     sources: report,
-    articles: unique.slice(0, limits?.maxTotal ?? 120),
+    articles: ordered.slice(0, limits?.maxTotal ?? 120),
   };
 
   for (const r of report) {
@@ -313,6 +391,10 @@ async function main() {
   console.log(`${out.articles.length} articole, din ${okFeeds}/${feeds.length} surse.`);
   if (editorialFiltered) {
     console.log(`${editorialFiltered} articole respinse de politica editorială.`);
+  }
+  if (editorialPromoted) {
+    const inWindow = out.articles.filter((a) => a.promoted && now - Date.parse(a.publishedAt) <= PROMOTE_WINDOW_MS).length;
+    console.log(`${editorialPromoted} articole prioritare, din care ${inWindow} urcate (restul, mai vechi de 24h).`);
   }
 
   if (DRY) {
