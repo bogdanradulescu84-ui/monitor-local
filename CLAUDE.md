@@ -1,6 +1,19 @@
 # Buzău365 — context pentru sesiunile Claude
 
-Agregator de presă locală din Buzău. Static, fără server și fără bază de date.
+Agregator de presă. Static, fără server și fără bază de date.
+
+**Din 26 iulie 2026 nu mai e strict buzoian.** A fost, până atunci. Proprietarul a
+cerut explicit adăugarea presei centrale și a sportului, ca să aibă ce posta pe
+Facebook de două ori pe zi. Nu e derivă, e decizie — nu „repara" înapoi.
+
+Ce s-a păstrat din vechea identitate: **secțiunile locale rămân despre Buzău.**
+Politica națională nu intră în „Politică", ci în „Național"; sportul are secțiunea
+lui. Așa, „Administrație" înseamnă în continuare administrație buzoiană. Coșul
+`buzau` n-are plafon, celelalte au — presa centrală aduce de cinci ori mai multe
+articole decât cea locală și ar îneca-o.
+
+Sloganul din `config/sources.json → site.tagline` spune încă „Presa buzoiană,
+într-un singur loc". Nu mai e exact adevărat. E o singură cheie de config.
 
 ## Cum funcționează
 
@@ -19,6 +32,9 @@ Citește `README.md` pentru detalii. Regula de aur: **tot ce se configurează st
 - **Prioritizarea urcă articolele doar din ultimele 24h** (`orderWithPromoted`). Altfel coloana de ore din flux ar arăta ore care sar înapoi. Vezi secțiunea Design.
 - **`fallbackSection` e `diverse`, intenționat.** Pe `local`, secțiunea Local se umple cu tot ce n-a fost clasificat (au fost 85 din 96) și nu mai înseamnă nimic.
 - **Dacă toate sursele pică, colectorul iese cu eroare și NU scrie `data/articles.json`.** Site-ul rămâne pe ultima colectare bună. Nu „repara" asta scriind un fișier gol.
+- **Coșurile (`bucket`) nu sunt același lucru cu secțiunile.** Coșul spune ce fel de știre e — `buzau`, `tara`, `sport` — și decide cotele postării și plafoanele. Secțiunea spune unde apare pe site. Un articol Digi24 despre Buzău are coșul `buzau` și se clasifică normal, într-o secțiune locală.
+- **Postarea se face de două ori pe zi, iar ferestrele de timp sunt adiacente, nu suprapuse** (14h dimineața, 10h seara). Ele sunt singurul lucru care ține postarea de seară să n-o repete pe cea de dimineață — nu există niciun fișier cu ce s-a publicat deja. Dacă muți orele din `digest.yml`, mută și ferestrele.
+- **`pick()` din `digest.mjs` face două treceri.** Prima ține la diversitatea surselor, a doua completează cota dacă n-are de unde. Există pentru că presa buzoiană e concentrată: în 14 ore publică două-trei ziare, iar cu o singură trecere cota de 6 nu s-ar umple aproape niciodată.
 
 ## Design
 
@@ -35,7 +51,7 @@ Portat dintr-un prototip aprobat. Elementele care nu sunt decorative:
 |---|---|---|
 | `collect.yml` | la 2 ore | trage feed-urile, commit dacă s-a schimbat ceva, cheamă deploy |
 | `deploy.yml` | push pe main | build static, publicare pe Pages |
-| `digest.yml` | zilnic 06:10 UTC | compune postarea zilei, o trimite pe pagina de Facebook prin Make și deschide un issue cu ce a plecat |
+| `digest.yml` | 06:10 și 16:30 UTC | compune postarea, o trimite pe pagina de Facebook prin Make și deschide un issue cu ce a plecat |
 
 **Proiectul are de acum un serviciu extern și secrete.** Până la 26 iulie 2026 nu avea
 niciunul, iar documentația spunea asta explicit. Postarea pe Facebook se face prin Make

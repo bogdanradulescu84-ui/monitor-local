@@ -206,6 +206,42 @@ function classify(text, sections, fallback) {
   return best ?? fallback ?? sections[0].id;
 }
 
+/* ---------------- coșuri ---------------- */
+
+/**
+ * Coșul decide două lucruri: cotele din postarea zilnică și plafoanele de mai
+ * jos. Vezi „_feeds" în config pentru ce înseamnă fiecare scope.
+ *
+ * Feed-urile 'tara' se împart după conținut: un articol din Digi24 care
+ * menționează Buzăul e știre buzoiană, nu națională, și se clasifică normal.
+ */
+function bucketOf(feed, haystack, requireAny) {
+  if (feed.scope === "sport") return "sport";
+  if (feed.scope === "tara") {
+    const despreBuzau = requireAny.length && requireAny.some((w) => hasWord(haystack, w));
+    return despreBuzau ? "buzau" : "tara";
+  }
+  return "buzau";
+}
+
+/**
+ * Plafon pe coș, aplicat înaintea lui maxTotal. Fără el, cele 9 feed-uri
+ * naționale și sportive (peste 500 de articole pe rulare) ar împinge afară
+ * presa locală, care aduce vreo 90.
+ */
+function capPerBucket(list, caps) {
+  if (!caps) return list;
+  const used = new Map();
+  return list.filter((a) => {
+    const cap = caps[a.bucket];
+    if (cap == null) return true;
+    const n = used.get(a.bucket) ?? 0;
+    if (n >= cap) return false;
+    used.set(a.bucket, n + 1);
+    return true;
+  });
+}
+
 /* ---------------- ordering ---------------- */
 
 const PROMOTE_WINDOW_MS = 24 * 3600_000;
@@ -319,11 +355,21 @@ async function main() {
 
       const haystack = fold(`${e.title} ${e.summary}`);
       if (excludeAny.some((w) => hasWord(haystack, w))) continue;
-      if (feed.scope !== "local" && requireAny.length && !requireAny.some((w) => hasWord(haystack, w))) continue;
+      // Doar 'national' cere relevanță buzoiană. 'tara' și 'sport' intră întregi
+      // și se separă prin coș, mai jos.
+      if (feed.scope === "national" && requireAny.length && !requireAny.some((w) => hasWord(haystack, w))) continue;
       if (blockedByPolicy(haystack)) {
         editorialFiltered++;
         continue;
       }
+
+      const bucket = bucketOf(feed, haystack, requireAny);
+      // Secțiunile impuse: fără ele, un articol de fotbal ar cădea în
+      // „Comunitate", care are „sport" și „echipa" printre cuvintele-cheie.
+      const section =
+        bucket === "sport" ? "sport"
+        : bucket === "tara" ? "national"
+        : classify(haystack, sections, feed.section ?? config.fallbackSection);
 
       const promoted = promotedByPolicy(haystack, `${e.title} ${e.summary}`);
       if (promoted) editorialPromoted++;
@@ -335,7 +381,8 @@ async function main() {
         link: e.link,
         source: feed.name,
         scope: feed.scope ?? "national",
-        section: classify(haystack, sections, feed.section ?? config.fallbackSection),
+        bucket,
+        section,
         image: e.image || "",
         publishedAt: new Date(ts).toISOString(),
         promoted,
@@ -371,7 +418,7 @@ async function main() {
   // Doar în ultimele 24h: coloana de ore din stânga fluxului organizează știrea
   // după *când*. Un articol de acum trei zile urcat în capul listei ar face orele
   // să sară înapoi și ar goli coloana de sens.
-  const ordered = orderWithPromoted(unique, now);
+  const ordered = capPerBucket(orderWithPromoted(unique, now), limits?.maxPerBucket);
 
   const out = {
     generatedAt: new Date().toISOString(),
@@ -388,7 +435,11 @@ async function main() {
   for (const r of report) {
     console.log(r.ok ? `  ✓ ${r.feed}: ${r.kept}` : `  ✗ ${r.feed}: ${r.error}`);
   }
-  console.log(`${out.articles.length} articole, din ${okFeeds}/${feeds.length} surse.`);
+  const peCos = out.articles.reduce((m, a) => m.set(a.bucket, (m.get(a.bucket) ?? 0) + 1), new Map());
+  console.log(
+    `${out.articles.length} articole, din ${okFeeds}/${feeds.length} surse.  ` +
+      [...peCos].map(([k, v]) => `${k}: ${v}`).join(" · ")
+  );
   if (editorialFiltered) {
     console.log(`${editorialFiltered} articole respinse de politica editorială.`);
   }

@@ -7,7 +7,11 @@ export type Article = {
   summary: string;
   link: string;
   source: string;
-  scope: "local" | "national";
+  /** De unde vine. Vezi „_feeds" în config/sources.json. */
+  scope: "local" | "national" | "tara" | "sport";
+  /** Ce fel de știre e, după filtrare. Decide cotele postării și plafoanele.
+   *  Opțional: articolele colectate înainte de introducerea coșurilor n-au câmpul. */
+  bucket?: "buzau" | "tara" | "sport";
   section: string;
   image: string;
   publishedAt: string;

@@ -7,8 +7,9 @@
  * Nu inventează nimic: titlurile și sursele sunt exact cele colectate.
  * Filtrul editorial s-a aplicat deja, la colectare.
  *
- *   node scripts/digest.mjs          markdown pentru issue, de citit pe telefon
- *   node scripts/digest.mjs --raw    doar textul postării, pentru publicare automată
+ *   node scripts/digest.mjs               markdown pentru issue, de citit pe telefon
+ *   node scripts/digest.mjs --raw         doar textul postării, pentru publicare automată
+ *   node scripts/digest.mjs --window=11   ia doar articolele din ultimele 11 ore
  */
 
 import { readFile } from "node:fs/promises";
@@ -21,9 +22,23 @@ const CONFIG = new URL("../config/sources.json", import.meta.url);
 
 const RAW = process.argv.includes("--raw");
 
-const MAX_ITEMS = 6;
-const MAX_PER_SOURCE = 2;
-const WINDOW_HOURS = 24;
+/**
+ * Fereastra de timp din care se aleg articolele.
+ *
+ * Se postează de două ori pe zi, iar fereastra e singurul lucru care ține
+ * postarea de seară să n-o repete pe cea de dimineață. Nu ținem minte ce s-a
+ * publicat deja — dimineața acoperă intervalul de la postarea de aseară, seara
+ * pe cel de la postarea de dimineață. Fără stare, fără fișier de urmărit.
+ *
+ * Ferestrele sunt puțin mai largi decât intervalul real, ca să nu cadă nimic
+ * între ele. Prețul e că un articol apărut fix la graniță poate apărea de două
+ * ori — preferabil unuia pierdut.
+ */
+const WINDOW_HOURS = (() => {
+  const arg = process.argv.find((a) => a.startsWith("--window="));
+  const n = arg ? Number(arg.slice("--window=".length)) : NaN;
+  return Number.isFinite(n) && n > 0 ? n : 24;
+})();
 
 /**
  * Peste atât, colectarea e prea veche pentru publicare automată.
@@ -68,18 +83,43 @@ function rank(articles, sections) {
   });
 }
 
-function pick(articles, sections, since) {
+/**
+ * Alege pe cote, coș cu coș: atâtea buzoiene, atâtea naționale, atâtea de sport.
+ *
+ * Nu se completează dintr-un coș în altul și nu se reia din afara ferestrei. Dacă
+ * azi n-a fost decât o știre națională, postarea are o singură știre națională —
+ * varianta cealaltă ar fi să repete ceva deja publicat, ceea ce e mai rău.
+ *
+ * Coșurile respectă ordinea din 'quota'; articolele fără coș (colectate înainte
+ * de introducerea lor) intră în „buzau", ca postarea să meargă și pe date vechi.
+ */
+function pick(articles, sections, since, quota, maxPerSource) {
   const fresh = articles.filter((a) => new Date(a.publishedAt) >= since);
-  const pool = fresh.length >= MAX_ITEMS ? fresh : articles;
-
   const perSource = new Map();
   const chosen = [];
-  for (const a of rank(pool, sections)) {
-    const used = perSource.get(a.source) ?? 0;
-    if (used >= MAX_PER_SOURCE) continue;
-    perSource.set(a.source, used + 1);
-    chosen.push(a);
-    if (chosen.length >= MAX_ITEMS) break;
+
+  for (const [bucket, cota] of Object.entries(quota)) {
+    const pool = rank(fresh.filter((x) => (x.bucket ?? "buzau") === bucket), sections);
+    const luate = new Set();
+
+    // Două treceri. Prima ține la diversitate: cel mult maxPerSource de la
+    // aceeași publicație. A doua completează locurile rămase fără limita asta.
+    //
+    // Există pentru că presa buzoiană e concentrată: într-o fereastră de 14 ore
+    // publică de obicei două-trei ziare, iar Opinia și Buzău Media scot mai tot.
+    // Cu o singură trecere, cota de 6 s-ar umple rar. Mai bine șase știri de la
+    // trei surse decât patru de la trei surse.
+    for (const limit of [maxPerSource, Infinity]) {
+      for (const a of pool) {
+        if (luate.size >= cota) break;
+        if (luate.has(a)) continue;
+        const used = perSource.get(a.source) ?? 0;
+        if (used >= limit) continue;
+        perSource.set(a.source, used + 1);
+        luate.add(a);
+        chosen.push(a);
+      }
+    }
   }
   return chosen;
 }
@@ -97,12 +137,18 @@ if (ageHours > STALE_HOURS) {
   process.exit(EXIT_STALE);
 }
 
+const shape = JSON.parse(await readFile(CONFIG, "utf8")).post ?? {};
+const quota = shape.quota ?? { buzau: 6 };
+const maxPerSource = shape.maxPerSource ?? 2;
+
+// Fereastra pornește de la ora colectării, nu de la ora curentă: dacă ultima
+// colectare a fost acum 40 de minute, articolele de dinaintea ei tot intră.
 const since = new Date(generated.getTime() - WINDOW_HOURS * 3600_000);
-const items = pick(data.articles, data.sections, since);
+const items = pick(data.articles, data.sections, since, quota, maxPerSource);
 const url = data.site.url || "";
 
 if (!items.length) {
-  const msg = "Nimic de postat: nu există articole colectate.";
+  const msg = `Nimic de postat: niciun articol nou în ultimele ${WINDOW_HOURS} ore.`;
   // Cu --raw, stdout e textul care ajunge pe Facebook. Mesajul ăsta nu are ce
   // căuta acolo: ar fi publicat ca postare.
   if (RAW) {
@@ -120,7 +166,6 @@ if (!items.length) {
  * primul rând e cârlig, nu antet decorativ: ce nu intră acolo nu se citește.
  * Rândul liber dintre știri le face să se vadă ca elemente separate.
  */
-const shape = JSON.parse(await readFile(CONFIG, "utf8")).post ?? {};
 const fill = (tpl, fallback) =>
   String(tpl ?? fallback)
     .replaceAll("{n}", String(items.length))

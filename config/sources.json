@@ -16,7 +16,11 @@
   "post": {
     "header": "𝗦𝗧𝗜𝗥𝗜𝗟𝗘 𝗭𝗜𝗟𝗘𝗜 — {n} {stiri} în 60 de secunde",
     "bullet": "📌",
-    "footer": "Toate știrile, într-un singur loc: {url}"
+    "footer": "Toate știrile, într-un singur loc: {url}",
+    "_quota": "Câte știri intră în postare din fiecare coș. Dacă un coș n-are destule în fereastra de timp, postarea iese mai scurtă — nu se completează din alt coș și nu se reia din zilele trecute.",
+    "quota": { "buzau": 6, "tara": 3, "sport": 1 },
+    "_maxPerSource": "Cel mult atâtea știri de la aceeași publicație, ca postarea să nu fie a unei singure surse.",
+    "maxPerSource": 2
   },
 
   "sections": [
@@ -52,6 +56,20 @@
       "keywords": ["elevi", "profesori", "pacienti", "medic", "festival", "concert", "expozitie", "biblioteca", "muzeu", "voluntari", "sport", "echipa", "biserica", "camin cultural", "bacalaureat", "evaluare nationala"]
     },
     {
+      "id": "national",
+      "name": "Național",
+      "desc": "Ce se întâmplă în țară. Vine din presa centrală și nu trece prin filtrul de relevanță buzoiană.",
+      "_note": "Fără cuvinte-cheie: articolele ajung aici pentru că vin dintr-un feed cu scope 'tara' și nu menționează Buzăul. Secțiunea le e impusă, nu ghicită. Așa, secțiunile locale rămân despre Buzău — dacă politica națională ar intra în 'Politică', secțiunea aia n-ar mai însemna politică buzoiană.",
+      "keywords": []
+    },
+    {
+      "id": "sport",
+      "name": "Sport",
+      "desc": "Fotbal, competiții, rezultate. Din presa sportivă centrală.",
+      "_note": "Secțiune impusă feed-urilor cu scope 'sport'. Nu se bazează pe cuvinte-cheie, altfel articolele ar cădea în 'Comunitate', care are deja 'sport' și 'echipa' în listă.",
+      "keywords": []
+    },
+    {
       "id": "diverse",
       "name": "Diverse",
       "desc": "Ce nu s-a potrivit cu nicio secțiune. Dacă se adună prea multe aici, mai adaugă cuvinte-cheie mai sus.",
@@ -62,7 +80,7 @@
   "_fallbackSection": "Unde ajung articolele care nu potrivesc niciun cuvânt-cheie. Ține-o pe 'diverse': dacă o pui pe 'local', secțiunea Local se umple cu tot ce n-a fost clasificat și nu mai înseamnă nimic.",
   "fallbackSection": "diverse",
 
-  "_feeds": "scope: 'local' = presă din zonă, intră fără filtru de relevanță. scope: 'national' = trece prin filters.requireAny. section = secțiunea implicită dacă niciun cuvânt-cheie nu se potrivește (opțional).",
+  "_feeds": "Patru valori pentru 'scope', care decid ce se filtrează și în ce coș ajunge articolul:\n  'local'    — presă buzoiană. Fără filtru. Coș: buzau.\n  'national' — presă centrală, dar se păstrează DOAR articolele despre Buzău (filters.requireAny). Coș: buzau.\n  'tara'     — presă centrală, fără filtru. Articolele care menționează Buzăul merg în coșul buzau și se clasifică normal; restul merg în coșul tara și primesc secțiunea 'Național'.\n  'sport'    — presă sportivă, fără filtru. Coș: sport, secțiunea 'Sport' impusă.\nCoșurile contează în două locuri: cotele postării zilnice (post.quota) și plafoanele de la limits.maxPerBucket, care împiedică presa centrală să înece știrile buzoiene.\n'section' pe un feed = secțiunea implicită dacă niciun cuvânt-cheie nu se potrivește (opțional).",
   "feeds": [
     { "name": "Opinia Buzău",        "url": "https://opiniabuzau.ro/feed/",          "scope": "local" },
     { "name": "Buzău Media",         "url": "https://buzaumedia.ro/feed/",           "scope": "local" },
@@ -73,12 +91,16 @@
     { "name": "Șansa News",          "url": "https://sansanews.ro/feed/",            "scope": "local" },
     { "name": "Observatorul Buzoian","url": "https://www.observatorulbuzoian.ro/feed/", "scope": "local" },
 
-    { "name": "Digi24",              "url": "https://www.digi24.ro/rss",             "scope": "national" },
-    { "name": "Știri pe surse",      "url": "https://www.stiripesurse.ro/feed/",     "scope": "national" },
-    { "name": "DC News",             "url": "https://www.dcnews.ro/feed/",           "scope": "national" },
-    { "name": "Antena 3",            "url": "https://www.antena3.ro/feed/",          "scope": "national" },
-    { "name": "HotNews",             "url": "https://hotnews.ro/feed/",              "scope": "national" },
-    { "name": "Recorder",            "url": "https://recorder.ro/feed/",             "scope": "national" }
+    { "name": "Digi24",              "url": "https://www.digi24.ro/rss",             "scope": "tara" },
+    { "name": "Știri pe surse",      "url": "https://www.stiripesurse.ro/feed/",     "scope": "tara" },
+    { "name": "DC News",             "url": "https://www.dcnews.ro/feed/",           "scope": "tara" },
+    { "name": "Antena 3",            "url": "https://www.antena3.ro/feed/",          "scope": "tara" },
+    { "name": "HotNews",             "url": "https://hotnews.ro/feed/",              "scope": "tara" },
+    { "name": "Recorder",            "url": "https://recorder.ro/feed/",             "scope": "tara" },
+
+    { "name": "GSP",                 "url": "https://www.gsp.ro/rss.xml",            "scope": "sport" },
+    { "name": "Digi Sport",          "url": "https://www.digisport.ro/rss",          "scope": "sport" },
+    { "name": "Prosport",            "url": "https://www.prosport.ro/feed/",         "scope": "sport" }
   ],
 
   "_editorial": "Linia editorială a publicației, aplicată la colectare. Un articol e respins dacă menționează un subiect din 'protect.subjects' ȘI conține un semnal din 'protect.negativeCues'. Filtrarea se face pe cuvinte, deci e aproximativă în ambele sensuri: uneori aruncă un articol neutru care conține din întâmplare 'ancheta', alteori lasă să treacă o critică formulată fără aceste cuvinte. 'disclosure' apare în subsolul site-ului — dacă îl golești, filtrul rămâne activ dar cititorul nu mai află de el.",
@@ -132,6 +154,8 @@
     "_maxPerFeed": "Câte articole se iau, cel mult, dintr-un singur feed la o rulare.",
     "maxPerFeed": 25,
     "_maxTotal": "Câte articole rămân în fișierul final, cele mai recente primele.",
-    "maxTotal": 120
+    "maxTotal": 160,
+    "_maxPerBucket": "Plafon pe coș, aplicat ÎNAINTE de maxTotal. Fără el, presa centrală ar îneca știrile buzoiene: cele 9 feed-uri naționale și sportive aduc peste 500 de articole pe rulare, față de vreo 90 din presa locală. Coșul 'buzau' n-are plafon — el e motivul pentru care există site-ul.",
+    "maxPerBucket": { "tara": 30, "sport": 12 }
   }
 }

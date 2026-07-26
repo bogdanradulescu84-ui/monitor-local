@@ -6,11 +6,28 @@ name: Postarea zilnică
 #
 # Make deține conexiunea cu pagina; aici pleacă doar textul. Regulile editoriale
 # rămân în repo, aplicate la colectare.
+#
+# Se postează de două ori pe zi. Fereastra de timp e singurul lucru care ține
+# postarea de seară să n-o repete pe cea de dimineață — nu ținem minte ce s-a
+# publicat deja. Ferestrele sunt alese ca să se atingă, nu să se suprapună:
+#
+#   dimineața  09:10, fereastră 14h  → acoperă de aseară de la 19:00 până acum
+#   seara      19:30, fereastră 10h  → acoperă de azi-dimineață de la 09:00
+#
+# Dacă muți orele, mută și ferestrele, altfel ori pierzi știri între ele, ori
+# le publici de două ori.
 on:
   schedule:
     # 06:10 UTC = 09:10 ora României vara, 08:10 iarna.
     - cron: "10 6 * * *"
+    # 16:30 UTC = 19:30 vara, 18:30 iarna.
+    - cron: "30 16 * * *"
   workflow_dispatch:
+    inputs:
+      fereastra:
+        description: "Din câte ore în urmă se iau știrile"
+        default: "14"
+        required: false
 
 permissions:
   contents: read
@@ -30,9 +47,14 @@ jobs:
       #   0 = avem text    3 = colectare mai veche de 26h    4 = nimic de postat
       - name: Compune postarea
         id: compose
+        env:
+          # Rularea de seară recunoscută după cron-ul care a declanșat-o.
+          # La pornire manuală se ia valoarea din formular.
+          FEREASTRA: ${{ github.event.schedule == '30 16 * * *' && '10' || (github.event.inputs.fereastra || '14') }}
         run: |
+          echo "Fereastră: ultimele $FEREASTRA ore."
           set +e
-          node scripts/digest.mjs --raw > post.txt 2> compose.err
+          node scripts/digest.mjs --raw --window="$FEREASTRA" > post.txt 2> compose.err
           echo "code=$?" >> "$GITHUB_OUTPUT"
           set -e
           cat compose.err
