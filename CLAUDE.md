@@ -58,9 +58,16 @@ Portat dintr-un prototip aprobat. Elementele care nu sunt decorative:
 
 **Proiectul are de acum un serviciu extern și secrete.** Până la 26 iulie 2026 nu avea
 niciunul, iar documentația spunea asta explicit. Postarea pe Facebook se face prin Make
-(plan gratuit), care deține conexiunea cu pagina; `MAKE_WEBHOOK_URL`, `TELEGRAM_BOT_TOKEN`
-și `TELEGRAM_CHAT_ID` stau în GitHub secrets. Make e doar poștaș: nu citește feed-uri și
-nu compune text, tocmai ca regulile editoriale să rămână în repo. Designul complet:
+(plan gratuit), care deține conexiunea cu pagina.
+
+Două secrete în GitHub, ambele adrese de webhook Make: `MAKE_WEBHOOK_URL` (postarea) și
+`TELEGRAM_WEBHOOK_URL` (alertele). Al doilea trimite către un scenariu Telegram care
+exista deja în contul proprietarului — de aceea nu e niciun token de bot pe undeva.
+Ambele adrese funcționează ca parole: cine le are poate posta pe pagină. Se regenerează
+din Make dacă scapă.
+
+Make e doar poștaș: nu citește feed-uri și nu compune text, tocmai ca regulile editoriale
+să rămână în repo. Designul complet:
 `docs/superpowers/specs/2026-07-26-postare-automata-facebook-design.md`.
 
 `digest.mjs` nu produce text dacă ultima colectare e mai veche de 26 de ore (iese cu cod 3).
