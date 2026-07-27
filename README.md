@@ -32,6 +32,7 @@ Tot în `config/sources.json`:
 | cheie | ce face |
 |---|---|
 | `site` | numele publicației, localitatea, județul, contactul |
+| `analytics.cloudflareToken` | token-ul de Cloudflare Web Analytics. Gol = nu se măsoară nimic |
 | `sections` | secțiunile și cuvintele-cheie după care se clasifică articolele |
 | `feeds` | lista de feed-uri RSS/Atom |
 | `fallbackSection` | unde ajung articolele care nu potrivesc niciun cuvânt-cheie |
@@ -72,6 +73,12 @@ Cuvintele-cheie se scriu **fără diacritice**. Colectorul le elimină din ambel
 Ca să pornească, în repo: **Settings → Pages → Source: GitHub Actions**.
 
 Pentru domeniu propriu, scoate `BASE_PATH` din `deploy.yml` și adaugă fișierul `CNAME` în `public/`.
+
+## Trafic
+
+GitHub Pages nu dă statistici de acces, iar „Insights → Traffic" din repo numără vizitele pe pagina de GitHub, nu pe site. Măsurarea se face cu Cloudflare Web Analytics: token-ul din *Manage site → JS snippet* stă în `config/sources.json` la `analytics.cloudflareToken`, iar `app/layout.tsx` îl pune în pagini la build.
+
+Funcționează și cu înregistrările DNS pe „DNS only" — e un beacon în pagină, nu depinde de proxy-ul Cloudflare. Nu pune cookie-uri și nu reține date personale, deci site-ul nu are nevoie de banner de consimțământ. Cât timp token-ul e gol nu se încarcă niciun script.
 
 ## Dacă un editor cere retragerea
 

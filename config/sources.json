@@ -12,6 +12,11 @@
     "url": "https://buzau365.ro"
   },
 
+  "_analytics": "Măsurarea traficului. 'cloudflareToken' e token-ul din Cloudflare → Analytics & Logs → Web Analytics → buzau365.ro → Manage site → JS snippet: șirul din data-cf-beacon. Cât timp e gol, nu se încarcă niciun script și nu se măsoară nimic. Token-ul e public prin natura lui — stă în codul sursă al paginii, nu e o parolă. Nu folosește cookie-uri, deci nu e nevoie de banner de consimțământ.",
+  "analytics": {
+    "cloudflareToken": "1b8a52fbc22d4c4084910b7942877706"
+  },
+
   "_post": "Forma postării zilnice de Facebook (scripts/digest.mjs). Substituții disponibile: {n} = câte știri, {stiri} = 'știre' sau 'știri' după caz, {data} = data în română, {url} = adresa site-ului. Antetul folosește alfabetul Unicode 'bold' — Facebook nu are text îngroșat adevărat, iar alfabetul acela NU conține diacritice românești (Ă, Â, Î, Ș, Ț). Dacă schimbi textul, scrie-l fără diacritice sau acceptă că semnul de deasupra poate ieși decalat pe unele telefoane. Între știri se lasă un rând liber, ca să se vadă că sunt separate.",
   "post": {
     "header": "𝗦𝗧𝗜𝗥𝗜𝗟𝗘 𝗭𝗜𝗟𝗘𝗜 — {n} {stiri} în 60 de secunde",
