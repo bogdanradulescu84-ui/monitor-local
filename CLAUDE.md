@@ -76,6 +76,7 @@ Fără asta, o zi în care toate sursele pică ar duce la republicarea titlurilo
 ## Rămas de făcut
 
 - [ ] **Domeniul `buzau365.ro`**: DNS-ul e la Cloudflare (nameservere `alexandra`/`wilson`, A-uri către GitHub Pages, toate „DNS only"). Când delegarea `.ro` e publică: adaugă `public/CNAME` cu `buzau365.ro`, scoate `BASE_PATH` din `deploy.yml`, apoi `gh api -X PUT repos/bogdanradulescu84-ui/monitor-local/pages -f cname=buzau365.ro`.
+- [x] **Traficul se măsoară**: Cloudflare Web Analytics, token în `config/sources.json` → `analytics.cloudflareToken`, script injectat din `app/layout.tsx`. Datele se văd în Cloudflare → *Analytics & Logs* → *Web Analytics*.
 - [ ] `contact@buzau365.ro` — de activat prin Cloudflare Email Routing. Adresa e deja afișată pe site, dar încă nu există.
 - [ ] Titlurile preluate din Facebook vin cu litere Unicode „bold" (𝐁𝐮𝐳𝐚̆𝐮) și arată prost în serif. De normalizat în `collect.mjs`.
 - [ ] „Diverse" ține majoritatea articolelor. Se reduce adăugând cuvinte-cheie în secțiunile din config, nu schimbând clasificatorul.

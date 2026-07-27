@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { clockOf, loadData, longDate } from "@/lib/articles";
+import { clockOf, loadAnalytics, loadData, longDate } from "@/lib/articles";
 import "./globals.css";
 
 const data = loadData();
+const analytics = loadAnalytics();
 
 const TITLE = `${data.site.name} — presă locală și politică`;
 const DESCRIPTION =
@@ -117,6 +118,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
+
+        {/*
+          Cloudflare Web Analytics. Se încarcă doar dacă token-ul e completat în
+          config/sources.json → analytics.cloudflareToken. Fără cookie-uri și
+          fără date personale, deci nu cere banner de consimțământ.
+
+          `type="module"` e cum livrează Cloudflare snippet-ul azi; modulele se
+          încarcă oricum amânat, deci nu întârzie afișarea titlurilor. Nu-l
+          schimba în script clasic: fișierul e un modul ES.
+        */}
+        {analytics.cloudflareToken && (
+          <script
+            type="module"
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={JSON.stringify({ token: analytics.cloudflareToken })}
+          />
+        )}
       </body>
     </html>
   );

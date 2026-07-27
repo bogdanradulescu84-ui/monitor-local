@@ -50,6 +50,22 @@ export type Data = {
 };
 
 const DATA_DIR = path.join(process.cwd(), "data");
+const CONFIG_FILE = path.join(process.cwd(), "config", "sources.json");
+
+export type Analytics = { cloudflareToken?: string };
+
+/**
+ * Citit direct din config/sources.json, nu din data/articles.json: altfel
+ * token-ul ar apărea pe site abia după următoarea colectare, nu la primul
+ * build de după ce l-ai pus în config.
+ */
+export function loadAnalytics(): Analytics {
+  try {
+    return JSON.parse(readFileSync(CONFIG_FILE, "utf8")).analytics ?? {};
+  } catch {
+    return {};
+  }
+}
 
 /**
  * Live data if the collector has run, otherwise the bundled sample so the site
