@@ -23,16 +23,27 @@ name: Postarea zilnică
 # 27 iulie 2026 postarea programată la 06:10 a plecat la 06:58 — 48 de minute
 # întârziere. De aceea ora e trasă mai devreme decât ținta reală: vrem să
 # aterizeze în jur de 09:00-09:20, nu la fix.
+#
+# La prânz nu se postează digestul, ci comparația: același eveniment politic, cum
+# l-au titrat două publicații. Alt script, aceleași coduri de ieșire.
 on:
   schedule:
     # 05:30 UTC = 08:30 ora României vara, 07:30 iarna.
     - cron: "30 5 * * *"
+    # 08:20 UTC = 11:20 vara. Postarea de comparație, țintă ~12:00.
+    - cron: "20 8 * * *"
     # 16:30 UTC = 19:30 vara, 18:30 iarna.
     - cron: "30 16 * * *"
   workflow_dispatch:
     inputs:
+      fel:
+        description: "Ce fel de postare"
+        type: choice
+        options: ["digest", "compara"]
+        default: "digest"
+        required: false
       fereastra:
-        description: "Din câte ore în urmă se iau știrile"
+        description: "Digest: din câte ore în urmă se iau știrile"
         default: "14"
         required: false
 
@@ -55,13 +66,19 @@ jobs:
       - name: Compune postarea
         id: compose
         env:
-          # Rularea de seară recunoscută după cron-ul care a declanșat-o.
-          # La pornire manuală se ia valoarea din formular.
+          # Ce fel de postare, după cron-ul care a declanșat rularea.
+          # La pornire manuală se ia din formular.
+          FEL: ${{ github.event.schedule == '20 8 * * *' && 'compara' || (github.event.inputs.fel || 'digest') }}
           FEREASTRA: ${{ github.event.schedule == '30 16 * * *' && '12' || (github.event.inputs.fereastra || '14') }}
         run: |
-          echo "Fereastră: ultimele $FEREASTRA ore."
           set +e
-          node scripts/digest.mjs --raw --window="$FEREASTRA" > post.txt 2> compose.err
+          if [ "$FEL" = "compara" ]; then
+            echo "Postare de comparație (același eveniment, două titluri)."
+            node scripts/compara.mjs --raw > post.txt 2> compose.err
+          else
+            echo "Digest, fereastră: ultimele $FEREASTRA ore."
+            node scripts/digest.mjs --raw --window="$FEREASTRA" > post.txt 2> compose.err
+          fi
           echo "code=$?" >> "$GITHUB_OUTPUT"
           set -e
           cat compose.err

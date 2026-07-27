@@ -37,6 +37,9 @@ Citește `README.md` pentru detalii. Regula de aur: **tot ce se configurează st
 - **Coroborarea urcă subiectele scrise de mai multe ziare** (`grupeazaSubiecte`). Când trei ziare relatează același eveniment, articolele se comasează într-unul singur, se păstrează cel mai recent, iar numărul publicațiilor devine `coverage`. Rezolvă și o problemă veche: deduplicarea prindea doar titlurile identice, deci aceeași știre apărea de trei ori pe site.
 - **Coșul primează în fața coroborării la ordonarea fluxului.** Scorul NU e comparabil între coșuri: cele trei ziare sportive scriu toate despre aceleași meciuri, deci fiecare meci are scor 2-3, în timp ce ziarele buzoiene scriu fiecare despre altceva. Fără separare, prima pagină se deschidea cu patru știri despre Gigi Becali. Singura excepție sunt prioritarele editoriale, care trec înaintea coșurilor — sunt rare și cerute explicit.
 - **Coroborarea urcă doar în ultimele 24h.** Un subiect de acum patru zile scris de două ziare nu trece înaintea știrii de azi. Peste 24h se cade pe cronologic.
+- **Postarea de prânz compară încadrări, și e restrânsă la coșul `tara`** (`compara.mjs`). Nu din preferință editorială, ci din măsurătoare: gruparea subiectelor merge bine unde titlurile au nume proprii rare (Grindeanu, Cîrpaci, Cernavodă) și greșește des pe presa buzoiană, unde anunțurile primăriilor au formulări identice — ședința Consiliului Local Buzău se lipea de cea din comuna Vadu Pașii. Aproape jumătate din grupurile locale erau greșite, față de aproape niciunul dintre cele naționale. Pentru o postare care spune „uite cum au titrat diferit același eveniment", o grupare greșită nu e o imprecizie, e o dezmințire publică.
+- **`compara.maxSuprapunere` există ca să nu publicăm cartonașe fără miez.** Dacă cele două titluri seamănă prea mult, nu e comparație, ci aceeași știre spusă la fel. Calibrat pe date reale: 20% la o pereche bună, 83% și 91% la perechi inutile.
+- **Extragerea automată a fragmentului scurt care diferențiază două titluri NU funcționează.** A fost încercată („cea mai lungă bucată de cuvinte prezente într-un titlu și absente din celălalt") și scoate lucruri fără sens: „impostorii ăștia! Vreți", „explica celor", „spune". O singură încercare din șase era utilă. De aceea cartonașul citează titlurile întregi. Nu reîncerca fără un model de limbaj.
 - **`pick()` din `digest.mjs` face două treceri.** Prima ține la diversitatea surselor, a doua completează cota dacă n-are de unde. Există pentru că presa buzoiană e concentrată: în 14 ore publică două-trei ziare, iar cu o singură trecere cota de 6 nu s-ar umple aproape niciodată.
 
 ## Design
@@ -54,7 +57,7 @@ Portat dintr-un prototip aprobat. Elementele care nu sunt decorative:
 |---|---|---|
 | `collect.yml` | la 2 ore | trage feed-urile, commit dacă s-a schimbat ceva, cheamă deploy |
 | `deploy.yml` | push pe main | build static, publicare pe Pages |
-| `digest.yml` | 05:30 și 16:30 UTC | compune postarea, o trimite pe pagina de Facebook prin Make și deschide un issue cu ce a plecat |
+| `digest.yml` | 05:30, 08:20 și 16:30 UTC | compune postarea, o trimite pe pagina de Facebook prin Make și deschide un issue cu ce a plecat. La prânz rulează `compara.mjs`, în rest `digest.mjs` |
 
 **Proiectul are de acum un serviciu extern și secrete.** Până la 26 iulie 2026 nu avea
 niciunul, iar documentația spunea asta explicit. Postarea pe Facebook se face prin Make

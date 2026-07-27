@@ -28,6 +28,26 @@
     "maxPerSource": 2
   },
 
+  "_compara": "Postarea de prânz (scripts/compara.mjs): același eveniment politic, cum l-au titrat două publicații. 'buckets' e restrâns la 'tara' pentru că gruparea subiectelor e precisă doar acolo — presa centrală folosește nume proprii rare, care potrivesc bine, în timp ce anunțurile primăriilor buzoiene au formulări identice și se lipesc greșit între ele (măsurat: aproape jumătate din grupurile locale erau greșite). 'maxSuprapunere' = cât de mult pot semăna cele două titluri alese; peste prag nu e comparație, ci aceeași știre spusă la fel, iar cartonașul n-ar avea miez. Calibrat pe date reale: 20% la o pereche bună (Grindeanu), 83% și 91% la perechi inutile. Dacă nimic politic nu trece pragul, se cade pe subiectul zilei, cu alt antet și fără pretenția de comparație.",
+  "compara": {
+    "buckets": ["tara"],
+    "maxSuprapunere": 0.4,
+    "header": "🔎 ACELAȘI EVENIMENT, DOUĂ TITLURI",
+    "footer": "Concluzia e a ta.",
+    "headerRezerva": "🔎 DESPRE ASTA A SCRIS AZI TOATĂ PRESA",
+    "footerRezerva": "Citește-le pe toate și compară.",
+    "_termeniPolitici": "Un grup intră în discuție doar dacă titlurile conțin unul dintre acestea. Scrise fără diacritice. Numele de politicieni sunt utile: presa scrie despre oameni, nu despre partide.",
+    "termeniPolitici": [
+      "psd", "pnl", "usr", "aur", "udmr", "partid", "coalitie", "opozitie",
+      "guvern", "guvernul", "premier", "ministru", "ministrul", "ministerul",
+      "parlament", "deputat", "senator", "senat", "camera deputatilor",
+      "alegeri", "candidat", "motiune", "presedinte", "presedintele",
+      "primar", "primarul", "consilier", "prefect",
+      "buget", "salarizare", "pensii", "taxe", "impozit", "lege", "ordonanta",
+      "grindeanu", "bolojan", "nicusor dan", "kelemen hunor", "ciolacu", "simion"
+    ]
+  },
+
   "sections": [
     {
       "id": "local",

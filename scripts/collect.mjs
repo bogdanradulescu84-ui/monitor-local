@@ -275,6 +275,12 @@ function grupeazaSubiecte(list, opts) {
       coverage: new Set(membri.map((m) => m.source)).size,
       // Numai când mai multe publicații au scris: pe site se poate arăta „și în…".
       alsoIn: [...new Set(membri.map((m) => m.source))].filter((s) => s !== pastrat.source),
+      // Toate variantele, nu doar numele surselor. Secțiunea de comparare a
+      // încadrărilor are nevoie de titlurile în sine: ele sunt materialul.
+      variants:
+        membri.length > 1
+          ? membri.map((m) => ({ source: m.source, title: m.title, link: m.link, publishedAt: m.publishedAt }))
+          : undefined,
     });
   }
   return out;
