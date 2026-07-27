@@ -33,7 +33,7 @@ Citește `README.md` pentru detalii. Regula de aur: **tot ce se configurează st
 - **`fallbackSection` e `diverse`, intenționat.** Pe `local`, secțiunea Local se umple cu tot ce n-a fost clasificat (au fost 85 din 96) și nu mai înseamnă nimic.
 - **Dacă toate sursele pică, colectorul iese cu eroare și NU scrie `data/articles.json`.** Site-ul rămâne pe ultima colectare bună. Nu „repara" asta scriind un fișier gol.
 - **Coșurile (`bucket`) nu sunt același lucru cu secțiunile.** Coșul spune ce fel de știre e — `buzau`, `tara`, `sport` — și decide cotele postării și plafoanele. Secțiunea spune unde apare pe site. Un articol Digi24 despre Buzău are coșul `buzau` și se clasifică normal, într-o secțiune locală.
-- **Postarea se face de două ori pe zi, iar ferestrele de timp sunt adiacente, nu suprapuse** (14h dimineața, 10h seara). Ele sunt singurul lucru care ține postarea de seară să n-o repete pe cea de dimineață — nu există niciun fișier cu ce s-a publicat deja. Dacă muți orele din `digest.yml`, mută și ferestrele.
+- **Postarea se face de două ori pe zi, iar ferestrele acoperă intervalul dintre postări plus o oră** (14h dimineața pentru un interval de 13h, 12h seara pentru 11h). Marja există pentru că ora de rulare e aproximativă. Ele sunt singurul lucru care ține postarea de seară să n-o repete pe cea de dimineață — nu există niciun fișier cu ce s-a publicat deja. Dacă muți orele din `digest.yml`, mută și ferestrele.
 - **Coroborarea urcă subiectele scrise de mai multe ziare** (`grupeazaSubiecte`). Când trei ziare relatează același eveniment, articolele se comasează într-unul singur, se păstrează cel mai recent, iar numărul publicațiilor devine `coverage`. Rezolvă și o problemă veche: deduplicarea prindea doar titlurile identice, deci aceeași știre apărea de trei ori pe site.
 - **Coșul primează în fața coroborării la ordonarea fluxului.** Scorul NU e comparabil între coșuri: cele trei ziare sportive scriu toate despre aceleași meciuri, deci fiecare meci are scor 2-3, în timp ce ziarele buzoiene scriu fiecare despre altceva. Fără separare, prima pagină se deschidea cu patru știri despre Gigi Becali. Singura excepție sunt prioritarele editoriale, care trec înaintea coșurilor — sunt rare și cerute explicit.
 - **Coroborarea urcă doar în ultimele 24h.** Un subiect de acum patru zile scris de două ziare nu trece înaintea știrii de azi. Peste 24h se cade pe cronologic.
@@ -54,7 +54,7 @@ Portat dintr-un prototip aprobat. Elementele care nu sunt decorative:
 |---|---|---|
 | `collect.yml` | la 2 ore | trage feed-urile, commit dacă s-a schimbat ceva, cheamă deploy |
 | `deploy.yml` | push pe main | build static, publicare pe Pages |
-| `digest.yml` | 06:10 și 16:30 UTC | compune postarea, o trimite pe pagina de Facebook prin Make și deschide un issue cu ce a plecat |
+| `digest.yml` | 05:30 și 16:30 UTC | compune postarea, o trimite pe pagina de Facebook prin Make și deschide un issue cu ce a plecat |
 
 **Proiectul are de acum un serviciu extern și secrete.** Până la 26 iulie 2026 nu avea
 niciunul, iar documentația spunea asta explicit. Postarea pe Facebook se face prin Make
@@ -72,6 +72,11 @@ să rămână în repo. Designul complet:
 
 `digest.mjs` nu produce text dacă ultima colectare e mai veche de 26 de ore (iese cu cod 3).
 Fără asta, o zi în care toate sursele pică ar duce la republicarea titlurilor de ieri.
+
+**Orele programate sunt aproximative.** GitHub tratează `schedule` ca „nu mai devreme de",
+nu „exact atunci". Pe 27 iulie 2026 postarea de la 06:10 a plecat la 06:58, iar colectarea
+programată la :07 a rulat la 03:57, 06:56, 11:35. De aceea ora e trasă mai devreme decât
+ținta reală, iar ferestrele au o oră de marjă. Nu „repara" mutând ora înapoi la fix.
 
 ## Rămas de făcut
 

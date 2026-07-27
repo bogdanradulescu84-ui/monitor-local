@@ -9,17 +9,24 @@ name: Postarea zilnică
 #
 # Se postează de două ori pe zi. Fereastra de timp e singurul lucru care ține
 # postarea de seară să n-o repete pe cea de dimineață — nu ținem minte ce s-a
-# publicat deja. Ferestrele sunt alese ca să se atingă, nu să se suprapună:
+# publicat deja. Ferestrele acoperă intervalul dintre postări, plus o oră în
+# plus, ca o întârziere să nu lase știri necuprinse de niciuna.
 #
-#   dimineața  09:10, fereastră 14h  → acoperă de aseară de la 19:00 până acum
-#   seara      19:30, fereastră 10h  → acoperă de azi-dimineață de la 09:00
+#   dimineața  08:30, fereastră 14h  → intervalul real e 13h (de aseară, 19:30)
+#   seara      19:30, fereastră 12h  → intervalul real e 11h (de azi, 08:30)
 #
-# Dacă muți orele, mută și ferestrele, altfel ori pierzi știri între ele, ori
+# Dacă muți orele, mută și ferestrele. Altfel ori pierzi știri între ele, ori
 # le publici de două ori.
+#
+# ORA E APROXIMATIVĂ, ȘI NU DIN VINA NOASTRĂ. GitHub tratează `schedule` ca
+# „nu mai devreme de", nu ca „exact atunci", și la ore rotunde are cozi. Pe
+# 27 iulie 2026 postarea programată la 06:10 a plecat la 06:58 — 48 de minute
+# întârziere. De aceea ora e trasă mai devreme decât ținta reală: vrem să
+# aterizeze în jur de 09:00-09:20, nu la fix.
 on:
   schedule:
-    # 06:10 UTC = 09:10 ora României vara, 08:10 iarna.
-    - cron: "10 6 * * *"
+    # 05:30 UTC = 08:30 ora României vara, 07:30 iarna.
+    - cron: "30 5 * * *"
     # 16:30 UTC = 19:30 vara, 18:30 iarna.
     - cron: "30 16 * * *"
   workflow_dispatch:
@@ -50,7 +57,7 @@ jobs:
         env:
           # Rularea de seară recunoscută după cron-ul care a declanșat-o.
           # La pornire manuală se ia valoarea din formular.
-          FEREASTRA: ${{ github.event.schedule == '30 16 * * *' && '10' || (github.event.inputs.fereastra || '14') }}
+          FEREASTRA: ${{ github.event.schedule == '30 16 * * *' && '12' || (github.event.inputs.fereastra || '14') }}
         run: |
           echo "Fereastră: ultimele $FEREASTRA ore."
           set +e
