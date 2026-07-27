@@ -78,6 +78,16 @@ nu „exact atunci". Pe 27 iulie 2026 postarea de la 06:10 a plecat la 06:58, ia
 programată la :07 a rulat la 03:57, 06:56, 11:35. De aceea ora e trasă mai devreme decât
 ținta reală, iar ferestrele au o oră de marjă. Nu „repara" mutând ora înapoi la fix.
 
+## Decizii deschise (28 iulie 2026)
+
+Lucruri discutate cu proprietarul, neîncheiate. Nu le decide singur.
+
+- [ ] **Secțiunea de comparare a încadrărilor.** Aceeași știre, cum au titrat mai multe ziare. Format ales: o întrebare construită din două citate reale, de forma „«Obiect luminos» sau «prima dronă doborâtă pe teritoriul României»?". Fără etichete pe publicații, fără judecăți. **Interzis** în text: „toate unghiurile", „complet", „nefiltrat" — sunt afirmații verificabile pe care secțiunea nu le poate susține, fiindcă moștenește filtrul `protect`. „Concluzia e a ta" e în regulă: invită, nu promite. Partea nerezolvată e extragerea automată a fragmentului scurt care face diferența dintre două titluri; ideea de testat e „cea mai lungă bucată de cuvinte prezente într-un titlu și absente din celălalt", de probat pe 20-30 de grupuri înainte de a construi ceva.
+- [ ] **Repo-ul e public**, deci `editorial.protect` și `editorial.promote` sunt vizibile oricui, iar `disclosure` e gol. Proprietarul știe. Ieșiri discutate: o frază în subsol, plan plătit pentru repo privat, sau lăsat așa. Nu insista — a fost semnalat de trei ori.
+- [ ] **`site.tagline`** spune „Presa buzoiană, într-un singur loc", dar site-ul are acum sport și politică națională.
+- [ ] **Regulile editoriale prind numele partidelor, nu ale oamenilor.** Presa locală scrie despre persoane: un articol despre Marcel Ciolacu nu conține „PSD" și deci nu e urcat. Proprietarul urmează să dea lista de nume; se adaugă în `protect.subjects`, care servește ambele reguli.
+- [x] **Întârzierea GitHub e acceptată.** Postările au plecat la 09:58 și 21:07 în loc de 09:10 și 19:30. Proprietarul a zis „accept așa cum este" pe 27 iulie. Nu propune ceasuri externe decât dacă redeschide el subiectul.
+
 ## Rămas de făcut
 
 - [ ] **Domeniul `buzau365.ro`**: DNS-ul e la Cloudflare (nameservere `alexandra`/`wilson`, A-uri către GitHub Pages, toate „DNS only"). Când delegarea `.ro` e publică: adaugă `public/CNAME` cu `buzau365.ro`, scoate `BASE_PATH` din `deploy.yml`, apoi `gh api -X PUT repos/bogdanradulescu84-ui/monitor-local/pages -f cname=buzau365.ro`.
