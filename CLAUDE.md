@@ -25,7 +25,10 @@ Citește `README.md` pentru detalii. Regula de aur: **tot ce se configurează st
 
 ## Ce trebuie știut înainte de orice modificare
 
-- **Agregăm, nu republicăm.** Titlu, rezumatul din feed, link către sursă. Nu adăuga pagini de articol cu text integral — e problemă de drepturi de autor, nu preferință de design.
+- **Agregăm, nu republicăm — dar asta se referă la textele ALTORA.** Din presa preluată se păstrează titlul, rezumatul din feed și link către sursă; nu construi pagini cu textul integral al altcuiva, e problemă de drepturi de autor, nu preferință de design.
+- **Conținutul propriu e altceva și e permis.** „Articolul Casei” (`content/articole/`, `lib/articole.ts`, `/articol/[slug]`) sunt texte scrise de publicație. Acolo nu există problemă de copyright, fiindcă autorul e chiar publicația. **Nu șterge secțiunea crezând că încalcă regula de mai sus** — sunt două cazuri diferite, iar confuzia dintre ele e exact motivul pentru care regula e scrisă acum în două rânduri.
+- **Articolele proprii au antet JSON, nu YAML, iar corpul e text simplu, nu markdown.** Deliberat: nu merită două dependințe noi pentru texte de zece paragrafe. Dacă apar subtitluri, liste sau link-uri în corp, atunci se pune un parser adevărat.
+- **`params` e promisiune în rutele dinamice** (`/articol/[slug]`, `/c/[cat]`). Fără `await`, pagina se generează tăcut ca 404: fișierul există, are dimensiune normală, dar înăuntru e 404-ul. S-a întâmplat la prima versiune a paginii de articol. Verifică *conținutul* fișierului generat, nu doar existența lui.
 - **Linia editorială e în `config/sources.json` → `editorial`.** E o decizie asumată a proprietarului. Respectă-o și păstreaz-o în config, nu o muta în cod. Are două părți: `protect` respinge articole, `promote` le urcă. `protect` rulează primul — un articol respins nu mai poate fi urcat.
 - **Potrivirea cuvintelor-cheie e pe cuvânt întreg** (`hasWord` în `collect.mjs`). A fost pe subșir și clasa greșit: `adi` se regăsea în „tradiția". Nu reveni la `includes()`.
 - **`AUR` se potrivește doar cu majuscule, pe titlul original** (`hasUpperWord`). *Aur* e cuvânt întreg în română, deci potrivirea obișnuită ar urca „medalie de aur" sau „furt de bijuterii din aur" ca atac la adresa partidului. Titlurile scrise integral cu majuscule sunt sărite, acolo distincția nu există. Nu simplifica la `hasWord`.

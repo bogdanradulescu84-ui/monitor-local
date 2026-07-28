@@ -530,3 +530,129 @@ footer {
     transition-duration: .001ms !important;
   }
 }
+
+/* ---------- Articolul Casei ---------- */
+/* Conținut propriu, nu agregat. Se deosebește vizual de flux prin ramă și
+   etichetă: cititorul trebuie să vadă din prima că textul e scris aici. */
+
+.casa {
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--stamp);
+  background: var(--paper-2);
+  margin-bottom: 30px;
+}
+.casa-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--rule);
+}
+.casa-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.casa-corp {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 20px;
+  padding: 16px;
+  color: inherit;
+  text-decoration: none;
+}
+.casa-foto {
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  background: var(--paper);
+  align-self: start;
+}
+.casa-foto img { display: block; width: 100%; height: auto; }
+.casa-text { display: flex; flex-direction: column; gap: 9px; }
+.casa-text h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(21px, 2.6vw, 30px);
+  line-height: 1.16;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+  margin: 0;
+}
+.casa-text p { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 46ch; }
+.casa-cta {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--stamp);
+  margin-top: auto;
+}
+.casa-corp:hover .casa-text h2 { text-decoration: underline; text-underline-offset: 3px; }
+.casa-corp:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+
+@media (max-width: 760px) {
+  .casa-corp { grid-template-columns: 1fr; gap: 14px; }
+}
+
+/* ---------- pagina de articol ---------- */
+
+.articol { max-width: 68ch; margin: 0 auto; padding: 8px 0 40px; }
+.articol .kicker { display: block; margin-bottom: 10px; }
+.articol h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.14;
+  letter-spacing: -.015em;
+  text-wrap: balance;
+  margin: 0 0 12px;
+}
+.articol .semnatura {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink-3);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+}
+.articol figure { margin: 20px 0; }
+.articol figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+.articol figcaption {
+  font-size: 12.5px;
+  color: var(--ink-3);
+  margin-top: 7px;
+  font-style: italic;
+}
+.articol .corp p {
+  font-size: 17px;
+  line-height: 1.62;
+  margin: 0 0 17px;
+}
+.articol .corp p:first-child::first-letter {
+  font-family: var(--serif);
+  float: left;
+  font-size: 3.1em;
+  line-height: .84;
+  padding: 3px 9px 0 0;
+  color: var(--navy-2);
+}
+.surse {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.surse h2 {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 10px;
+}
+.surse ol { margin: 0; padding-left: 20px; }
+.surse li { margin-bottom: 8px; font-size: 14px; }
+.surse .pub { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }

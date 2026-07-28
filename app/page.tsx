@@ -1,11 +1,14 @@
 import Link from "next/link";
+import { ArticolulCasei } from "@/components/ArticolulCasei";
 import { FluxRow, LeadCard, StackCard } from "@/components/Cards";
+import { articolulCasei } from "@/lib/articole";
 import { clockOf, loadData, sectionName } from "@/lib/articles";
 
 export default function Home() {
   const data = loadData();
   const { articles, sections, counts, sources, generatedAt } = data;
   const at = generatedAt;
+  const casa = articolulCasei();
 
   if (!articles.length) {
     return (
@@ -27,6 +30,9 @@ export default function Home() {
 
   return (
     <div className="wrap">
+      {/* Deasupra fluxului: conținutul propriu are prioritate față de cel preluat. */}
+      {casa && <ArticolulCasei a={casa} />}
+
       <section className="top">
         <LeadCard a={lead} at={at} kicker={sectionName(data, lead.section)} />
         <div className="stack">
