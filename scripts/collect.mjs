@@ -471,6 +471,14 @@ async function main() {
     for (const e of entries.slice(0, limits?.maxPerFeed ?? 25)) {
       if (!e.title || !e.link) continue;
 
+      // Feed-urile luate prin Google News poartă publicația în titlu, după o
+      // liniuță: „Titlul articolului - Stiripesurse". Numele sursei îl avem
+      // deja din config și îl afișăm separat, deci sufixul e redundant.
+      if (feed.stripSuffix) {
+        const suffix = ` - ${feed.stripSuffix}`;
+        if (e.title.endsWith(suffix)) e.title = e.title.slice(0, -suffix.length).trim();
+      }
+
       const when = e.date ? new Date(e.date) : null;
       const ts = when && !Number.isNaN(when.getTime()) ? when.getTime() : now;
       if (now - ts > maxAgeMs) continue;

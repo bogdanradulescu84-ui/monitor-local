@@ -117,7 +117,7 @@
     { "name": "Observatorul Buzoian","url": "https://www.observatorulbuzoian.ro/feed/", "scope": "local" },
 
     { "name": "Digi24",              "url": "https://www.digi24.ro/rss",             "scope": "tara" },
-    { "name": "Știri pe surse",      "url": "https://www.stiripesurse.ro/feed/",     "scope": "tara" },
+    { "name": "Stiripesurse.ro", "url": "https://news.google.com/rss/search?q=site:stiripesurse.ro&hl=ro&gl=RO&ceid=RO:ro", "scope": "tara", "stripSuffix": "Stiripesurse", "_nota": "Feed-ul propriu (stiripesurse.ro/feed/) răspunde 403 la orice cerere venită de pe un server GitHub Actions, indiferent de user-agent — blocaj după IP de centru de date. Trecem prin feed-ul public Google News filtrat pe site-ul lor. Consecințe: titlurile vin cu sufixul publicației (de aici stripSuffix), iar linkul trece printr-o redirecționare Google înainte de articol. Redenumit din Știri pe surse, ca să nu se mai confunde cu Știri din Surse, ziarul buzoian." },
     { "name": "DC News",             "url": "https://www.dcnews.ro/feed/",           "scope": "tara" },
     { "name": "Antena 3",            "url": "https://www.antena3.ro/feed/",          "scope": "tara" },
     { "name": "HotNews",             "url": "https://hotnews.ro/feed/",              "scope": "tara" },
