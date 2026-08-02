@@ -4,7 +4,7 @@
   "autor": "Condicarul",
   "data": "2026-07-28",
   "rezumat": "I s-a stricat mașina. Și aplicația de vot. Amândouă, în aceeași zi, la aceeași ședință. Despre performanța de a fi absent și fizic, și virtual.",
-  "imagine": "/articole/legea-lui-murphy.jpeg",
+  "imagine": "/img/articole/legea-lui-murphy.jpeg",
   "imagineAlt": "Montaj satiric: deputatul apare de două ori — o dată lângă mașina remorcată, o dată în fața laptopului cu aplicația de vot blocată.",
   "surse": [
     {

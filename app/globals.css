@@ -531,67 +531,66 @@ footer {
   }
 }
 
-/* ---------- Articolul Casei ---------- */
-/* Conținut propriu, nu agregat. Se deosebește vizual de flux prin ramă și
-   etichetă: cititorul trebuie să vadă din prima că textul e scris aici. */
+/* ---------- Articolele Casei: lista ---------- */
+/* Conținut propriu, nu agregat. Rândurile sunt mai generoase decât la
+   secțiunile preluate: aici titlul și rezumatul sunt scrise de redacție,
+   nu tăiate dintr-un feed, deci merită spațiu. */
 
-.casa {
-  border: 1px solid var(--rule);
-  border-top: 3px solid var(--stamp);
-  background: var(--paper-2);
-  margin-bottom: 30px;
-}
-.casa-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 11px 16px;
-  border-bottom: 1px solid var(--rule);
-}
-.casa-meta {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--ink-3);
-}
-.casa-corp {
+.arhiva { display: flex; flex-direction: column; }
+
+.arh-rand { border-bottom: 1px solid var(--rule-soft); }
+
+.arh-link {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
-  gap: 20px;
-  padding: 16px;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 26px;
+  padding: 24px 0;
+  align-items: start;
   color: inherit;
   text-decoration: none;
 }
-.casa-foto {
+
+.arh-foto {
   border: 1px solid var(--rule);
+  background: var(--paper-2);
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: var(--paper);
-  align-self: start;
 }
-.casa-foto img { display: block; width: 100%; height: auto; }
-.casa-text { display: flex; flex-direction: column; gap: 9px; }
-.casa-text h2 {
+.arh-foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+.arh-text { display: flex; flex-direction: column; gap: 9px; }
+
+.arh-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .03em;
+  color: var(--ink-3);
+}
+
+.arh-text h3 {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(21px, 2.6vw, 30px);
-  line-height: 1.16;
+  font-size: clamp(20px, 2.3vw, 27px);
+  line-height: 1.17;
   letter-spacing: -.01em;
   text-wrap: balance;
   margin: 0;
 }
-.casa-text p { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 46ch; }
-.casa-cta {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: .06em;
-  color: var(--stamp);
-  margin-top: auto;
-}
-.casa-corp:hover .casa-text h2 { text-decoration: underline; text-underline-offset: 3px; }
-.casa-corp:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
 
-@media (max-width: 760px) {
-  .casa-corp { grid-template-columns: 1fr; gap: 14px; }
+.arh-text p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 62ch;
+  text-wrap: pretty;
+}
+
+.arh-link:hover h3 { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.arh-link:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+
+@media (max-width: 620px) {
+  .arh-link { grid-template-columns: 108px minmax(0, 1fr); gap: 16px; padding: 18px 0; }
 }
 
 /* ---------- pagina de articol ---------- */
