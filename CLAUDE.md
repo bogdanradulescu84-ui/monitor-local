@@ -62,6 +62,11 @@ Portat dintr-un prototip aprobat. Elementele care nu sunt decorative:
 | `deploy.yml` | push pe main | build static, publicare pe Pages |
 | `digest.yml` | 05:30, 08:20 și 16:30 UTC | compune postarea, o trimite pe pagina de Facebook prin Make și deschide un issue cu ce a plecat. La prânz rulează `compara.mjs`, în rest `digest.mjs` |
 
+**Fiecare postare pe Facebook merge cu aceeași imagine**, cerută explicit de proprietar
+pe 6 august 2026: macheta din `public/img/fb/post.jpg`, trimisă către Make în câmpul
+`imagine`. Se schimbă înlocuind fișierul din repo, fără să umbli în Make. Nu scoate
+câmpul și nu-l face condiționat — e o regulă permanentă, nu o probă.
+
 **Proiectul are de acum un serviciu extern și secrete.** Până la 26 iulie 2026 nu avea
 niciunul, iar documentația spunea asta explicit. Postarea pe Facebook se face prin Make
 (plan gratuit), care deține conexiunea cu pagina.

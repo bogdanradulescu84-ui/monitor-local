@@ -95,7 +95,15 @@ jobs:
         run: |
           # Textul intră în JSON prin jq, nu prin interpolare: titlurile conțin
           # ghilimele, diacritice și apostrofuri care ar strica payload-ul.
-          jq -Rs --arg link "https://buzau365.ro" '{text: ., link: $link}' post.txt > payload.json
+          # `imagine` e macheta fixă a paginii, cerută explicit de proprietar
+          # pentru fiecare postare. Trăiește în repo (public/img/fb/post.jpg),
+          # deci se schimbă înlocuind fișierul — nu e nevoie să umbli în Make.
+          # Scenariul din Make trebuie să o mapeze ca fotografie a postării;
+          # dacă n-o folosește, câmpul e pur și simplu ignorat.
+          jq -Rs \
+            --arg link "https://buzau365.ro" \
+            --arg imagine "https://buzau365.ro/img/fb/post.jpg" \
+            '{text: ., link: $link, imagine: $imagine}' post.txt > payload.json
 
           publish() {
             curl -sS -X POST "$WEBHOOK" \
