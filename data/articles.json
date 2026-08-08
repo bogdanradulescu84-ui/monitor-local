@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T20:44:12.469Z",
+  "generatedAt": "2026-08-08T22:41:41.972Z",
   "site": {
     "name": "Buzău365",
     "nameEmphasis": "365",
@@ -159,14 +159,14 @@
     }
   ],
   "counts": {
-    "local": 21,
-    "politica": 2,
-    "administratie": 2,
-    "economie": 6,
-    "comunitate": 6,
+    "local": 11,
+    "politica": 0,
+    "administratie": 0,
+    "economie": 3,
+    "comunitate": 3,
     "national": 30,
     "sport": 12,
-    "diverse": 36
+    "diverse": 15
   },
   "sources": [
     {
@@ -177,9 +177,9 @@
     },
     {
       "feed": "Buzău Media",
-      "ok": true,
-      "kept": 15,
-      "error": null
+      "ok": false,
+      "kept": 0,
+      "error": "fetch failed"
     },
     {
       "feed": "Știri de Buzău",
@@ -189,15 +189,15 @@
     },
     {
       "feed": "Știri din Surse",
-      "ok": true,
-      "kept": 3,
-      "error": null
+      "ok": false,
+      "kept": 0,
+      "error": "HTTP 415"
     },
     {
       "feed": "Campus TV Buzău",
-      "ok": true,
-      "kept": 10,
-      "error": null
+      "ok": false,
+      "kept": 0,
+      "error": "HTTP 415"
     },
     {
       "feed": "Buzoienii",
@@ -207,9 +207,9 @@
     },
     {
       "feed": "Șansa News",
-      "ok": true,
-      "kept": 15,
-      "error": null
+      "ok": false,
+      "kept": 0,
+      "error": "HTTP 415"
     },
     {
       "feed": "Observatorul Buzoian",
@@ -226,7 +226,7 @@
     {
       "feed": "Stiripesurse.ro",
       "ok": true,
-      "kept": 25,
+      "kept": 24,
       "error": null
     },
     {
@@ -274,6 +274,21 @@
   ],
   "articles": [
     {
+      "id": "9-august-2026-opinia-buzau",
+      "title": "9 august 2026",
+      "summary": "Creștinii ortodocși îi pomenesc pe Sfântul Apostol Matia, iar credincioșii romano-catolici o comemorează pe Sfânta Tereza Benedicta a Crucii (Edith Stein), fecioară martiră, patroană a Europei. 1601 – Mihai Viteazul…",
+      "link": "https://opiniabuzau.ro/9-august-2026/",
+      "source": "Opinia Buzău",
+      "scope": "local",
+      "bucket": "buzau",
+      "section": "diverse",
+      "image": "",
+      "publishedAt": "2026-08-08T21:01:55.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
       "id": "flash-interviuri-de-la-turneul-de-handbal-masculin-observatorul-buzoian",
       "title": "Flash-interviuri de la turneul de handbal masculin",
       "summary": "https://www.observatorulbuzoian.ro/feed/ Galerie foto de la turneul din Sala Sporturilor Foto și video: Vali Mocanu și Mihai Chiriazi The post Flash-interviuri de la turneul de handbal masculin first appeared on…",
@@ -299,21 +314,6 @@
       "section": "diverse",
       "image": "",
       "publishedAt": "2026-08-08T12:22:17.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "au-pus-afumatiul-pe-jar-metalul-isi-ia-punctele-acasa-si-e-la-cota-4-campus-tv-b",
-      "title": "Au pus Afumațiul pe jar. Metalul își ia punctele acasă și e la cota 4",
-      "summary": "Metalul a dispus azi, cu 3 la 1, de CS Afumați, după un meci mai echilibrat decât o arată scorul. Au fost două reprize total diferite, buzoienii reușind „remontada”, după ce la pauză erau conduși cu 1-0. Oaspeții au…",
-      "link": "https://www.campusbuzau.ro/au-pus-afumatiul-pe-jar-metalul-isi-ia-punctele-acasa-si-e-la-cota-4/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-08-at-14.12.43-1024x768.jpeg",
-      "publishedAt": "2026-08-08T11:42:41.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -364,215 +364,6 @@
       "alsoIn": []
     },
     {
-      "id": "in-piata-daciei-lustruiala-costa-mai-mult-ca-reabilitarea-ne-am-ales-doar-cu-che",
-      "title": "În Piața Daciei, lustruiala costă mai mult ca reabilitarea. Ne-am ales doar cu cheltuieli, după modernizare",
-      "summary": "Nu doar dalele din granit se lustruiesc în Piața Daciei, la costuri care fac să amețească orice plătitor de impozite din orașul Buzău, dar întreținerea obiectivului include și alte lucrări. Dacă pentru spălarea dalelor…",
-      "link": "https://sansanews.ro/in-piata-daciei-lustruiala-costa-mai-mult-ca-reabilitarea-ne-am-ales-doar-cu-cheltuieli-dupa-modernizare/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "economie",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/Piata-Daciei--1024x473.jpeg",
-      "publishedAt": "2026-08-08T08:45:33.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "mexicanul-victor-pleaca-de-la-buzau-spre-piete-opinia-buzau",
-      "title": "„Mexicanul Victor” pleacă de la Buzău spre piețe",
-      "summary": "Cercetătorii din Buzău lansează pe piață o legumă complet neobișnuită, gata să concureze cu culturile tradiționale din solariile românești. Stațiunea de Cercetare-Dezvoltare pentru Legumicultură (SCDL) a finalizat…",
-      "link": "https://opiniabuzau.ro/mexicanul-victor-pleaca-de-la-buzau-spre-piete/",
-      "source": "Opinia Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-08T08:00:13.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "atentie-la-polenul-de-ambrozie-semnalul-de-alarma-tras-de-dr-tudor-ciuhodaru-o-s",
-      "title": "Atenție la polenul de ambrozie! Semnalul de alarmă tras de dr. Tudor Ciuhodaru: „O singură expunere poate fi letală”",
-      "summary": "Începe sezonul de vârf al înfloririi ambroziei, un pericol invizibil, dar extrem de agresiv, care amenință sănătatea a milioane de români. Deși există obligația legală a eradicării acestei plante, sunt multe locuri în…",
-      "link": "https://sansanews.ro/atentie-la-polenul-de-ambrozie-semnalul-de-alarma-tras-de-dr-tudor-ciuhodaru-o-singura-expunere-poate-fi-letala/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://sansanews.ro/wp-content/uploads/2025/08/ambrozie-1024x576.jpg",
-      "publishedAt": "2026-08-08T06:23:05.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "raul-care-dispare-inainte-de-varsare-seceta-a-redus-dramatic-debitul-raului-slan",
-      "title": "Râul care dispare înainte de vărsare. Seceta a redus dramatic debitul râului Slănic",
-      "summary": "Seceta afectează tot mai puternic lacurile și râurile din țară. Slănicul, unul dintre cei mai importanți afluenți ai râului Buzău, aproape că nu mai ajunge la vărsare. Imagini spectaculoase surprind cum firul de apă…",
-      "link": "https://www.campusbuzau.ro/raul-care-dispare-inainte-de-varsare-seceta-a-redus-dramatic-debitul-raului-slanic/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/08/slanic-3.jpg",
-      "publishedAt": "2026-08-07T16:48:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "metalul-in-cautarea-victoriei-maine-la-matineu-cu-afumati-campus-tv-buzau",
-      "title": "Metalul, în căutarea victoriei. Mâine, la matineu, cu Afumați",
-      "summary": "La debutul pe teren propriu din noul sezon al Ligii a II-a, Metalul Buzău are șansa de a confirma impresia bună lăsată în prima etapă și de a obține primul succes în fața propriilor suporteri. Sâmbătă, de la ora 11.00…",
-      "link": "https://www.campusbuzau.ro/metalul-in-cautarea-victoriei-maine-la-matineu-cu-afumati/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-07T16:47:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "expozitii-parada-militara-si-festival-de-muzica-buzaul-celebreaza-110-ani-de-la-",
-      "title": "Expoziții, paradă militară și festival de muzică. Buzăul celebrează 110 ani de la înființarea Armatei a 2-a",
-      "summary": "Divizia 2 Infanterie „Getica” marchează 110 ani de la înființarea Armatei a 2-a, una dintre cele mai reprezentative structuri ale Oștirii Române. Cu acest prilej, între 10 și 20 august, în municipiul Buzău va avea loc o…",
-      "link": "https://www.campusbuzau.ro/expozitii-parada-militara-si-festival-de-muzica-buzaul-celebreaza-110-ani-de-la-infiintarea-armatei-a-2-a/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/08/afis-ziua-diviziei-2.jpg",
-      "publishedAt": "2026-08-07T16:47:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "hai-la-joaca-program-de-functionare-unitar-campus-tv-buzau",
-      "title": "Hai la joacă. Program de funcționare unitar",
-      "summary": "Există oameni răutăcioși care nu suportă copiii și zarva pe care aceștia o fac atunci când se joacă. De aceea locurile de joacă amenajate în apropierea blocurilor nu sunt deloc agreate de unii locatari care ar dori ca…",
-      "link": "https://www.campusbuzau.ro/hai-la-joaca-program-de-functionare-unitar/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-07T16:46:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "toamna-bogata-abundenta-la-toamna-buzoiana-2026-campus-tv-buzau",
-      "title": "Toamnă bogată. Abundență la „Toamna buzoiană 2026”",
-      "summary": "Cea mai mare piaţă agro-alimentară din Buzău, exclusiv pentru producători, va funcţiona în luna septembrie la târgul „Toamna Buzoiană”. Producătorii sunt bucuroşi că vor avea unde să-și vândă produsele iar vizitatorii…",
-      "link": "https://www.campusbuzau.ro/toamna-bogata-abundenta-la-toamna-buzoiana-2026/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "",
-      "publishedAt": "2026-08-07T16:45:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "descoperiti-istoria-chiar-la-ea-acasa-buzau-media",
-      "title": "Descoperiți istoria chiar la ea acasă!",
-      "summary": "Vă așteptăm pe 11 august, între 09:00 și 13:00, la Ziua Porților Deschise de la Gruiu Dării.",
-      "link": "https://buzaumedia.ro/stiri-buzau/descoperiti-istoria-chiar-la-ea-acasa/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/765872431_122329764194016871_3941654032394154257_n.jpg",
-      "publishedAt": "2026-08-07T13:35:15.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": [],
-      "variants": [
-        {
-          "source": "Buzău Media",
-          "title": "Descoperiți istoria chiar la ea acasă!",
-          "link": "https://buzaumedia.ro/stiri-buzau/descoperiti-istoria-chiar-la-ea-acasa/",
-          "publishedAt": "2026-08-07T13:35:15.000Z"
-        },
-        {
-          "source": "Buzău Media",
-          "title": "Doar o dată pe an se întâmplă!",
-          "link": "https://buzaumedia.ro/stiri-buzau/doar-o-data-pe-an-se-intampla/",
-          "publishedAt": "2026-08-06T19:19:38.000Z"
-        }
-      ]
-    },
-    {
-      "id": "primaria-comunei-vintila-voda-vesti-importante-pentru-comunitatea-noastra-buzau-",
-      "title": "Primăria comunei Vintilă Vodă: Vești importante pentru comunitatea noastră!",
-      "summary": "Astăzi, Primăria Comunei Vintilă Vodă a semnat Contractul de Finanțare pentru proiectul: „Realizarea capacităților de producere și stocare a energiei electrice din surse fotovoltaice pentru Școala și Primăria Vintilă…",
-      "link": "https://buzaumedia.ro/stiri-buzau/primaria-comunei-vintila-voda-vesti-importante-pentru-comunitatea-noastra/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://s.w.org/images/core/emoji/15.0.3/72x72/2705.png",
-      "publishedAt": "2026-08-07T13:34:03.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "marea-balaceala-se-amana-buzau-media",
-      "title": "”Marea Bălăceală” se amână!",
-      "summary": "Dragi copii și părinți, Ne vedem la „𝐌𝐚𝐫𝐞𝐚 𝐁𝐚̆𝐥𝐚̆𝐜𝐞𝐚𝐥𝐚̆” pe data de 𝟐𝟐 𝐚𝐮𝐠𝐮𝐬𝐭, de la ora [image: 1️⃣][image: 0️⃣]:[image: 0️⃣][image: 0️⃣], cu o săptămână mai târziu decât data anunțată inițial. Vă…",
-      "link": "https://buzaumedia.ro/stiri-buzau/marea-balaceala-se-amana/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/765958751_2270008380430186_6588051417483029441_n.jpg",
-      "publishedAt": "2026-08-07T13:31:39.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "tanar-de-18-ani-aproape-de-moarte-care-este-improvizatia-pe-care-sa-o-eviti-la-m",
-      "title": "Tânăr de 18 ani, aproape de moarte! Care este improvizația pe care să o eviți la mașina electrică de tuns iarba",
-      "summary": "O improvizație a fost ceea ce a condus la accidentul casnic de astăzi în care un tânăr de 18 ani a fost în pragul morții după ce s-a electrocutat cu o mașină de tuns iarba. Întâmplarea a avut loc într-o gospodărie din…",
-      "link": "https://sansanews.ro/tanar-de-18-ani-aproape-de-moarte-care-este-improvizatia-pe-care-sa-o-eviti-la-masina-electrica-de-tuns-iarba/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/masina-electrica-1024x682.jpg",
-      "publishedAt": "2026-08-07T13:12:09.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "primer-intreruperea-alimentarii-cu-energie-electrica-a-fabricilor-de-medicamente",
-      "title": "PRIMER: “Întreruperea alimentării cu energie electrică a fabricilor de medicamente va pune în pericol accesul pacienților la medicamente esențiale. Industria farmaceutică trebuie inclusă în categoria sectoarelor critice și exceptată de la eventualele măsuri de restricționare.”",
-      "summary": "În contextul actualei crize energetice și al posibilității adoptării unor măsuri de reducere a consumului de energie electrică, PRIMER – care reuneşte cele mai importante 18 situri de fabricaţie de medicamente din ţară…",
-      "link": "https://www.campusbuzau.ro/industria-farmaceutica-trebuie-inclusa-in-categoria-sectoarelor-critice-si-exceptata-de-la-eventualele-masuri-de-restrictionare/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-07T13:00:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
       "id": "video-traficanti-de-droguri-din-buzau-si-ramnicu-sarat-arestati-preventiv-peste-",
       "title": "VIDEO Traficanți de droguri din Buzău și Râmnicu Sărat, arestați preventiv. Peste 520 de grame de canabis, găsite la percheziții",
       "summary": "Articolul VIDEO Traficanți de droguri din Buzău și Râmnicu Sărat, arestați preventiv. Peste 520 de grame de canabis, găsite la percheziții se poate citi integral pe Stiri de Buzau . Doi bărbați, ambii în vârstă de 46 de…",
@@ -583,21 +374,6 @@
       "section": "local",
       "image": "https://stiridebuzau.ro/wp-content/uploads/2026/08/droguri-300x191.jpeg",
       "publishedAt": "2026-08-07T12:03:07.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "flagrant-intr-un-parc-din-ramnicu-sarat-doi-barbati-au-fost-arestati-pentru-traf",
-      "title": "Flagrant într-un parc din Râmnicu Sărat! Doi bărbați au fost arestați pentru trafic de droguri. Ce a descoperit DIICOT",
-      "summary": "Doi bărbați, ambii în vârstă de 46 de ani, au fost trimiși după gratii de judecătorii Tribunalului Buzău, fiind acuzați de trafic de droguri de risc și mare risc. Ei puseseră la punct o adevărată rețea, care funcționa…",
-      "link": "https://sansanews.ro/flagrant-intr-un-parc-din-ramnicu-sarat-doi-barbati-au-fost-arestati-pentru-trafic-de-droguri-ce-a-descoperit-diicot/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-07-at-14.31.02-1024x651.jpeg",
-      "publishedAt": "2026-08-07T11:57:01.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -683,307 +459,6 @@
       ]
     },
     {
-      "id": "update-tanar-de-18-ani-electrocutat-in-timp-ce-tundea-iarba-sansa-news",
-      "title": "(UPDATE) Tânăr de 18 ani, electrocutat în timp ce tundea iarba",
-      "summary": "Update: Tânărul se află în stare critică și a rămas internat la Spitalul Județean Buzău. ”La acest moment, pacientul se afla internat in sectia A.T.I. Cardiologie a S.J.U. Buzau”, informează Spitalul Județean Buzău…",
-      "link": "https://sansanews.ro/tanar-de-18-ani-electrocutat-in-timp-ce-tundea-iarba/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://sansanews.ro/wp-content/uploads/2020/07/breakingnews-sansanews-1.jpg",
-      "publishedAt": "2026-08-07T10:56:08.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "se-cauta-100-de-zilieri-pentru-culesul-fructelor-cat-se-castiga-intr-o-zi-sansa-",
-      "title": "Se caută 100 de zilieri pentru culesul fructelor! Cât se câștigă într-o zi",
-      "summary": "Oportunitate de câștig pentru cei aflați în căutarea unui loc de muncă! Fructele de la Stațiunea de Cercetare Pietroasele și de la Istrița au început să se coacă, iar în câteva zile se va da startul culesului, astfel că…",
-      "link": "https://sansanews.ro/se-cauta-100-de-zilieri-pentru-culesul-fructelor-cat-se-castiga-intr-o-zi/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/759751865_122246358212115617_8988840312208859766_n.jpg",
-      "publishedAt": "2026-08-07T09:59:24.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "vijelii-in-zona-de-munte-a-buzaului-si-canicula-in-restul-judetului-sansa-news",
-      "title": "Vijelii în zona de munte a Buzăului și caniculă în restul județului",
-      "summary": "Vreme extremă astăzi în județul Buzău. După zile cu temperaturi caniculare, zona de munte a județului se va răcori. Meteorologii au anunțat vijelii și ploi torențiale începând cu ora 12.00 și până aproape de miezul…",
-      "link": "https://sansanews.ro/vijelii-in-zona-de-munte-a-buzaului-si-canicula-in-restul-judetului/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/vijelii.jpg",
-      "publishedAt": "2026-08-07T08:43:20.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "primul-interviu-al-comandantului-diviziei-2-infanterie-getica-generalul-maior-ga",
-      "title": "Primul interviu al comandantului Diviziei 2 Infanterie „Getica”, generalul-maior Gabriel Turculeț dezvăluie care sunt noile echipamente achiziționate prin programul de înzestrare! Urmează 10 zile de manifestări militare în municipiu! Vezi motivul și programul",
-      "summary": "La aproape un an de la preluarea comenzii Diviziei 2 Infanterie „Getica”, generalul-maior Gabriel Turculeț a vorbit, într-un interviu acordat revistei Observatorul Militar, despre responsabilitatea de a conduce una…",
-      "link": "https://sansanews.ro/primul-interviu-al-comandantului-diviziei-2-infanterie-getica-generalul-maior-gabriel-turculet-dezvaluie-care-sunt-noile-echipamente-achizitionate-prin-programul-de-inzestrare-urme/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/turculet-1024x562.jpg",
-      "publishedAt": "2026-08-07T07:23:51.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "statiunea-pentru-legumicultura-buzau-cauta-geamuri-vechi-pentru-sere-ca-sa-le-in",
-      "title": "Stațiunea pentru Legumicultură Buzău caută geamuri vechi pentru sere, ca să le înlocuiască pe cele sparte de furtuni!",
-      "summary": "Stațiunea de Cercetare-Dezvoltare pentru Legumicultură Buzău are nevoie de ajutor, pentru ca serele sale, în care se pastrează soiuri de plante și legume extrem de valoroase, să fie în continuare funcționale…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-statiunea-pentru-legumicultura-buzau-cauta-geamuri-vechi-pentru-sere-ca-sa-le-inlocuiasca-pe-cele-sparte-de-furtuni/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/geamuri.jpg",
-      "publishedAt": "2026-08-07T06:16:20.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "apa-suficienta-in-barajul-de-la-siriu-pentru-irigarea-culturilor-buzau-media",
-      "title": "Apă suficientă în barajul de la Siriu, pentru irigarea culturilor!",
-      "summary": "În ciuda caniculei din ultima perioadă, fermirii buzoienii nu au motive de îngrijorare în ceea ce privește udarea culturilor. O spun reprezentanții Administrației Bazinale de Apă Buzău-Ialomița care precizează că…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-apa-suficienta-in-barajul-de-la-siriu-pentru-irigarea-culturilor/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/apa.jpg",
-      "publishedAt": "2026-08-07T06:16:10.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "piata-dacia-din-nou-in-santier-buzau-media",
-      "title": "Piața Dacia, din nou în șantier!",
-      "summary": "Piața Dacia, reabilitată în urmă cu 3 ani, a intrat, din nou, în reparații. O firmă va scana toate dalele de platoul din centrul orașului, iar cele montate prost vor fi scoase și repuse. De asemenea, dalele sparte vor…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-piata-dacia-din-nou-in-santier/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "economie",
-      "image": "",
-      "publishedAt": "2026-08-07T06:15:48.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "buzoianul-ilie-stan-isi-face-scoala-de-fotbal-buzau-media",
-      "title": "Buzoianul Ilie Stan își face școală de fotbal!",
-      "summary": "Unul dintre cele mai importante nume din fotbalul buzoian, Ilie Stan, își face școală de fotbal. Proiectul este dedicat copiilor și va demara, la Giurgiu, nu la Buzău. Școala de Fotbal „Ilie Stan”, destinată copiilor cu…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-buzoianul-ilie-stan-isi-face-scoala-de-fotbal/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/stan.jpg",
-      "publishedAt": "2026-08-07T06:15:37.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "primaria-amaru-anunt-important-intreruperea-alimentarii-cu-gaze-naturale-buzau-m",
-      "title": "Primăria Amaru: ANUNȚ IMPORTANT – ÎNTRERUPEREA ALIMENTĂRII CU GAZE NATURALE",
-      "summary": "Stimați cetățeni, Vă informăm că, potrivit notificării transmise de NEOGAS GRID S.A., în perioada: 10 august 2026, ora 07:00 – 14 august 2026, ora 08:00 Va fi sistată alimentarea cu gaze naturale în localitatea Amaru și…",
-      "link": "https://buzaumedia.ro/stiri-buzau/primaria-amaru-anunt-important-intreruperea-alimentarii-cu-gaze-naturale/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "",
-      "publishedAt": "2026-08-06T17:57:53.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "constantin-toma-tabara-urbana-vacanta-de-vara-2026-buzau-media",
-      "title": "Constantin Toma: Tabăra Urbană, Vacanța de vară 2026",
-      "summary": "Dragi buzoieni, Ieri s-a deschis la Buzău, în Parcul Marghiloman, la Centrul Educațional pentru Permacultură și Hrană Sănătoasă ,,Casa Grădinarului”, ,,Tabăra Urbană, Vacanța de vară 2026”, ce se va desfășura în…",
-      "link": "https://buzaumedia.ro/stiri-buzau/constantin-toma-tabara-urbana-vacanta-de-vara-2026/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-06T17:57:39.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "florin-ceparu-impreuna-putem-demonstra-ca-ramnicu-sarat-este-un-oras-care-invest",
-      "title": "Florin Ceparu: Împreună putem demonstra că Râmnicu Sărat este un oraș care investește în oameni, în idei și în viitor",
-      "summary": "RÂMNICU SĂRAT – ORAȘ CANDIDAT PENTRU CAPITALA TINERETULUI DIN ROMÂNIA 2028, TRECE ÎN ETAPA A II-A! Astăzi facem un pas important pentru viitorul comunității noastre. Râmnicu Sărat intră în competiția pentru titlul de…",
-      "link": "https://buzaumedia.ro/stiri-buzau/florin-ceparu-impreuna-putem-demonstra-ca-ramnicu-sarat-este-un-oras-care-investeste-in-oameni-in-idei-si-in-viitor/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "politica",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/1785948143_783_763028395_28244386001844730_5230500526660418834_n.jpg",
-      "publishedAt": "2026-08-06T17:57:03.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "prima-zi-de-tabara-urbana-peste-200-de-copii-vor-invata-sa-gradinareasca-campus-",
-      "title": "Prima zi de Tabără Urbană. Peste 200 de copii vor învăța să grădinărească",
-      "summary": "Prima ediție a Taberei Urbane de la Casa Grădinarului a fost inaugurată ieri la primul Centru Educațional pentru Permacultură și Hrană Sănătoasă din țară. Deși ar fi trebuit să se defășoare cu 80 de copii, s-au înscris…",
-      "link": "https://www.campusbuzau.ro/prima-zi-de-tabara-urbana-peste-200-de-copii-vor-invata-sa-gradinareasca/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-06T15:45:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "gura-de-oxigen-pentru-sistemul-sanitar-angajarile-din-spitale-deblocate-prin-leg",
-      "title": "Gură de oxigen pentru sistemul sanitar. Angajările din spitale, deblocate prin lege",
-      "summary": "Cu toate că a solicitat, printr-un memorandum adresat Ministerului Sănătății, deblocarea a peste o sută de posturi, Spitalul Județean de Urgență Buzău a primit acordul pentru scoaterea la concurs a doar 24 de posturi…",
-      "link": "https://www.campusbuzau.ro/gura-de-oxigen-pentru-sistemul-sanitar-angajarile-din-spitale-deblocate-prin-lege/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/08/claudiu-damian.jpg",
-      "publishedAt": "2026-08-06T15:44:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "nu-comasare-ci-cooperare-intre-uat-uri-consortiile-administrative-alternativa-pr",
-      "title": "Nu comasare, ci cooperare între UAT-uri. Consorțiile administrative, alternativa propusă de Marcel Ciolacu",
-      "summary": "Reforma administrativ-teritorială este, în ultimii ani, un subiect intens dezbătut în spațiul public. Președintele Consiliului Județean Buzău, Marcel Ciolacu, și-a exprimat, la rândul său, opinia cu privire la acest…",
-      "link": "https://www.campusbuzau.ro/nu-comasare-ci-cooperare-intre-uat-uri-consortiile-administrative-alternativa-propusa-de-marcel-ciolacu/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/03/ciolacu-si-cirjan.jpg",
-      "publishedAt": "2026-08-06T15:43:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "anunt-public-buzau-media",
-      "title": "ANUNȚ PUBLIC",
-      "summary": "Astăzi, 06.08.2026, primarul Municipiului Buzău anunță că a fost inițiat *Proiectul de hotărâre nr. 155 din 06.08.2026* *privind organizarea şi funcţionarea **Târgului „TOAMNA BUZOIANĂ – 2026”.* Documentația poate fi…",
-      "link": "https://buzaumedia.ro/stiri-buzau/anunt-public-19/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "",
-      "publishedAt": "2026-08-06T13:58:41.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "shopping-city-buzau-gazduieste-panini-fifa-world-cup-26-sticker-swap-tour-buzau-",
-      "title": "Shopping City Buzău găzduiește PANINI FIFA WORLD CUP 26 Sticker Swap Tour",
-      "summary": "Shopping City Buzău aduce PANINI FIFA WORLD CUP 26 Sticker Swap Tour, dedicat colecționarilor de stickere Buzău, 6 august 2026 – Shopping City Buzău îi invită pe pasionații de fotbal și colecționarii de stickere PANINI…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-shopping-city-buzau-gazduieste-panini-fifa-world-cup-26-sticker-swap-tour/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-06T13:57:02.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Știri din Surse"
-      ],
-      "variants": [
-        {
-          "source": "Buzău Media",
-          "title": "Shopping City Buzău găzduiește PANINI FIFA WORLD CUP 26 Sticker Swap Tour",
-          "link": "https://buzaumedia.ro/stiri-buzau/fwd-shopping-city-buzau-gazduieste-panini-fifa-world-cup-26-sticker-swap-tour/",
-          "publishedAt": "2026-08-06T13:57:02.000Z"
-        },
-        {
-          "source": "Știri din Surse",
-          "title": "Shopping City Buzău aduce PANINI FIFA WORLD CUP 26 Sticker Swap Tour, dedicat colecționarilor de stickere",
-          "link": "https://stiridinsursebuzau.ro/shopping-city-buzau-aduce-panini-fifa-world-cup-26-sticker-swap-tour-dedicat-colectionarilor-de-stickere/",
-          "publishedAt": "2026-08-06T11:15:22.000Z"
-        }
-      ]
-    },
-    {
-      "id": "buzoienii-asteptati-la-buzau-wine-fest-un-eveniment-dedicat-gustului-si-experien",
-      "title": "Buzoienii, așteptați la Buzău Wine Fest, un eveniment dedicat gustului și experiențelor autentice!",
-      "summary": "Buzoienii sunt invitați, la finalul acestei luni, la un festival cu totul special: Buzău Wine Fest. Evenimentul va avea loc între 28 și 30 august 2026, în comuna Pietroasele, chiar în Zona Tezaur, acolo unde a fost…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-buzoienii-asteptati-la-buzau-wine-fest-un-eveniment-dedicat-gustului-si-experientelor-autentice/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "politica",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/vinuri.jpg",
-      "publishedAt": "2026-08-06T13:56:50.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "buzaul-va-avea-din-nou-un-serviciu-de-ecarisaj-buzau-media",
-      "title": "Buzăul va avea, din nou, un serviciu de ecarisaj!",
-      "summary": "Municipiul Buzău va avea, din nou, un serviciu de ecarisaj. Consiliul Local Municipal Buzău a aprobat, în cea mai recentă ședință, reînființarea serviciului care ar trebui să adune câinii fără stăpân de pe străzi…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-buzaul-va-avea-din-nou-un-serviciu-de-ecarisaj/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "administratie",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/caini.jpg",
-      "publishedAt": "2026-08-06T13:56:39.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "economia-e-la-dieta-cum-au-strans-romanii-cureaua-in-acest-an-la-ce-bunuri-de-uz",
-      "title": "Economia e la dietă! Cum au strâns românii cureaua în acest an. La ce bunuri de uz personal au renunțat! Ultimele date",
-      "summary": "Prima jumătate a acestui an a adus o confirmare oficială a faptului că românii au început să facă, de voie, de nevoie, economie, tăind din cheltuieli. Cifra de afaceri din comerțul cu amănuntul a înregistrat o scădere…",
-      "link": "https://sansanews.ro/economia-e-la-dieta-cum-au-strans-romanii-cureaua-in-acest-an-la-ce-bunuri-de-uz-personal-au-renuntat-ultimele-date/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "economie",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/03/cumparaturi-cos-zilnic-supermarket.jpg",
-      "publishedAt": "2026-08-06T12:09:01.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
       "id": "imagini-alarmante-din-buzau-raul-slanic-dispare-inainte-de-confluenta-cu-raul-bu",
       "title": "Imagini alarmante din Buzău. Râul Slănic dispare înainte de confluența cu râul Buzău",
       "summary": "Articolul Imagini alarmante din Buzău. Râul Slănic dispare înainte de confluența cu râul Buzău se poate citi integral pe Stiri de Buzau . Un fenomen îngrijorător a fost surprins la confluența râului Slănic cu râul…",
@@ -1014,51 +489,6 @@
       "alsoIn": []
     },
     {
-      "id": "conflictul-infoline-cu-sursele-autorizate-perioada-abunda-cu-postari-care-ingrij",
-      "title": "Conflictul infoline cu sursele autorizate! Perioada abundă cu postări care îngrijorează populația! Ultima, pârâul Slănic seacă înainte de vărsarea în râul Buzău! Ce spun cei de la Apele Române",
-      "summary": "Pârâul Slănic seacă înainte de vărsarea în râul Buzău! Este semnalul de alarmă tras de un buzoian care a publicat în spațiul public inclusiv imagini surprinse la confluența celor două ape curgătoare și în care se vede…",
-      "link": "https://sansanews.ro/conflictul-infoline-cu-sursele-autorizate-perioada-abunda-cu-postari-care-ingrijoreaza-populatia-ultima-paraul-slanic-seaca-inainte-de-varsarea-in-raul-buzau-ce-spun-cei-de-la-apele-romane/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/762923646_1577816547185824_7141316494209469374_n-1024x576.jpg",
-      "publishedAt": "2026-08-06T10:52:05.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "retineti-vifor-2-incepe-transportul-de-maine-si-va-veti-lovi-in-trafic-de-ele-pa",
-      "title": "Rețineți! Vifor 2! Începe transportul de mâine și vă veți lovi în trafic de ele! Până la sfârșitul lunii pleacă spre Buzău de la Agigea! 32 metri lungime și înalte cât un bloc",
-      "summary": "Trafic îngreunat și restricții de circulație pe drumurile din sud-estul țării! De mâine și până la sfârșitul lunii august, 25 de convoaie de mari dimensiuni vor traversa județele Constanța, Ialomița și Buzău…",
-      "link": "https://sansanews.ro/retineti-vifor-2-incepe-transportul-de-maine-si-va-veti-lovi-in-trafic-de-ele-pana-la-sfarsitul-lunii-pleaca-spre-buzau-de-la-agigea-32-metri-lungime-si-inalte-cat-un-bloc/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/Vifor-Header-scaled-e1706701635827-1024x504.jpg",
-      "publishedAt": "2026-08-06T10:14:51.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "video-piata-dacia-adauga-inca-o-lucrare-in-care-primarul-toma-s-a-infundat-defin",
-      "title": "(VIDEO) Piața Dacia adaugă încă o lucrare în care primarul Toma s-a înfundat definitiv! Milioane de euro îngropate și rezultate îndoielnice! Acum se înlocuiesc iarăși dalele! Viceprimarul Apostu explică cum dezastrul este sub control!",
-      "summary": "S-a deschis șantierul în municipiul Buzău. Pentru a scăpa de dalele „dansante”, buzoienii trebuie să suporte, din nou, lucrări în Piața Dacia. Timp de câteva săptămâni, o firmă specializată va scana toate dalele, iar…",
-      "link": "https://sansanews.ro/piata-dacia-adauga-inca-o-lucrare-in-care-primarul-toma-s-a-infundat-definitiv-milioane-de-euro-ingropate-si-rezultate-indoielnice-acum-se-inlocuiesc-iarasi-dalele-viceprimarul-apostu-explica-cum-d/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-06-at-02.45.49-1024x576.jpeg",
-      "publishedAt": "2026-08-06T10:04:30.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
       "id": "primarie-din-judetul-buzau-amendata-cu-50-000-de-lei-dupa-ce-garda-de-mediu-a-ga",
       "title": "Primărie din județul Buzău, amendată cu 50.000 de lei după ce Garda de Mediu a găsit un depozit ilegal de deșeuri",
       "summary": "Articolul Primărie din județul Buzău, amendată cu 50.000 de lei după ce Garda de Mediu a găsit un depozit ilegal de deșeuri se poate citi integral pe Stiri de Buzau . Mormane de gunoaie împrăștiate la întâmplare, în loc…",
@@ -1084,36 +514,6 @@
       "section": "diverse",
       "image": "https://stiridebuzau.ro/wp-content/uploads/2026/08/764103310_3027858934217532_8040979085179496863_n-300x224.jpg",
       "publishedAt": "2026-08-06T06:59:29.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "primaria-balaceanu-amendata-de-garda-de-mediu-ce-au-gasit-comisarii-in-comuna-sa",
-      "title": "Primăria Bălăceanu, amendată de Garda de Mediu. Ce au găsit comisarii în comună",
-      "summary": "Mormane de gunoi nesortat întinse pe zeci de metri. De la plastic, hârtie, cartoane, deșeuri amenajate, gunoi de grajd și până la resturi menajere erau depozitate ilegal pe platforma destinată depozitării deșeurilor…",
-      "link": "https://sansanews.ro/primaria-balaceanu-amendata-de-garda-de-mediu-ce-au-gasit-comisarii-in-comuna/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/764089443_1388009046839714_3064108208764597670_n-768x1024.jpg",
-      "publishedAt": "2026-08-06T06:12:08.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "p-anunt-publicitar-sansa-news",
-      "title": "(P) ANUNȚ PUBLICITAR",
-      "summary": "CEC BANK S.A. – Sucursala Buzău cu sediul în Str. Unirii, bl. 14 IJK și 15A , jud. Buzău, organizează în data de 13.08.2026 ora 11:00 și ora 14:00, licitații deschise cu strigare pentru vânzarea imobilelor proprietate…",
-      "link": "https://sansanews.ro/p-anunt-publicitar-2/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "administratie",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/07/cec_bank_logo.jpg",
-      "publishedAt": "2026-08-06T06:00:06.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -1175,21 +575,6 @@
       "section": "local",
       "image": "https://stiridebuzau.ro/wp-content/uploads/2026/08/Screenshot_20260805-220750_WhatsApp-300x182.jpg",
       "publishedAt": "2026-08-05T19:16:27.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "buzau-wine-fest-pe-platoul-unde-s-a-descoperit-closca-de-la-pietroasele-promovam",
-      "title": "Buzau Wine Fest! Pe platoul unde s-a descoperit Cloșca de la Pietroasele, promovăm un alt tezaur județean: vinul și gastronomia buzoiană",
-      "summary": "Buzăul reînvie tradiția unei sărbători dedicate exclusiv vinului, un produs care poate deveni laitmotivul unei întregi strategii de promovare a județului, atât în plan turistic, cât și în plan economic. Evenimentul care…",
-      "link": "https://sansanews.ro/buzau-wine-fest-pe-platoul-unde-s-a-descoperit-closca-de-la-pietroasele-promovam-un-alt-tezaur-judetean-vinul-si-gastronomia-buzoiana/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/sarbatoarea-tamaioasei-pietroasele.jpg",
-      "publishedAt": "2026-08-05T16:30:15.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -1315,21 +700,6 @@
       "alsoIn": []
     },
     {
-      "id": "vaslim-la-caiace-si-zambim-fara-limite-doua-zile-de-sport-si-incluziune-la-buzau",
-      "title": "„Vâslim la caiace și zâmbim fără limite”, două zile de sport și incluziune la Buzău",
-      "summary": "Parcul Tineretului din Buzău a fost, în weekend, gazda celei de-a VI-a ediții a proiectului „Vâslim la caiace și zâmbim fără limite”, organizat de Asociația Îmbunătățirea Vieții, cu sprijinul mai multor parteneri. Timp…",
-      "link": "https://stiridinsursebuzau.ro/vaslim-la-caiace-si-zambim-fara-limite-doua-zile-de-sport-si-incluziune-la-buzau/",
-      "source": "Știri din Surse",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://stiridinsursebuzau.ro/wp-content/uploads/2026/07/900x200.gif",
-      "publishedAt": "2026-08-04T18:24:39.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
       "id": "video-incendiu-de-vegetatie-uscata-pe-aproximativ-100-de-hectare-in-comuna-buzoi",
       "title": "VIDEO Incendiu de vegetație uscată, pe aproximativ 100 de hectare, în comuna buzoiană Podgoria",
       "summary": "Articolul VIDEO Incendiu de vegetație uscată, pe aproximativ 100 de hectare, în comuna buzoiană Podgoria se poate citi integral pe Stiri de Buzau . Pompierii buzoieni intervin pentru stingerea unui incendiu de vegetație…",
@@ -1340,21 +710,6 @@
       "section": "diverse",
       "image": "https://stiridebuzau.ro/wp-content/uploads/2026/08/ince-vegetatie-300x169.jpeg",
       "publishedAt": "2026-08-04T15:14:46.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "parasutist-militar-ranit-la-buzau-dupa-un-incident-in-timpul-unui-salt-stiri-din",
-      "title": "Parașutist militar rănit la Buzău, după un incident în timpul unui salt. Știri din Surse Buzău a solicitat un punct de vedere MApN",
-      "summary": "Un parașutist militar în vârstă de 33 de ani a ajuns, marți dimineață, la Unitatea de Primiri Urgențe a Spitalului Județean de Urgență Buzău, după un incident produs în timpul unui salt cu parașuta. Militarul a suferit…",
-      "link": "https://stiridinsursebuzau.ro/parasutist-militar-ranit-la-buzau-dupa-un-incident-in-timpul-unui-salt-stiri-din-surse-buzau-a-solicitat-un-punct-de-vedere-mapn/",
-      "source": "Știri din Surse",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://stiridinsursebuzau.ro/wp-content/uploads/2026/08/WhatsApp-Video-2026-08-04-at-17.52.34.mp4",
-      "publishedAt": "2026-08-04T15:14:27.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -1449,16 +804,16 @@
       "alsoIn": []
     },
     {
-      "id": "se-pregateste-o-noua-intrare-in-masa-in-ceuta-si-melilla-mobilizare-pe-retelele-",
-      "title": "Se pregătește o nouă intrare în masă în Ceuta și Melilla. Mobilizare pe rețelele sociale pentru data de 15 august",
-      "summary": "Apelurile la o nouă tentativă de pătrundere în masă în Ceuta şi Melilla pe data de 15 august continuă în Maroc şi coincid cu o desfăşurare masivă a forţelor de poliţie marocane la frontierele cu cele...",
-      "link": "https://www.antena3.ro/externe/se-pregateste-o-noua-intrare-in-masa-in-ceuta-si-melilla-mobilizare-pe-retelele-sociale-pentru-data-de-15-august-798766.html",
-      "source": "Antena 3",
+      "id": "alerta-in-ceuta-si-melilla-o-noua-intrare-in-masa-a-migrantilor-mobilizata-pe-re",
+      "title": "Alertă în Ceuta și Melilla: O nouă intrare în masă a migranților, mobilizată pe rețelele sociale pentru 15 august. Marocul sporește forțele de securitate",
+      "summary": "Autoritățile din Spania și Maroc sunt în alertă. S-ar pregăti o nouă intrare în masă în Ceuta și Melilla. Se pare că migranții se mobilizează pe rețelele sociale pentru data de 15 august. Marocul a mobilizat din nou…",
+      "link": "https://www.dcnews.ro/alerta-in-ceuta-si-melilla-o-noua-intrare-in-masa-a-migrantilor-mobilizata-pe-retelele-sociale-pentru-15-august-marocul-sporeste-fortele-de-securitate_1074675.html",
+      "source": "DC News",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/08/se-pregateste-o-noua-intrare-in-masa-in-ceuta-si-melilla-mobilizare-pe-retelele-sociale-pentru-data-de-15-august-1091652.jpg",
-      "publishedAt": "2026-08-08T20:04:00.000Z",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/08/alerta-in-ceuta-si-melilla-o-noua-intrare-in-masa-a-migrantilor-mobilizata-pe-retelele-sociale-pentru-15-august-marocul-sporeste-fortele-de-securitate-5434890.jpeg",
+      "publishedAt": "2026-08-08T20:51:00.000Z",
       "promoted": false,
       "coverage": 2,
       "alsoIn": [
@@ -1466,10 +821,10 @@
       ],
       "variants": [
         {
-          "source": "Antena 3",
-          "title": "Se pregătește o nouă intrare în masă în Ceuta și Melilla. Mobilizare pe rețelele sociale pentru data de 15 august",
-          "link": "https://www.antena3.ro/externe/se-pregateste-o-noua-intrare-in-masa-in-ceuta-si-melilla-mobilizare-pe-retelele-sociale-pentru-data-de-15-august-798766.html",
-          "publishedAt": "2026-08-08T20:04:00.000Z"
+          "source": "DC News",
+          "title": "Alertă în Ceuta și Melilla: O nouă intrare în masă a migranților, mobilizată pe rețelele sociale pentru 15 august. Marocul sporește forțele de securitate",
+          "link": "https://www.dcnews.ro/alerta-in-ceuta-si-melilla-o-noua-intrare-in-masa-a-migrantilor-mobilizata-pe-retelele-sociale-pentru-15-august-marocul-sporeste-fortele-de-securitate_1074675.html",
+          "publishedAt": "2026-08-08T20:51:00.000Z"
         },
         {
           "source": "Digi24",
@@ -1573,6 +928,37 @@
       ]
     },
     {
+      "id": "interul-lui-cristi-chivu-invinge-juventus-intr-un-meci-amical-stiripesurse-ro",
+      "title": "Interul lui Cristi Chivu învinge Juventus, într-un meci amical",
+      "summary": "Interul lui Cristi Chivu învinge Juventus, într-un meci amical Stiripesurse",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWUJBdUJrUnNYNzBiSFp2QWxVU1BUbm5lY09SM0Vmdlk0MnZpS2ljWGZUYjhrQlB4NWhsVDhDcmVVQnR0clk3cVZSTTIxdjNMMDgzYzJqUjV0R3A3TnNPcG9LZ051cjB3WVhEbkYtZEpkS2JYTjVjNnRJN19sZ21MXzhhNy1kU2w1SmV2VExPTkJGb21QMHVJa25WelJ3QQ?oc=5",
+      "source": "Stiripesurse.ro",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "",
+      "publishedAt": "2026-08-08T16:31:48.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "DC News"
+      ],
+      "variants": [
+        {
+          "source": "Stiripesurse.ro",
+          "title": "Interul lui Cristi Chivu învinge Juventus, într-un meci amical",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWUJBdUJrUnNYNzBiSFp2QWxVU1BUbm5lY09SM0Vmdlk0MnZpS2ljWGZUYjhrQlB4NWhsVDhDcmVVQnR0clk3cVZSTTIxdjNMMDgzYzJqUjV0R3A3TnNPcG9LZ051cjB3WVhEbkYtZEpkS2JYTjVjNnRJN19sZ21MXzhhNy1kU2w1SmV2VExPTkJGb21QMHVJa25WelJ3QQ?oc=5",
+          "publishedAt": "2026-08-08T16:31:48.000Z"
+        },
+        {
+          "source": "DC News",
+          "title": "Cristi Chivu, supărat după ce s-a întâmplat în Inter - Juventus: \"Nu mi-a plăcut deloc!\"",
+          "link": "https://www.dcnews.ro/cristi-chivu-suparat-dupa-ce-s-a-intamplat-in-inter-juventus-nu-mi-a-placut-deloc_1074645.html",
+          "publishedAt": "2026-08-08T14:26:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "drona-care-a-explodat-in-bulgaria-aproape-de-romania-a-fost-identificata-ce-arat",
       "title": "Drona care a explodat în Bulgaria, aproape de România, a fost identificată. Ce arată analiza preliminară a epavei",
       "summary": "Autoritățile bulgare au identificat drona care s-a prăbușit și a explodat sâmbătă dimineață în apropierea graniței cu România, la circa un kilometru de o stație de comprimare a gazelor de pe traseul gazoductului…",
@@ -1633,6 +1019,51 @@
           "publishedAt": "2026-08-08T12:14:00.000Z"
         }
       ]
+    },
+    {
+      "id": "dupa-30-de-ani-india-incearca-sa-recupereze-trupul-alpinistului-green-boots-de-p",
+      "title": "După 30 de ani, India încearcă să recupereze trupul alpinistului „Green Boots” de pe Everest",
+      "summary": "Trupul unui alpinist indian, devenit cunoscut în întreaga lume sub numele de „Green Boots”, după bocancii săi verzi, ar putea fi recuperat, în sfârșit, la aproape 30 de ani după ce a murit pe Muntele...",
+      "link": "https://www.antena3.ro/externe/mapamond/dupa-30-de-ani-india-incearca-sa-recupereze-trupul-alpinistului-green-boots-de-pe-everest-798773.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/08/dupa-30-de-ani-india-incearca-sa-recupereze-trupul-alpinistului-green-boots-de-pe-everest-1091661.jpg",
+      "publishedAt": "2026-08-08T20:52:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "incendiu-devastator-in-vestul-canadei-peste-20-000-de-oameni-au-fost-evacuati-du",
+      "title": "Incendiu devastator în vestul Canadei. Peste 20.000 de oameni au fost evacuați după ce flăcările s-au extins rapid",
+      "summary": "Un incendiu de vegetație scăpat de sub control se extinde rapid în Columbia Britanică, în vestul Canadei, obligând peste 20.000 de oameni din Summerland și Peachland să-și părăsească locuințele. Flăcările au cuprins…",
+      "link": "https://www.digi24.ro/stiri/externe/mapamond/incendiu-devastator-in-vestul-canadei-peste-20-000-de-oameni-au-fost-evacuati-dupa-ce-flacarile-s-au-extins-rapid-3898847",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjMl/MkYwOCUyRjE4JTJGMTc4NDEyNF8xNzg0/MTI0X2NhbmFkYS1pbmNlbmRpdS1wcm9m/aW1lZGlhNi5qcGcmaGFzaD0wMGE3ZTFm/YTQ1MTg2ZTY3YzEzMjIyNmQ2MWZjOGFmYw==.jpg",
+      "publishedAt": "2026-08-08T20:48:17.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "dinamo-o-zdrobeste-pe-fc-voluntari-si-urca-pe-locul-doi-al-clasamentului-stiripe",
+      "title": "Dinamo o zdrobește pe FC Voluntari și urcă pe locul doi al clasamentului",
+      "summary": "Dinamo o zdrobește pe FC Voluntari și urcă pe locul doi al clasamentului Stiripesurse",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdWtYZi16TFpubk9ITHJ3dEFPeWtQUE50V2N4V1NtTTcyVTN1VGJHTnl6ZE9YZEpkWjgweTFjMzdNX3dINDJpRzZNMUtJaENCaVB4ck1abVpTM2FpRU81bUxlSU4tbDY2aS1tdjJBNjNqZFlTMnd3S2FSZDJ3UXlSX0o4dWtlcGpkRkk0MV9LTXhGNTJaXzA0cXRBTklpMVI1MzFPZlNNUFlDdWV2?oc=5",
+      "source": "Stiripesurse.ro",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "",
+      "publishedAt": "2026-08-08T20:44:16.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
     },
     {
       "id": "ministrul-turc-de-externe-pactul-de-aparare-dintre-turcia-pakistan-si-arabia-sau",
@@ -1705,6 +1136,21 @@
       "section": "national",
       "image": "https://www.antena3.ro/thumbs/landscape/2026/08/08/cum-vrea-o-firma-apropiata-de-trump-sa-scoata-petrol-din-groenlanda-inclusiv-cu-ajutorul-unui-documentar-facut-de-dr-phil-1091658.jpg",
       "publishedAt": "2026-08-08T20:21:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "inconstienta-la-volan-bebelus-de-11-luni-tinut-pe-locul-soferului-intr-o-masina-",
+      "title": "Inconștiență la volan: Bebeluș de 11 luni, ținut pe locul șoferului într-o mașină aflată în mers",
+      "summary": "Inconștiență la volan: Bebeluș de 11 luni, ținut pe locul șoferului într-o mașină aflată în mers Stiripesurse",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOXkyTmZsN19WOTZYaTVacGs5OC1KSm53WmlOc0JNd2NiTVNISUVBdmlqLThmNUZkSUI1LXpReGUyVVRuU0YzZ3VVNzF1UkZiNmpHekViMlpSRkQ0anF2em9uQmtKTEVPS0ItSklmcEJlYkU0cHRIcUI2UlMxLXhXZ2FpaVdDZElpdlczdGl2Q2Q4TXJnRVV4MG1VT3J1eFgxMm9KX0tXRE14SUVteEtlWnpseENseDZXQ053ZF9hSWdObU5FYWdFcFpB?oc=5",
+      "source": "Stiripesurse.ro",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "",
+      "publishedAt": "2026-08-08T20:20:06.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -1830,6 +1276,21 @@
       "alsoIn": []
     },
     {
+      "id": "se-pregateste-o-noua-intrare-in-masa-in-ceuta-si-melilla-mobilizare-pe-retelele-",
+      "title": "Se pregătește o nouă intrare în masă în Ceuta și Melilla. Mobilizare pe rețelele sociale pentru data de 15 august",
+      "summary": "Apelurile la o nouă tentativă de pătrundere în masă în Ceuta şi Melilla pe data de 15 august continuă în Maroc şi coincid cu o desfăşurare masivă a forţelor de poliţie marocane la frontierele cu cele...",
+      "link": "https://www.antena3.ro/externe/se-pregateste-o-noua-intrare-in-masa-in-ceuta-si-melilla-mobilizare-pe-retelele-sociale-pentru-data-de-15-august-798766.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/08/se-pregateste-o-noua-intrare-in-masa-in-ceuta-si-melilla-mobilizare-pe-retelele-sociale-pentru-data-de-15-august-1091652.jpg",
+      "publishedAt": "2026-08-08T20:04:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
       "id": "vantul-a-alimentat-romania-sambata-seara-eolienele-au-asigurat-37-din-energie-ma",
       "title": "Vântul a alimentat România sâmbătă seară: eolienele au asigurat 37% din energie, mai mult decât hidro și gazele la un loc",
       "summary": "România a produs, sâmbătă seară, mai multă energie electrică decât avea nevoie, potrivit datelor afișate în timp real de compania Transelectrica. La ora 22:47, țara genera 6.646 de megawați (MW), o cantitate...",
@@ -1905,156 +1366,177 @@
       "alsoIn": []
     },
     {
-      "id": "conditiile-iranului-pentru-sua-ca-sa-deblocheze-stramtoarea-ormuz-pana-cand-amer",
-      "title": "Condițiile Iranului pentru SUA ca să deblocheze Strâmtoarea Ormuz. „Până când America nu își va corecta comportamentul, nu va fi redeschisă”",
-      "summary": "Șeful Consiliului Național Suprem de Securitate al Iranului, Mohammad Bagher Zolghadr, a emis o listă de solicitări pe care susține că Statele Unite trebuie să le îndeplinească înainte ca Teheranul să deschidă…",
-      "link": "https://hotnews.ro/conditiile-iranului-pentru-sua-ca-sa-deblocheze-stramtoarea-ormuz-pana-cand-america-nu-isi-va-corecta-comportamentul-nu-va-fi-redeschisa-2320266",
-      "source": "HotNews",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-08T19:48:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "opozitia-belarusa-pregateste-un-dosar-contra-lui-lukasenko-pentru-sprijinirea-ra",
-      "title": "Opoziția belarusă pregătește un dosar contra lui Lukașenko pentru sprijinirea războiului Rusiei în Ucraina: „E complice la agresiune”",
-      "summary": "Opoziția belarusă din exil pregătește un „set consolidat de probe” pe care intenționează să îl transmită autorităților ucrainene, susținând că regimul lui Aleksandr Lukașenko a sprijinit agresiunea Rusiei împotriva…",
-      "link": "https://www.digi24.ro/stiri/externe/ue/opozitia-belarusa-pregateste-un-dosar-contra-lui-lukasenko-pentru-sprijinirea-razboiului-rusiei-in-ucraina-e-complice-la-agresiune-3898793",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwNiUyRjI1JTJGMjgwNzA1Nl8yODA3/MDU2X3Byb2ZpbWVkaWEtMDg0MTA2NTIy/Mi1lMTczNjMzMjM4NTQ0OC5qcGcmaGFz/aD02NzMzNDUwMTIzYTAwOGUzZTJjZjMzMWNhZmVkMDU4Yw==.jpg",
-      "publishedAt": "2026-08-08T19:43:26.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "iranul-prezinta-o-lista-de-cerinte-pe-care-sua-trebuie-sa-le-indeplineasca-pentr",
-      "title": "Iranul prezintă o listă de cerinţe pe care SUA trebuie să le îndeplinească pentru a redeschide Strâmtoarea Ormuz",
-      "summary": "Teheranul a pus sâmbătă pe masă un set de condiții pe care Washingtonul ar trebui să le bifeze înainte ca Iranul să permită reluarea traficului maritim prin Strâmtoarea Ormuz. Lista cuprinde încetarea...",
-      "link": "https://www.antena3.ro/externe/iranul-prezinta-o-lista-de-cerinte-pe-care-sua-trebuie-sa-le-indeplineasca-pentru-a-redeschide-stramtoarea-ormuz-798769.html",
-      "source": "Antena 3",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/08/iranul-prezinta-o-lista-de-cerinte-pe-care-sua-trebuie-sa-le-indeplineasca-pentru-a-redeschide-stramtoarea-ormuz-1091655.jpg",
-      "publishedAt": "2026-08-08T19:36:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "musk-nu-permite-ucrainei-sa-utilizeze-reteaua-starlink-pentru-atacuri-in-rusia-c",
-      "title": "Musk nu permite Ucrainei să utilizeze reţeaua Starlink pentru atacuri în Rusia. Ce le-a spus oficialilor de la Kiev",
-      "summary": "Miliardarul american din domeniul tehnologiei, Elon Musk, refuză în prezent să acorde Ucrainei permisiunea de a utiliza reţeaua de sateliţi Starlink pentru a lansa atacuri pe teritoriul rus, a relatat The Atlantic…",
-      "link": "https://www.digi24.ro/stiri/externe/musk-nu-permite-ucrainei-sa-utilizeze-reteaua-starlink-pentru-atacuri-in-rusia-ce-le-a-spus-oficialilor-de-la-kiev-3898771",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjUl/MkYwMiUyRjIyJTJGMjE5NTYyM18yMTk1/NjIzX05qQmhPVFUzTXpFNE5UWTNZekV6/TldSbVlURmtNRGhrWXprX3RodW1iXy5q/cGcmaGFzaD1hMmI5NjA0MDBmMzMwZDhhZjQzOGJhZWUyNzlhNGQ3ZA==.jpg",
-      "publishedAt": "2026-08-08T19:24:32.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "de-ce-peste-178-000-de-imigranti-au-fugit-brusc-sau-au-fost-deportati-din-africa",
-      "title": "De ce peste 178.000 de imigranți au fugit brusc sau au fost deportați din Africa de Sud",
-      "summary": "Peste 178.000 de imigranți africani au părăsit Africa de Sud în ultimele luni, împinși de la spate de măsurile dure luate de autorități împotriva migrației ilegale și de proteste anti-imigrație, uneori...",
-      "link": "https://www.antena3.ro/externe/de-ce-peste-178-000-de-imigranti-au-fugit-brusc-sau-au-fost-deportati-din-africa-de-sud-798767.html",
-      "source": "Antena 3",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/08/de-ce-peste-178-000-de-imigranti-au-fugit-brusc-sau-au-fost-deportati-din-africa-de-sud-1091651.jpg",
-      "publishedAt": "2026-08-08T19:03:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "scene-tensionate-in-parlamentul-din-kosovo-premierul-albin-kurti-a-fost-atacat-c",
-      "title": "Scene tensionate în parlamentul din Kosovo: Premierul Albin Kurti a fost atacat cu ouă de o parlamentară din opoziție",
-      "summary": "Time Kadrijaj, parlamentară din opoziție, a aruncat cu ouă în premierul interimar Albin Kurti, sâmbătă, în Parlament, într-un incident care a dus la suspendarea ședinței, potrivit AFP și Euractiv. În Kosovo au avut loc…",
-      "link": "https://hotnews.ro/scene-tensionate-in-parlamentul-din-kosovo-premierul-albin-kurti-a-fost-atacat-cu-oua-de-o-parlamentara-din-opozitie-2320254",
-      "source": "HotNews",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-08T18:59:26.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "dinamo-fc-voluntari-4-0-elevii-lui-nuno-campos-au-dat-recital-pe-arcul-de-triumf",
-      "title": "Dinamo - FC Voluntari 4-0. Elevii lui Nuno Campos au dat recital pe ”Arcul de Triumf”!",
-      "summary": "Dinamo - FC Voluntari 4-0. Elevii lui Nuno Campos au dat recital pe ”Arcul de Triumf”!",
-      "link": "https://www.digisport.ro/fotbal/liga-1/dinamo-fc-voluntari-4-0-elevii-lui-nuno-campos-au-dat-recital-pe-arcul-de-triumf-4418719",
+      "id": "farul-csikszereda-3-2-marinarii-au-castigat-la-ovidiu-in-urma-unui-meci-spectacu",
+      "title": "Farul - Csikszereda 3-2. ”Marinarii” au câștigat la Ovidiu, în urma unui meci spectaculos cu ciucanii",
+      "summary": "Farul - Csikszereda 3-2. ”Marinarii” au câștigat la Ovidiu, în urma unui meci spectaculos cu ciucanii",
+      "link": "https://www.digisport.ro/fotbal/liga-1/farul-csikszereda-3-2-marinarii-au-castigat-la-ovidiu-in-urma-unui-meci-spectaculos-cu-ciucanii-4420165",
       "source": "Digi Sport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwOCUyRjI4OTgwMTJfMjg5ODAxMl9E/SU5BTU8tQlVDVVJFU1RJLUZDLVZPTFVO/VEFSSS1TVVBFUkxJR0EtU1VQRVJCRVQt/OF8wOF8yMDI2LmpwZyZoYXNoPTE1ZjNk/ZjUyYTM4M2VlMzU0NGQ4ZWVkMWJjOTYzNzc3.jpg",
-      "publishedAt": "2026-08-08T20:41:58.000Z",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwOCUyRjI4OTc5MzhfMjg5NzkzOF9G/QVJVTC1DT05TVEFOVEEtRkstQ1NJS1Na/RVJFREEtTUlFUkNVUkVBLUNJVUMtU1VQ/RVJMSUdBLVNVUEVSQkVULTA4XzA4XzIw/MjYuanBnJmhhc2g9MDYzMmY3Yjc3YjhmYTE5OTlhYjgyMmQ0NzczMWUyMjg=.jpg",
+      "publishedAt": "2026-08-08T22:12:59.000Z",
       "promoted": false,
-      "coverage": 3,
+      "coverage": 2,
       "alsoIn": [
-        "GSP",
         "Prosport"
       ],
       "variants": [
         {
           "source": "Digi Sport",
-          "title": "Dinamo - FC Voluntari 4-0. Elevii lui Nuno Campos au dat recital pe ”Arcul de Triumf”!",
-          "link": "https://www.digisport.ro/fotbal/liga-1/dinamo-fc-voluntari-4-0-elevii-lui-nuno-campos-au-dat-recital-pe-arcul-de-triumf-4418719",
-          "publishedAt": "2026-08-08T20:41:58.000Z"
-        },
-        {
-          "source": "GSP",
-          "title": "Panică în Dinamo - FC Voluntari! S-a prăbușit pe teren și a fost nevoie de intervenția ambulanței",
-          "link": "https://www.gsp.ro/fotbal/liga-1/panica-in-dinamo-fc-voluntari-s-a-prabusit-pe-teren-si-a-fost-nevoie-de-interventia-ambulantei-968272.html",
-          "publishedAt": "2026-08-08T20:22:01.000Z"
-        },
-        {
-          "source": "GSP",
-          "title": "Pancu, „spionul” lui Dinamo » A venit cu agenda să ia notițe înaintea derby-ului",
-          "link": "https://www.gsp.ro/fotbal/liga-1/daniel-pancu-spion-dinamo-voluntari-rapid-968253.html",
-          "publishedAt": "2026-08-08T19:13:14.000Z"
-        },
-        {
-          "source": "GSP",
-          "title": "Dinamo și-a cedat fotbalistul în ziua meciului cu FC Voluntari!",
-          "link": "https://www.gsp.ro/fotbal/liga-1/dinamo-imprumut-alex-irimia-metaloglobus-968225.html",
-          "publishedAt": "2026-08-08T17:23:01.000Z"
+          "title": "Farul - Csikszereda 3-2. ”Marinarii” au câștigat la Ovidiu, în urma unui meci spectaculos cu ciucanii",
+          "link": "https://www.digisport.ro/fotbal/liga-1/farul-csikszereda-3-2-marinarii-au-castigat-la-ovidiu-in-urma-unui-meci-spectaculos-cu-ciucanii-4420165",
+          "publishedAt": "2026-08-08T22:12:59.000Z"
         },
         {
           "source": "Prosport",
-          "title": "Dinamo – FC Voluntari 4-0, în etapa 4 din Superliga. „Câinii” au moral excelent înaintea derby-ului din Giulești, cu liderul Rapid",
-          "link": "https://www.prosport.ro/fotbal-intern/superliga/dinamo-fc-voluntari-live-text-online-in-etapa-4-din-superliga-20499824",
-          "publishedAt": "2026-08-08T16:30:39.000Z"
+          "title": "DECLARAȚII Antrenorul de la Csikszereda, descumpănit după a patra înfrângere consecutivă: „E tot mai greu!”",
+          "link": "https://www.prosport.ro/fotbal-intern/superliga/istvan-szabo-reactie-farul-csikszereda-20500110",
+          "publishedAt": "2026-08-08T18:46:06.000Z"
         }
       ]
     },
     {
-      "id": "video-accidentare-horror-in-dinamo-fc-voluntari-ambulanta-a-intrat-pe-teren-pros",
-      "title": "VIDEO Accidentare horror în Dinamo – FC Voluntari! Ambulanța a intrat pe teren",
-      "summary": "Moment cumplit cu un sfert de oră înainte de finalul meciului Dinamo – FC Voluntari! Salvarea a intrat imediat pe gazon, după ce jucătorul s-a prăbușit. Fundașul central spaniol al lui Dinamo Martín Pascual a creat…",
-      "link": "https://www.prosport.ro/fotbal-intern/superliga/accidentare-horror-dinamo-voluntari-ambulanta-teren-20500176",
+      "id": "dinamo-fc-voluntari-4-0-elevii-lui-nuno-campos-s-au-descatusat-pe-final-si-au-da",
+      "title": "Dinamo - FC Voluntari 4-0. Elevii lui Nuno Campos s-au descătușat pe final și au dat recital pe ”Arcul de Triumf”!",
+      "summary": "Dinamo - FC Voluntari 4-0. Elevii lui Nuno Campos s-au descătușat pe final și au dat recital pe ”Arcul de Triumf”!",
+      "link": "https://www.digisport.ro/fotbal/liga-1/dinamo-fc-voluntari-4-0-elevii-lui-nuno-campos-s-au-descatusat-pe-final-si-au-dat-recital-pe-arcul-de-triumf-4418719",
+      "source": "Digi Sport",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwOCUyRjI4OTgwMTJfMjg5ODAxMl9E/SU5BTU8tQlVDVVJFU1RJLUZDLVZPTFVO/VEFSSS1TVVBFUkxJR0EtU1VQRVJCRVQt/OF8wOF8yMDI2LmpwZyZoYXNoPTE1ZjNk/ZjUyYTM4M2VlMzU0NGQ4ZWVkMWJjOTYzNzc3.jpg",
+      "publishedAt": "2026-08-08T22:12:12.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Prosport"
+      ],
+      "variants": [
+        {
+          "source": "Digi Sport",
+          "title": "Dinamo - FC Voluntari 4-0. Elevii lui Nuno Campos s-au descătușat pe final și au dat recital pe ”Arcul de Triumf”!",
+          "link": "https://www.digisport.ro/fotbal/liga-1/dinamo-fc-voluntari-4-0-elevii-lui-nuno-campos-s-au-descatusat-pe-final-si-au-dat-recital-pe-arcul-de-triumf-4418719",
+          "publishedAt": "2026-08-08T22:12:12.000Z"
+        },
+        {
+          "source": "Prosport",
+          "title": "DECLARAȚII Nuno Campos își ține jucătorii cu picioarele pe pământ după ce Dinamo a făcut instrucție cu FC Voluntari: „Suntem departe!”",
+          "link": "https://www.prosport.ro/fotbal-intern/superliga/nuno-campos-reactie-meci-dinamo-voluntari-20500225",
+          "publishedAt": "2026-08-08T21:35:37.000Z"
+        }
+      ]
+    },
+    {
+      "id": "ion-gheorghe-a-rupt-tacerea-dupa-ce-a-provocat-penalty-ul-din-care-dinamo-a-desc",
+      "title": "Ion Gheorghe a rupt tăcerea, după ce a provocat penalty-ul din care Dinamo a deschis scorul cu Voluntari",
+      "summary": "Ion Gheorghe a rupt tăcerea, după ce a provocat penalty-ul din care Dinamo a deschis scorul cu Voluntari",
+      "link": "https://www.digisport.ro/fotbal/liga-1/ion-gheorghe-a-rupt-tacerea-dupa-ce-a-provocat-penalty-ul-din-care-dinamo-a-deschis-scorul-cu-voluntari-4421397",
+      "source": "Digi Sport",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwOSUyRjI4OTgwMjdfMjg5ODAyN19p/b24tZ2hlb3JnaGUtMi5wbmcmaGFzaD1l/MjlhNDRhNDE4ZjE5MjQwNzI2Zjc5YWJmYjQxOTk5Mg==.png",
+      "publishedAt": "2026-08-08T22:10:11.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "GSP"
+      ],
+      "variants": [
+        {
+          "source": "Digi Sport",
+          "title": "Ion Gheorghe a rupt tăcerea, după ce a provocat penalty-ul din care Dinamo a deschis scorul cu Voluntari",
+          "link": "https://www.digisport.ro/fotbal/liga-1/ion-gheorghe-a-rupt-tacerea-dupa-ce-a-provocat-penalty-ul-din-care-dinamo-a-deschis-scorul-cu-voluntari-4421397",
+          "publishedAt": "2026-08-08T22:10:11.000Z"
+        },
+        {
+          "source": "GSP",
+          "title": "Alex Musi a marcat cu Voluntari, dar a explicat și marea lui ratare: „S-a făcut mingea mică!” + „Cu Rapid o să fie foc!”",
+          "link": "https://www.gsp.ro/fotbal/liga-1/alex-musi-reactie-dinamo-voluntari-rapid-968287.html",
+          "publishedAt": "2026-08-08T21:14:24.000Z"
+        },
+        {
+          "source": "GSP",
+          "title": "S-a reîntors „Fortăreața câinilor” » Dinamo a dat RECITAL și merge în Giulești cu moral maxim",
+          "link": "https://www.gsp.ro/fotbal/liga-1/live-dinamo-fc-voluntari-etapa-4-superliga-968084.html",
+          "publishedAt": "2026-08-08T20:34:09.000Z"
+        }
+      ]
+    },
+    {
+      "id": "adrian-mazilu-a-dat-declaratia-serii-daca-nu-ma-baga-nu-cred-ca-marcam-gsp",
+      "title": "Adrian Mazilu a dat declarația serii: „Dacă nu mă băga, nu cred că marcam”",
+      "summary": "Dinamo - FC Voluntari 4-0. Adrian Mazilu (20 de ani) a marcat primul său gol pentru „câini”. Extrema a punctat în prelungirile partidei și a recunoscut că reușita are o însemnătate aparte, după o perioadă de aproximativ…",
+      "link": "https://www.gsp.ro/fotbal/liga-1/adrian-mazilu-reactie-dinamo-fc-voluntari-968301.html",
+      "source": "GSP",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/08082026/a1e42785-c197-4af7-b444-e0f5703457f8.jpg?width=290&height=208",
+      "publishedAt": "2026-08-08T22:01:52.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Digi Sport"
+      ],
+      "variants": [
+        {
+          "source": "GSP",
+          "title": "Adrian Mazilu a dat declarația serii: „Dacă nu mă băga, nu cred că marcam”",
+          "link": "https://www.gsp.ro/fotbal/liga-1/adrian-mazilu-reactie-dinamo-fc-voluntari-968301.html",
+          "publishedAt": "2026-08-08T22:01:52.000Z"
+        },
+        {
+          "source": "Digi Sport",
+          "title": "Alex Musi a dat declarația serii, după ce Dinamo a învins-o pe FC Voluntari cu 4-0",
+          "link": "https://www.digisport.ro/fotbal/liga-1/alex-musi-a-dat-declaratia-serii-dupa-ce-dinamo-a-invins-o-pe-fc-voluntari-cu-4-0-4421481",
+          "publishedAt": "2026-08-08T21:23:24.000Z"
+        }
+      ]
+    },
+    {
+      "id": "catalin-cirjan-a-tras-o-sperietura-groaznica-au-facut-niste-semne-disperate-gsp",
+      "title": "Cătălin Cîrjan a tras o sperietură groaznică: „Au făcut niște semne disperate”",
+      "summary": "Dinamo - FC Voluntari 4-0. Cătălin Cîrjan (23 de ani), căpitanul „câinilor”, a tras concluziile după victoria categorică obținută de „câini” în etapa a 4-a din Superliga. Mijlocașul a vorbit despre starea gazonului de…",
+      "link": "https://www.gsp.ro/fotbal/liga-1/catalin-cirjan-reactie-dinamo-voluntari-968291.html",
+      "source": "GSP",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/08082026/702c4e4e-1f33-4d40-9b2e-017f5239a620.jpg?width=290&height=208",
+      "publishedAt": "2026-08-08T21:33:21.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Digi Sport"
+      ],
+      "variants": [
+        {
+          "source": "GSP",
+          "title": "Cătălin Cîrjan a tras o sperietură groaznică: „Au făcut niște semne disperate”",
+          "link": "https://www.gsp.ro/fotbal/liga-1/catalin-cirjan-reactie-dinamo-voluntari-968291.html",
+          "publishedAt": "2026-08-08T21:33:21.000Z"
+        },
+        {
+          "source": "Digi Sport",
+          "title": "Momente de panică la Dinamo - FC Voluntari! Semne disperate către ambulanță",
+          "link": "https://www.digisport.ro/fotbal/liga-1/momente-de-panica-la-dinamo-fc-voluntari-semne-disperate-catre-ambulanta-4421317",
+          "publishedAt": "2026-08-08T20:15:24.000Z"
+        }
+      ]
+    },
+    {
+      "id": "darius-olaru-a-spart-gheata-in-belgia-cum-a-marcat-primul-gol-intr-o-victorie-zd",
+      "title": "Darius Olaru a spart gheața în Belgia! Cum a marcat primul gol, într-o victorie zdrobitoare",
+      "summary": "După ce a fost titular în preliminariile Champions League, Darius Olaru a spart gheața în Belgia și a marcat primul gol pentru Union SG. Fostul căpitan al celor de la FCSB și-a făcut din nou apariția pe teren pentru…",
+      "link": "https://www.prosport.ro/fotbal-extern/stranieri/darius-olaru-gol-union-sg-20500210",
       "source": "Prosport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/accidentare-horror-dinamo-voluntari-ambulanta-teren-1400x785.jpg",
-      "publishedAt": "2026-08-08T20:22:32.000Z",
+      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/darius-olaru-gol-union-sg.jpg",
+      "publishedAt": "2026-08-08T20:46:03.000Z",
       "promoted": false,
       "coverage": 2,
       "alsoIn": [
@@ -2063,15 +1545,15 @@
       "variants": [
         {
           "source": "Prosport",
-          "title": "VIDEO Accidentare horror în Dinamo – FC Voluntari! Ambulanța a intrat pe teren",
-          "link": "https://www.prosport.ro/fotbal-intern/superliga/accidentare-horror-dinamo-voluntari-ambulanta-teren-20500176",
-          "publishedAt": "2026-08-08T20:22:32.000Z"
+          "title": "Darius Olaru a spart gheața în Belgia! Cum a marcat primul gol, într-o victorie zdrobitoare",
+          "link": "https://www.prosport.ro/fotbal-extern/stranieri/darius-olaru-gol-union-sg-20500210",
+          "publishedAt": "2026-08-08T20:46:03.000Z"
         },
         {
           "source": "Digi Sport",
-          "title": "OUT! Jucătorul care a plecat de la Dinamo chiar în ziua meciului cu FC Voluntari",
-          "link": "https://www.digisport.ro/fotbal/liga-1/out-jucatorul-care-a-plecat-de-la-dinamo-chiar-in-ziua-meciului-cu-fc-voluntari-4421023",
-          "publishedAt": "2026-08-08T16:37:46.000Z"
+          "title": "Darius Olaru, primul GOL în Belgia! Românul a marcat și a contribuit la o mare umilință",
+          "link": "https://www.digisport.ro/fotbal/darius-olaru-primul-gol-in-belgia-romanul-a-marcat-si-a-contribuit-la-o-mare-umilinta-4421309",
+          "publishedAt": "2026-08-08T20:45:59.000Z"
         }
       ]
     },
@@ -2138,220 +1620,61 @@
       ]
     },
     {
-      "id": "primul-transfer-cerut-de-marius-sumudica-la-cfr-cluj-digi-sport",
-      "title": "Primul transfer cerut de Marius Șumudică la CFR Cluj",
-      "summary": "Primul transfer cerut de Marius Șumudică la CFR Cluj",
-      "link": "https://www.digisport.ro/fotbal/liga-1/primul-transfer-cerut-de-marius-sumudica-la-cfr-cluj-4421319",
-      "source": "Digi Sport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwOCUyRjI4OTgwMDZfMjg5ODAwNl9w/cm9maW1lZGlhLTEwOTMzODIzODEuanBn/Jmhhc2g9MGMxZGFlMzBhNGEzYzI1Yjc3ZGMxZjgyYzcxNzkzNTI=.jpg",
-      "publishedAt": "2026-08-08T20:14:34.000Z",
-      "promoted": false,
-      "coverage": 3,
-      "alsoIn": [
-        "Prosport",
-        "GSP"
-      ],
-      "variants": [
-        {
-          "source": "Digi Sport",
-          "title": "Primul transfer cerut de Marius Șumudică la CFR Cluj",
-          "link": "https://www.digisport.ro/fotbal/liga-1/primul-transfer-cerut-de-marius-sumudica-la-cfr-cluj-4421319",
-          "publishedAt": "2026-08-08T20:14:34.000Z"
-        },
-        {
-          "source": "Prosport",
-          "title": "E gata! Marius Șumudică revine în Superliga: „Nu a fost greu de convins!”",
-          "link": "https://www.prosport.ro/fotbal-intern/superliga/marius-sumudica-revine-la-cfr-cluj-20500102",
-          "publishedAt": "2026-08-08T18:18:17.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "CFR Cluj are antrenor: Marius Șumudică!",
-          "link": "https://www.digisport.ro/fotbal/liga-1/cfr-cluj-are-antrenor-marius-sumudica-4421115",
-          "publishedAt": "2026-08-08T17:59:19.000Z"
-        },
-        {
-          "source": "GSP",
-          "title": "CFR Cluj s-a înțeles cu Marius Șumudică » Ce a spus Varga și toate detaliile despre contract",
-          "link": "https://www.gsp.ro/fotbal/liga-1/cfr-cluj-a-batut-palma-cu-marius-sumudica-968235.html",
-          "publishedAt": "2026-08-08T17:57:46.000Z"
-        }
-      ]
-    },
-    {
-      "id": "ce-a-facut-daniel-pancu-la-o-zi-dupa-scandalul-de-la-arad-digi-sport",
-      "title": "Ce a făcut Daniel Pancu, la o zi după scandalul de la Arad",
-      "summary": "Ce a făcut Daniel Pancu, la o zi după scandalul de la Arad",
-      "link": "https://www.digisport.ro/fotbal/liga-1/ce-a-facut-daniel-pancu-la-o-zi-dupa-scandalul-de-la-arad-4421263",
-      "source": "Digi Sport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwNyUyRjI4OTczODhfMjg5NzM4OF9k/YW5pZWwtcGFuY3UtdXRhLXJhcGlkLXBl/bmFsdHkucG5nJmhhc2g9YTM3NzgxOGQ3OTM0NjIzZDI5ZWQxMmY3MWFjYmUyMzI=.png",
-      "publishedAt": "2026-08-08T19:18:38.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Prosport"
-      ],
-      "variants": [
-        {
-          "source": "Digi Sport",
-          "title": "Ce a făcut Daniel Pancu, la o zi după scandalul de la Arad",
-          "link": "https://www.digisport.ro/fotbal/liga-1/ce-a-facut-daniel-pancu-la-o-zi-dupa-scandalul-de-la-arad-4421263",
-          "publishedAt": "2026-08-08T19:18:38.000Z"
-        },
-        {
-          "source": "Prosport",
-          "title": "Gestul prin care Jayson Papeau i-a supărat pe fanii celor de la UTA, care s-au referit, indirect, și la Adi Mihalcea: „Cerem doar respect pentru prezent!”",
-          "link": "https://www.prosport.ro/fotbal-intern/superliga/gestul-prin-care-jayson-papeau-i-a-suparat-pe-fanii-celor-de-la-uta-care-s-au-referit-indirect-si-la-adi-mihalcea-cerem-doar-respect-pentru-prezent-20499983",
-          "publishedAt": "2026-08-08T16:07:08.000Z"
-        }
-      ]
-    },
-    {
-      "id": "declaratii-antrenorul-de-la-csikszereda-descumpanit-dupa-a-patra-infrangere-cons",
-      "title": "DECLARAȚII Antrenorul de la Csikszereda, descumpănit după a patra înfrângere consecutivă: „E tot mai greu!”",
-      "summary": "Csikszereda e departe de forma de anul trecut, iar noul antrenor a rămas fără explicații după a patra înfrângere consecutivă din Superliga. A fost un meci spectaculos cu cinci goluri la Ovidiu. Farul a dat lovitura pe…",
-      "link": "https://www.prosport.ro/fotbal-intern/superliga/istvan-szabo-reactie-farul-csikszereda-20500110",
+      "id": "declaratii-alexandru-musi-le-a-pus-gand-rau-rapidistilor-inaintea-derby-ului-de-",
+      "title": "DECLARAȚII Alexandru Musi le-a pus gând rău rapidiștilor înaintea derby-ului de săptămâna viitoare: „O să fie foc!”",
+      "summary": "Autor al golului care a adus liniștea printre dinamoviști la meciul cu FC Voluntari, Alexandru Musi (22 de ani) le-a pus gând rău rapidiștilor înaintea derby-ului de sâmbătă, din Giulești. Dinamo a urcat pe locul 2 după…",
+      "link": "https://www.prosport.ro/fotbal-intern/superliga/alexandru-musi-gand-rau-rapidisti-derby-20500267",
       "source": "Prosport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/istvan-szabo-reactie-farul-csikszereda.jpg",
-      "publishedAt": "2026-08-08T18:46:06.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Digi Sport"
-      ],
-      "variants": [
-        {
-          "source": "Prosport",
-          "title": "DECLARAȚII Antrenorul de la Csikszereda, descumpănit după a patra înfrângere consecutivă: „E tot mai greu!”",
-          "link": "https://www.prosport.ro/fotbal-intern/superliga/istvan-szabo-reactie-farul-csikszereda-20500110",
-          "publishedAt": "2026-08-08T18:46:06.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "Antrenorul de la Csikszereda a rămas fără explicații, după 2-3 cu Farul: ”Total dezamăgit!”",
-          "link": "https://www.digisport.ro/fotbal/liga-1/antrenorul-de-la-csikszereda-a-ramas-fara-explicatii-dupa-2-3-cu-farul-total-dezamagit-4421141",
-          "publishedAt": "2026-08-08T18:14:28.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "Farul - Csikszereda 3-2. ”Marinarii” au câștigat la Ovidiu, în urma unui meci spectaculos cu ciucanii",
-          "link": "https://www.digisport.ro/fotbal/liga-1/farul-csikszereda-3-2-marinarii-au-castigat-la-ovidiu-in-urma-unui-meci-spectaculos-cu-ciucanii-4420165",
-          "publishedAt": "2026-08-08T17:43:32.000Z"
-        }
-      ]
-    },
-    {
-      "id": "romania-in-finala-campionatului-european-u18-divizia-b-intr-o-atmosfera-de-vis-l",
-      "title": "România, în finala Campionatului European U18, divizia B! Într-o atmosferă de vis la Tulcea, tricolorele au zdrobit Lituania",
-      "summary": "Într-o sală arhiplină la Tulcea, naționala feminină U18 a României a zdrobit Lituania, scor 78-48, și s-a calificat în finala Campionatului European, divizia B. Datorită acestui succes, tricolorele și-au asigurat…",
-      "link": "https://www.gsp.ro/sporturi/baschet/romania-finala-ce-u18-baschet-feminin-divizia-b-968230.html",
-      "source": "GSP",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/08082026/1eb0071f-fd57-4f7e-8d90-3527a890e603.jpg?width=290&height=208",
-      "publishedAt": "2026-08-08T17:34:35.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Digi Sport"
-      ],
-      "variants": [
-        {
-          "source": "GSP",
-          "title": "România, în finala Campionatului European U18, divizia B! Într-o atmosferă de vis la Tulcea, tricolorele au zdrobit Lituania",
-          "link": "https://www.gsp.ro/sporturi/baschet/romania-finala-ce-u18-baschet-feminin-divizia-b-968230.html",
-          "publishedAt": "2026-08-08T17:34:35.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "România U18 s-a calificat în finala Campionatului European! Victorie mare la Tulcea",
-          "link": "https://www.digisport.ro/baschet/romania-u18-s-a-calificat-in-finala-campionatului-european-victorie-mare-la-tulcea-4421085",
-          "publishedAt": "2026-08-08T17:30:09.000Z"
-        }
-      ]
-    },
-    {
-      "id": "psg-antrenament-nu-tocmai-reusit-inainte-de-supercupa-europei-a-marcat-in-minutu",
-      "title": "PSG, antrenament nu tocmai reușit înainte de Supercupa Europei! A marcat în minutul 2, apoi s-a prăbușit",
-      "summary": "Manchester United și Paris Saint-Germain au încheiat la egalitate, scor 1-1, într-un meci amical disputat în orașul suedez Göteborg. Campioana europeană a deschis scorul rapid, în minutul 2, prin Ibrahima Mbaye, însă…",
-      "link": "https://www.gsp.ro/international/campionate/psg-manchester-united-amical-968221.html",
-      "source": "GSP",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/08082026/2bfd2e3e-4640-41de-a480-8e95774285bc.jpg?width=290&height=208",
-      "publishedAt": "2026-08-08T17:26:39.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Digi Sport"
-      ],
-      "variants": [
-        {
-          "source": "GSP",
-          "title": "PSG, antrenament nu tocmai reușit înainte de Supercupa Europei! A marcat în minutul 2, apoi s-a prăbușit",
-          "link": "https://www.gsp.ro/international/campionate/psg-manchester-united-amical-968221.html",
-          "publishedAt": "2026-08-08T17:26:39.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "PSG - Manchester United 1-1. Amical de cinci stele pentru Regina Europei, înainte de Supercupa UEFA",
-          "link": "https://www.digisport.ro/fotbal/psg-manchester-united-1-1-amical-de-cinci-stele-pentru-regina-europei-inainte-de-supercupa-uefa-4421007",
-          "publishedAt": "2026-08-08T17:19:46.000Z"
-        }
-      ]
-    },
-    {
-      "id": "darius-olaru-primul-gol-in-belgia-romanul-a-marcat-si-a-contribuit-la-o-mare-umi",
-      "title": "Darius Olaru, primul GOL în Belgia! Românul a marcat și a contribuit la o mare umilință",
-      "summary": "Darius Olaru, primul GOL în Belgia! Românul a marcat și a contribuit la o mare umilință",
-      "link": "https://www.digisport.ro/fotbal/darius-olaru-primul-gol-in-belgia-romanul-a-marcat-si-a-contribuit-la-o-mare-umilinta-4421309",
-      "source": "Digi Sport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwMSUyRjI4NzY1MjlfMjg3NjUyOV9v/bGFydS5wbmcmaGFzaD00ZDAyYWMwODcyMzY4MjhkNzU3MDRiMGJlM2Q4ZjA0OA==.png",
-      "publishedAt": "2026-08-08T20:43:24.000Z",
+      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/alexandru-musi-gand-rau-rapidisti-derby-1400x785.jpg",
+      "publishedAt": "2026-08-08T21:56:28.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "estrela-sporting-0-1-acum-dgs-3-gool-cele-mai-tari-meciuri-din-portugalia-se-vad",
-      "title": "Estrela - Sporting 0-1, ACUM, DGS 3. GOOL! Cele mai tari meciuri din Portugalia se văd la Digi Sport!",
-      "summary": "Estrela - Sporting 0-1, ACUM, DGS 3. GOOL! Cele mai tari meciuri din Portugalia se văd la Digi Sport!",
-      "link": "https://www.digisport.ro/fotbal/portugalia/estrela-sporting-live-video-2230-dgs-3-cele-mai-tari-meciuri-din-portugalia-se-vad-la-digi-sport-4420527",
-      "source": "Digi Sport",
+      "id": "darius-olaru-primul-gol-pentru-union-sg-a-prins-un-voleu-superb-gsp",
+      "title": "Darius Olaru, primul GOL pentru Union SG! A prins un voleu superb",
+      "summary": "Darius Olaru (28 de ani), fostul căpitan al celor de la FCSB, a marcat primul său gol pentru Union Saint-Gilloise, în victoria categorică obținută de vicecampioana Belgiei pe terenul lui Westerlo, scor 5-1, în prima…",
+      "link": "https://www.gsp.ro/international/campionate/darius-olaru-primul-gol-pentru-union-saint-gilloise-968295.html",
+      "source": "GSP",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYwOCUyRjI4OTc5OTJfMjg5Nzk5Ml9l/c3RyZWxhLXNwb3J0aW5nLmpwZyZoYXNo/PWMyOWI0MDJlNWI1NjBjYTgwOTU1ZTMzZjQzOTkzYmQx.jpg",
-      "publishedAt": "2026-08-08T20:41:52.000Z",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/08082026/a79da0dd-6d41-4909-a437-89e51209c110.jpg?width=290&height=208",
+      "publishedAt": "2026-08-08T21:55:53.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "s-a-reintors-fortareata-cainilor-dinamo-da-recital-pentru-a-doua-oara-consecutiv",
-      "title": "S-a reîntors „Fortăreața câinilor” » Dinamo dă RECITAL pentru a doua oară consecutiv pe „Arc” și merge în Giulești cu moral maxim",
-      "summary": "Dinamo s-a impus contra celor de la FC Voluntari, scor 4-0, în partida ce închide ziua de sâmbătă în runda #4 de Superligă. Danny Armstrong, dintr-un penalty obținut de Alex Musi, a deschis scorul în prima repriză…",
-      "link": "https://www.gsp.ro/fotbal/liga-1/live-dinamo-fc-voluntari-etapa-4-superliga-968084.html",
+      "id": "mercato-in-europa-toate-transferurile-verii-sunt-aici-yan-diomande-a-semnat-cu-r",
+      "title": "MERCATO în Europa. Toate transferurile verii sunt AICI! Yan Diomande a semnat cu Real Madrid",
+      "summary": "Perioada de MERCATO din vara lui 2026 se anunță a fi una spectaculoasă, cu multe transferuri de răsunet.",
+      "link": "https://www.digisport.ro/fotbal/mercato-in-europa-toate-transferurile-verii-sunt-aici-yan-diomande-a-semnat-cu-real-madrid-4292761",
+      "source": "Digi Sport",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDYl/MkYwMyUyRjI3NTg5OTNfMjc1ODk5M19z/aXRlMy5wbmcmaGFzaD1hMzdkNDFhN2E1MDU0YzJkMTkzOGU5MTVhNTllMGM1Mg==.png",
+      "publishedAt": "2026-08-08T21:45:33.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "andrei-nicolescu-anunta-doua-transferuri-la-dinamo-s-ar-putea-sa-avem-mai-multe-",
+      "title": "Andrei Nicolescu anunță două transferuri la Dinamo: „S-ar putea să avem mai multe opțiuni cu Rapid”",
+      "summary": "Dinamo - FC Voluntari 4-0. Andrei Nicolescu, președintele „câinilor”, a tras concluziile după victoria categorică obținută în fața ilfovenilor. Oficialul a anunțat că roș-albii mai caută doi jucători, un mijlocaș…",
+      "link": "https://www.gsp.ro/fotbal/liga-1/andrei-nicolescu-reactie-dinamo-voluntari-968294.html",
       "source": "GSP",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/08082026/d9c6389e-bb85-4a23-aa54-0f5f61169497.jpeg?width=290&height=208",
-      "publishedAt": "2026-08-08T20:34:09.000Z",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/08082026/610ca633-dcf8-472f-a4b6-5ba8db84b7ba.jpg?width=290&height=208",
+      "publishedAt": "2026-08-08T21:43:43.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
