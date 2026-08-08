@@ -67,6 +67,20 @@ pe 6 august 2026: macheta din `public/img/fb/post.jpg`, trimisă către Make în
 `imagine`. Se schimbă înlocuind fișierul din repo, fără să umbli în Make. Nu scoate
 câmpul și nu-l face condiționat — e o regulă permanentă, nu o probă.
 
+**Postarea e cu fotografie, nu cu cartonaș de link.** Pe 8 august 2026 proprietarul a
+cerut ca linkul direct să fie înlocuit de imagine: postarea are macheta, textul de până
+acum și adresa site-ului scrisă în text (ultimul rând, footer-ul din config → `post`).
+Facebook nu le poate avea pe amândouă — o postare e ori fotografie, ori cartonaș de
+link — de aceea payload-ul din `digest.yml` **nu mai trimite câmpul `link`** și modulul
+din Make e `facebook-pages:CreatePostWithPhotos` (nu `CreatePost`), cu `photos[0]` de
+tip URL legat de `{{1.imagine}}`. Dacă pui `link` la loc și îl mapezi în Make, imaginea
+dispare. Blueprint-ul vechi e în istoricul commit-ului „postare cu imagine, fără link".
+
+Consecință de care să ții cont: imaginea o **descarcă Facebook** de la
+`https://buzau365.ro/img/fb/post.jpg`. Dacă domeniul sau Pages pică, postarea eșuează
+de tot — nu mai cade elegant pe text simplu. Alerta pe Telegram și issue-ul cu textul
+acoperă cazul: se poate publica manual.
+
 **Proiectul are de acum un serviciu extern și secrete.** Până la 26 iulie 2026 nu avea
 niciunul, iar documentația spunea asta explicit. Postarea pe Facebook se face prin Make
 (plan gratuit), care deține conexiunea cu pagina.

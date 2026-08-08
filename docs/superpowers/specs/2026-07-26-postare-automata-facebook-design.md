@@ -58,12 +58,20 @@ poate fi citită și modificată. Make e poștaș, nu redactor.
 
 Trei module:
 
-1. **Webhook (custom)** — primește `POST` cu `{ "text": "..." }`. URL-ul generat de Make
-   este un secret: cine îl are poate posta pe pagină. Se regenerează din Make dacă scapă.
-2. **Facebook Pages → Create a Post** — pagina se alege o singură dată, la crearea
-   conexiunii, dintr-o listă derulantă. Rămâne salvată în scenariu. GitHub nu trimite și
-   nu cunoaște identitatea paginii.
+1. **Webhook (custom)** — primește `POST` cu `{ "text": "...", "imagine": "..." }`.
+   URL-ul generat de Make este un secret: cine îl are poate posta pe pagină. Se
+   regenerează din Make dacă scapă.
+2. **Facebook Pages → Create a Post with Photos** — `message` ia `{{1.text}}`, iar
+   `photos[0]` e de tip URL și ia `{{1.imagine}}`. Pagina se alege o singură dată, la
+   crearea conexiunii, dintr-o listă derulantă. Rămâne salvată în scenariu. GitHub nu
+   trimite și nu cunoaște identitatea paginii.
 3. **Webhook response** — obligatoriu, nu opţional.
+
+**De ce nu „Create a Post".** Modulul acela n-are câmp de fotografie: are `link`, iar
+Facebook face din el un cartonaș cu previzualizare. Până pe 8 august 2026 asta se
+publica. Proprietarul a cerut fotografie în locul cartonașului, iar adresa site-ului
+rămâne scrisă în text. O postare Facebook e ori una, ori alta — nu amândouă — deci
+`link` a fost scos din payload cu totul.
 
 **De ce al treilea modul.** Un webhook Make răspunde implicit `Accepted` în clipa în care
 primeşte cererea, înainte să ruleze scenariul. Fără modulul de răspuns, GitHub ar primi
