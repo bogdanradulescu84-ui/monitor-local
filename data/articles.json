@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T04:47:51.153Z",
+  "generatedAt": "2026-08-19T07:01:33.547Z",
   "site": {
     "name": "Buzău365",
     "nameEmphasis": "365",
@@ -14,7 +14,7 @@
     "disclosure": ""
   },
   "editorialFiltered": 0,
-  "editorialPromoted": 0,
+  "editorialPromoted": 1,
   "sections": [
     {
       "id": "local",
@@ -159,14 +159,14 @@
     }
   ],
   "counts": {
-    "local": 11,
+    "local": 9,
     "politica": 1,
     "administratie": 5,
     "economie": 1,
-    "comunitate": 14,
+    "comunitate": 8,
     "national": 30,
     "sport": 12,
-    "diverse": 44
+    "diverse": 42
   },
   "sources": [
     {
@@ -177,9 +177,9 @@
     },
     {
       "feed": "Buzău Media",
-      "ok": true,
-      "kept": 15,
-      "error": null
+      "ok": false,
+      "kept": 0,
+      "error": "fetch failed"
     },
     {
       "feed": "Știri de Buzău",
@@ -214,7 +214,7 @@
     {
       "feed": "Observatorul Buzoian",
       "ok": true,
-      "kept": 5,
+      "kept": 6,
       "error": null
     },
     {
@@ -232,7 +232,7 @@
     {
       "feed": "DC News",
       "ok": true,
-      "kept": 25,
+      "kept": 24,
       "error": null
     },
     {
@@ -274,66 +274,95 @@
   ],
   "articles": [
     {
-      "id": "apa-cu-portia-in-satele-de-pe-valea-slanicului-fantanile-cu-apa-buna-salvarea-pe",
-      "title": "Apa, cu porția în satele de pe Valea Slănicului. Fântânile cu „apă bună”, salvarea pentru localnicii norocoși",
-      "summary": "Compania de Apă Buzău a instituit, începând de luni, 17 august, program de furnizare a apei pentru o parte dintre localitățile de pe Valea Slănicului, în contextul consumului mare din ultimele două săptămâni. În plină…",
-      "link": "https://www.campusbuzau.ro/apa-cu-portia-in-satele-de-pe-valea-slanicului-fantanile-cu-apa-buna-salvarea-pentru-localnicii-norocosi/",
-      "source": "Campus TV Buzău",
-      "scope": "local",
+      "id": "cum-au-incercat-usr-si-pnl-sa-i-salveze-pe-ilie-bolojan-si-simina-tanasescu-se-c",
+      "title": "Cum au încercat USR și PNL să-i salveze pe Ilie Bolojan și Simina Tănăsescu. Se cere convocarea unei ședințe extraordinare a Senatului",
+      "summary": "Comisia de Constituționalitate a Senatului a decis marți să ancheteze întâlnirea secretă dintre premierul demis Ilie Bolojan și președinta CCR, Simina Tănăsescu, iar Biroul Permanent al Senatului a trimis la vot în plen…",
+      "link": "https://www.dcnews.ro/cum-au-incercat-usr-si-pnl-sa-i-salveze-pe-ilie-bolojan-si-simina-tanasescu-se-cere-convocarea-unei-sedinte-extraordinare-a-senatului_1076856.html",
+      "source": "DC News",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/19/cum-au-incercat-usr-si-pnl-sa-i-salveze-pe-ilie-bolojan-si-simina-tanasescu-se-cere-convocarea-unei-sedinte-extraordinare-a-senatului-5438019.jpg",
+      "publishedAt": "2026-08-19T05:23:00.000Z",
+      "promoted": true,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "doua-cutremure-in-romania-noaptea-trecuta-ce-magnitudini-au-avut-si-unde-s-au-pr",
+      "title": "Două cutremure în România, noaptea trecută. Ce magnitudini au avut şi unde s-au produs",
+      "summary": "Două cutremure, cu magnitudini de 3,3 şi 2,9 pe Richter, s-au produs în ultimele 12 ore în judeţele Vrancea şi Buzău, potrivit datelor afişate de Institutul Naţional de Cercetare-Dezvoltare pentru Fizica...",
+      "link": "https://www.antena3.ro/actualitate/locale/doua-cutremure-in-romania-noaptea-trecuta-ce-magnitudini-au-avut-si-unde-s-au-produs-799956.html",
+      "source": "Antena 3",
+      "scope": "tara",
       "bucket": "buzau",
       "section": "diverse",
-      "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/08/femeie-cernatesti.jpg",
-      "publishedAt": "2026-08-18T16:43:00.000Z",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/doua-cutremure-in-romania-noaptea-trecuta-ce-magnitudini-au-avut-si-unde-s-au-produs-1094365.jpg",
+      "publishedAt": "2026-08-19T06:23:00.000Z",
       "promoted": false,
       "coverage": 2,
       "alsoIn": [
-        "Buzău Media"
+        "Digi24"
       ],
       "variants": [
         {
-          "source": "Campus TV Buzău",
-          "title": "Apa, cu porția în satele de pe Valea Slănicului. Fântânile cu „apă bună”, salvarea pentru localnicii norocoși",
-          "link": "https://www.campusbuzau.ro/apa-cu-portia-in-satele-de-pe-valea-slanicului-fantanile-cu-apa-buna-salvarea-pentru-localnicii-norocosi/",
-          "publishedAt": "2026-08-18T16:43:00.000Z"
+          "source": "Antena 3",
+          "title": "Două cutremure în România, noaptea trecută. Ce magnitudini au avut şi unde s-au produs",
+          "link": "https://www.antena3.ro/actualitate/locale/doua-cutremure-in-romania-noaptea-trecuta-ce-magnitudini-au-avut-si-unde-s-au-produs-799956.html",
+          "publishedAt": "2026-08-19T06:23:00.000Z"
         },
         {
-          "source": "Buzău Media",
-          "title": "Compania de Apă Buzău: 𝐀𝐩𝐚 𝐧𝐮 𝐞𝐬𝐭𝐞 𝐨 𝐫𝐞𝐬𝐮𝐫𝐬𝐚̆ 𝐢𝐧𝐞𝐩𝐮𝐢𝐳𝐚𝐛𝐢𝐥𝐚̆!",
-          "link": "https://buzaumedia.ro/stiri-buzau/compania-de-apa-buzau-%f0%9d%90%80%f0%9d%90%a9%f0%9d%90%9a-%f0%9d%90%a7%f0%9d%90%ae-%f0%9d%90%9e%f0%9d%90%ac%f0%9d%90%ad%f0%9d%90%9e-%f0%9d%90%a8-%f0%9d%90%ab%f0%9d%90%9e%f0%9d%90%ac%f0%9d%90%ae/",
-          "publishedAt": "2026-08-17T17:24:05.000Z"
+          "source": "Digi24",
+          "title": "Două cutremure s-au produs în ultimele 12 ore în România",
+          "link": "https://www.digi24.ro/stiri/actualitate/doua-cutremure-s-au-produs-in-ultimele-12-ore-in-romania-3911975",
+          "publishedAt": "2026-08-19T06:16:20.000Z"
         }
       ]
     },
     {
-      "id": "zeci-de-copii-din-judetul-buzau-aflati-in-situatii-dificile-au-plecat-in-tabere-",
-      "title": "Zeci de copii, din județul Buzău, aflați în situații dificile, au plecat în tabere organizate de Consiliul Județean!",
-      "summary": "Zeci de copii, din județul Buzău, aflați în situații dificile, dar care au rezultate bune la învățătură, au șansa de a petrece câteva zile de vis într-una dintre cele mai pitorești zone ale județului, Colți. Consiliul…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-zeci-de-copii-din-judetul-buzau-aflati-in-situatii-dificile-au-plecat-in-tabere-organizate-de-consiliul-judetean/",
-      "source": "Buzău Media",
+      "id": "closer-o-poveste-despre-iubire-dorinta-si-adevar-la-biaf-opinia-buzau",
+      "title": "„CLOSER”, o poveste despre iubire, dorință și adevăr, la BIAF",
+      "summary": "Spectacolul „CLOSER”, de Patrick Marber, propune publicului o incursiune intensă în universul fragil al relațiilor de iubire, acolo unde atracția, gelozia, dorința și trădarea se întâlnesc cu nevoia de adevăr. Montarea…",
+      "link": "https://opiniabuzau.ro/closer-o-poveste-despre-iubire-dorinta-si-adevar-la-biaf/",
+      "source": "Opinia Buzău",
       "scope": "local",
       "bucket": "buzau",
-      "section": "administratie",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/tabara-4.jpg",
-      "publishedAt": "2026-08-18T08:28:27.000Z",
+      "section": "diverse",
+      "image": "",
+      "publishedAt": "2026-08-19T06:30:54.000Z",
       "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Observatorul Buzoian"
-      ],
-      "variants": [
-        {
-          "source": "Buzău Media",
-          "title": "Zeci de copii, din județul Buzău, aflați în situații dificile, au plecat în tabere organizate de Consiliul Județean!",
-          "link": "https://buzaumedia.ro/stiri-buzau/fwd-zeci-de-copii-din-judetul-buzau-aflati-in-situatii-dificile-au-plecat-in-tabere-organizate-de-consiliul-judetean/",
-          "publishedAt": "2026-08-18T08:28:27.000Z"
-        },
-        {
-          "source": "Observatorul Buzoian",
-          "title": "40 de copii cu rezultate bune la învățătură au plecat în tabere gratuite la Colți",
-          "link": "https://www.observatorulbuzoian.ro/40-de-copii-cu-rezultate-bune-la-invatatura-au-plecat-in-tabere-gratuite-la-colti/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=40-de-copii-cu-rezultate-bune-la-invatatura-au-plecat-in-tabere-gratuite-la-colti",
-          "publishedAt": "2026-08-17T09:57:50.000Z"
-        }
-      ]
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "interviurile-observatorului-se-fac-si-la-despre-rugby-observatorul-buzoian",
+      "title": "„Interviurile Observatorului” se fac și la/despre rugby",
+      "summary": "https://www.observatorulbuzoian.ro/feed/ Știam deja de ani buni că Adrian Diaconu face două sporturi simultan. Tatăl lui ( Cristi ) îmi umplea în fiecare vară telefonul cu clipuri de la meciurile lui ” Tarzan „, așa cum…",
+      "link": "https://www.observatorulbuzoian.ro/interviurile-observatorului-se-fac-si-la-despre-rugby/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=interviurile-observatorului-se-fac-si-la-despre-rugby",
+      "source": "Observatorul Buzoian",
+      "scope": "local",
+      "bucket": "buzau",
+      "section": "diverse",
+      "image": "",
+      "publishedAt": "2026-08-19T06:22:48.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "restrictii-de-trafic-in-municipiul-buzau-pentru-parada-diviziei-2-infanterie-get",
+      "title": "Restricții de trafic în municipiul Buzău pentru parada Diviziei 2 Infanterie Getica. Care sunt zonele afectate și când",
+      "summary": "Șoferii din Buzău vor trebui să-și planifice cu atenție traseele astăzi și mâine. Pentru a permite desfășurarea festivităților dedicate împlinirii a 110 ani de la înființarea Armatei a 2-a, structură ale cărei tradiții…",
+      "link": "https://sansanews.ro/restrictii-de-trafic-in-municipiul-buzau-pentru-parada-diviziei-2-infanterie-getica-care-sunt-zonele-afectate-si-cand/",
+      "source": "Șansa News",
+      "scope": "local",
+      "bucket": "buzau",
+      "section": "local",
+      "image": "https://sansanews.ro/wp-content/uploads/2024/11/407373806_669196108700210_162614591477439619_n-1024x683.jpg",
+      "publishedAt": "2026-08-19T05:15:48.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
     },
     {
       "id": "primaria-municipiului-buzau-ii-invita-pe-copiii-din-municipiu-alaturi-de-parinti",
@@ -426,80 +455,6 @@
       "alsoIn": []
     },
     {
-      "id": "cand-va-fi-gata-centrala-de-la-nehoiasu-2-care-este-stadiul-lucrarilor-opinia-bu",
-      "title": "Când va fi gata centrala de la Nehoiașu 2. Care este stadiul lucrărilor",
-      "summary": "Centrala Hidroelectrică Nehoiașu 2 ar putea fi pusă în funcțiune în anul 2029, după ce Ministerul Mediului Apelor şi Pădurilor (MMAP) a emis acordul de mediu pentru creşterea ponderii producţiei de energie electrică din…",
-      "link": "https://opiniabuzau.ro/cand-va-fi-gata-centrala-de-la-nehoiasu-2-care-este-stadiul-lucrarilor/",
-      "source": "Opinia Buzău",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-18T21:08:24.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "primaria-ramnicu-sarat-informare-buzau-media",
-      "title": "Primăria Râmnicu Sărat: INFORMARE",
-      "summary": "𝟮𝟭 – 𝟮𝟯 𝗮𝘂𝗴𝘂𝘀𝘁 – 𝗧𝗲𝗮𝘁𝗿𝘂, 𝗳𝗶𝗹𝗺𝗲, 𝗱𝗲𝘀𝗲𝗻𝗲 ș𝗶 𝗮𝗰𝘁𝗶𝘃𝗶𝘁ăț𝗶 𝗚𝗥𝗔𝗧𝗨𝗜𝗧𝗘! Primăria Municipiului Râmnicu Sărat",
-      "link": "https://buzaumedia.ro/stiri-buzau/primaria-ramnicu-sarat-informare-15/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "",
-      "publishedAt": "2026-08-18T17:26:11.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": [],
-      "variants": [
-        {
-          "source": "Buzău Media",
-          "title": "Primăria Râmnicu Sărat: INFORMARE",
-          "link": "https://buzaumedia.ro/stiri-buzau/primaria-ramnicu-sarat-informare-15/",
-          "publishedAt": "2026-08-18T17:26:11.000Z"
-        },
-        {
-          "source": "Buzău Media",
-          "title": "ZILELE MUNICIPIULUI RÂMNICU SĂRAT – 21–23 AUGUST Piațeta Primăriei – ora 17:00",
-          "link": "https://buzaumedia.ro/stiri-buzau/zilele-municipiului-ramnicu-sarat-21-23-august-piateta-primariei-ora-1700/",
-          "publishedAt": "2026-08-17T16:19:46.000Z"
-        }
-      ]
-    },
-    {
-      "id": "florin-ceparu-ai-o-strategie-atunci-e-momentul-sa-o-pui-la-incercare-buzau-media",
-      "title": "Florin Ceparu: Ai o strategie? Atunci e momentul să o pui la încercare!",
-      "summary": "CHESS TOURNAMENT Ai o strategie? Atunci e momentul să o pui la încercare! Vino să joci șah, provoacă-ți prietenii și arată-ne ce mutări poți face. 26 august 2026 Ora 17:00 Europe Direct Râmnicu Sărat Locuri limitate!…",
-      "link": "https://buzaumedia.ro/stiri-buzau/florin-ceparu-ai-o-strategie-atunci-e-momentul-sa-o-pui-la-incercare/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-18T17:26:02.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "compania-de-apa-buzau-intrerupere-temporara-a-furnizarii-apei-potabile-p-t-30-mu",
-      "title": "Compania de Apă Buzău: Întrerupere temporară a furnizării apei potabile -P.T. 30, Municipiul Buzău",
-      "summary": "Mâine, 18.08.2026, în intervalul orar 09.00-14.00, va fi sistată furnizarea apei potabile la blocurile arondate P.T. 30, zona Bulevardului Nicolae Bălcescu. Întreruperea survine incidentului produs în această după…",
-      "link": "https://buzaumedia.ro/stiri-buzau/compania-de-apa-buzau-intrerupere-temporara-a-furnizarii-apei-potabile-p-t-30-municipiul-buzau/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "",
-      "publishedAt": "2026-08-18T17:25:52.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
       "id": "primele-benzinarii-de-pe-autostrada-moldovei-vor-fi-langa-ramnicu-sarat-stiri-de",
       "title": "Primele benzinării de pe Autostrada Moldovei vor fi lângă Râmnicu Sărat",
       "summary": "Articolul Primele benzinării de pe Autostrada Moldovei vor fi lângă Râmnicu Sărat se poate citi integral pe Stiri de Buzau . Primele benzinării de pe Autostrada Moldovei, A7, vor fi amenajate în apropiere de Râmnicu…",
@@ -554,6 +509,21 @@
       "bucket": "buzau",
       "section": "diverse",
       "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/08/smochine-3.jpg",
+      "publishedAt": "2026-08-18T16:43:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "apa-cu-portia-in-satele-de-pe-valea-slanicului-fantanile-cu-apa-buna-salvarea-pe",
+      "title": "Apa, cu porția în satele de pe Valea Slănicului. Fântânile cu „apă bună”, salvarea pentru localnicii norocoși",
+      "summary": "Compania de Apă Buzău a instituit, începând de luni, 17 august, program de furnizare a apei pentru o parte dintre localitățile de pe Valea Slănicului, în contextul consumului mare din ultimele două săptămâni. În plină…",
+      "link": "https://www.campusbuzau.ro/apa-cu-portia-in-satele-de-pe-valea-slanicului-fantanile-cu-apa-buna-salvarea-pentru-localnicii-norocosi/",
+      "source": "Campus TV Buzău",
+      "scope": "local",
+      "bucket": "buzau",
+      "section": "diverse",
+      "image": "https://www.campusbuzau.ro/wp-content/uploads/2026/08/femeie-cernatesti.jpg",
       "publishedAt": "2026-08-18T16:43:00.000Z",
       "promoted": false,
       "coverage": 1,
@@ -615,36 +585,6 @@
       "section": "diverse",
       "image": "https://stiridebuzau.ro/wp-content/uploads/2026/08/femeie-retinuta-arestata-300x200.png",
       "publishedAt": "2026-08-18T14:17:17.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "fragmentar-25-august-ora-17-00-la-centrul-muzeal-i-c-bratianu-buzau-media",
-      "title": "„Fragmentar”, 25 august, ora 17:00, la Centrul Muzeal „I. C. Brătianu”",
-      "summary": "Costache Daniel : Pe 25 august, de la ora 17:00, vă invit la Centrul Muzeal „I. C. Brătianu” pentru vernisajul expoziției de pictură „Fragmentar”, semnată de artistul buzoian George Stanciu. Este un proiect expozițional…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fragmentar-25-august-ora-1700-la-centrul-muzeal-i-c-bratianu/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/775799258_122230642100362419_117466084806267785_n.jpg",
-      "publishedAt": "2026-08-18T14:05:22.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "felicitari-tuturor-si-mult-succes-in-noul-an-scolar-buzau-media",
-      "title": "Felicitări tuturor și mult succes în noul an școlar!",
-      "summary": "Dragoș Voicu: Am avut bucuria să îi premiem pe elevii Școlii Gimnaziale Siriu care, prin muncă, seriozitate și perseverență, au obținut rezultate foarte bune la învățătură. Pentru mine, aceste premii nu înseamnă doar…",
-      "link": "https://buzaumedia.ro/stiri-buzau/felicitari-tuturor-si-mult-succes-in-noul-an-scolar/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/775445622_1064691909544350_1610416498775691919_n.jpg",
-      "publishedAt": "2026-08-18T13:53:27.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -770,66 +710,6 @@
       "alsoIn": []
     },
     {
-      "id": "si-at-buzau-media",
-      "title": "𝗚𝗥𝗔𝗧𝗨𝗜𝗧𝗘 – 𝗧𝗲𝗮𝘁𝗿𝘂, 𝗳𝗶𝗹𝗺𝗲, 𝗱𝗲𝘀𝗲𝗻𝗲 și 𝗮𝗰𝘁𝗶𝘃𝗶𝘁ăț𝗶!",
-      "summary": "VINERI PENTRU COPII – 17:00 – Filmul „Pokémon – Detectivul Pikachu” – 19:00 – Teatru pentru copii „Colțișor” PENTRU ADOLESCENȚI ȘI ADULȚI 17:00 – Expoziție fotografie de platou Theodor Tudose – „Nebunul” SÂMBĂTĂ PENTRU…",
-      "link": "https://buzaumedia.ro/stiri-buzau/%f0%9d%97%9a%f0%9d%97%a5%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%a8%f0%9d%97%9c%f0%9d%97%a7%f0%9d%97%98-%f0%9d%97%a7%f0%9d%97%b2%f0%9d%97%ae%f0%9d%98%81%f0%9d%97%bf%f0%9d%98%82-%f0%9d%97%b3%f0%9d%97%b6/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/776627923_28547487414857644_4321816335674224147_n.jpg",
-      "publishedAt": "2026-08-18T08:35:09.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "sute-de-buzoieni-solicita-sa-li-se-returneze-contributiile-la-asigurarile-de-san",
-      "title": "Sute de buzoieni solicită să li se returneze contribuțiile la asigurările de sănătate, deși au pensii de peste 3.000 de lei!",
-      "summary": "Avalanșă de cereri la Casa de Pensii Buzău din partea unor pensionari cu venituri de peste 3.000 de lei, care solicită să li se returneze contribuțiile la asigurările de sănătate. Potrivit reprezentanților Casei de…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-sute-de-buzoieni-solicita-sa-li-se-returneze-contributiile-la-asigurarile-de-sanatate-desi-au-pensii-de-peste-3-000-de-lei/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "diverse",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/contributii.jpg",
-      "publishedAt": "2026-08-18T08:28:18.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "noul-cimitir-din-buzau-gata-de-deschidere-buzau-media",
-      "title": "Noul cimitir, din Buzău, gata de deschidere!",
-      "summary": "Cimitirul Municipal, din Buzău, este gata de deschidere. Potrivit reprezentanților Primăriei Buzău, recepția finală a obiectivului, din cartierul Micro XIV, va fi făcută în următoarele zile. Cimitirul va primi denumirea…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-noul-cimitir-din-buzau-gata-de-deschidere/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/cimitir.jpg",
-      "publishedAt": "2026-08-18T08:27:53.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "metalul-buzau-victorie-pe-terenul-celor-de-la-cs-dinamo-buzau-media",
-      "title": "Metalul Buzău, victorie pe terenul celor de la CS Dinamo!",
-      "summary": "Metalul Buzău rămâne neînvinsă, după trei etape. Buzoienii au bifat, în weekend, a nouă victorie, de această dată pe terenul celor de la CS Dinamo. Echipa din Crâng, s-a impus cu 1-0, după un joc pe care l-au avut sub…",
-      "link": "https://buzaumedia.ro/stiri-buzau/fwd-metalul-buzau-victorie-pe-terenul-celor-de-la-cs-dinamo/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/metalul-2.jpg",
-      "publishedAt": "2026-08-18T08:27:12.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
       "id": "razie-pe-bulevardele-din-buzau-masini-cu-probleme-grave-scoase-din-trafic-foto-s",
       "title": "Razie pe bulevardele din Buzău. Mașini cu probleme grave, scoase din trafic (FOTO)",
       "summary": "Mașini zgomotoase, modificări făcute după bunul plac și defecțiuni tehnice care pot pune în pericol siguranța în trafic. Este ceea ce au găsit polițiștii rutieri în timpul unei acțiuni de control desfășurate împreună cu…",
@@ -890,36 +770,6 @@
       "alsoIn": []
     },
     {
-      "id": "ajf-buzau-incepe-o-noua-scoala-de-arbitri-organizata-de-comisia-judeteana-de-arb",
-      "title": "AJF Buzău: Începe o nouă școală de arbitri organizată de Comisia Județeană de Arbitri!",
-      "summary": "Dacă ai între 15 și 35 de ani, ești pasionat de sport și dorești să devii parte a lumii fotbalului dintr-o perspectivă diferită, acum ai ocazia să te înscrii la școala de arbitri. Pe 11 SEPTEMBRIE,, Comisia Județeană de…",
-      "link": "https://buzaumedia.ro/stiri-buzau/ajf-buzau-incepe-o-noua-scoala-de-arbitri-organizata-de-comisia-judeteana-de-arbitri-6/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "local",
-      "image": "",
-      "publishedAt": "2026-08-17T17:24:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "florin-ceparu-csm-ramnicu-sarat-1-castiga-cea-de-a-patra-editie-a-ramnicu-sarat-",
-      "title": "Florin Ceparu: CSM Râmnicu Sărat 1 câștigă cea de-a patra ediție a Râmnicu Sărat Beach Volleyball Open!",
-      "summary": "Echipa formată din Dragoș Răileanu – Andrei Scarlat a învins l în finală CSM 2, compusă din Dragoș Udrea – Marius Dorojan. Pe locurile trei și patru s-au clasat juniorii de la CSS Râmnicu Sărat! O întrecere de care…",
-      "link": "https://buzaumedia.ro/stiri-buzau/florin-ceparu-csm-ramnicu-sarat-1-castiga-cea-de-a-patra-editie-a-ramnicu-sarat-beach-volleyball-open/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/774803700_28392986643651331_4847836251233825_n.jpg",
-      "publishedAt": "2026-08-17T17:23:51.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
       "id": "avere-de-600-000-de-euro-din-exploatarea-iubitei-tanar-de-23-de-ani-saltat-de-po",
       "title": "Avere de 600.000 de euro din exploatarea „iubitei”. Tânăr de 23 de ani, săltat de polițiști de la o terasă din Buzău",
       "summary": "Un buzoian de 23 de ani a ajuns în arestul IPJ Buzău după ce ar fi determinat o tânără de aceeași vârstă să practice prostituția. Potrivit anchetatorilor, individul fi exploatat-o timp de 3 ani și și-ar fi însușit cea…",
@@ -964,21 +814,6 @@
           "publishedAt": "2026-08-17T14:02:08.000Z"
         }
       ]
-    },
-    {
-      "id": "comic-7-b-festival-de-teatru-buzau-international-arts-festival-buzau-media",
-      "title": "𝐏𝐑𝐄𝐌𝐈𝐄𝐑𝐀̆ 𝐍𝐀𝐓̦𝐈𝐎𝐍𝐀𝐋𝐀̆ 𝐋𝐀 𝐅𝐄𝐒𝐓𝐈𝐕𝐀𝐋𝐔𝐋 𝐈𝐍𝐓𝐄𝐑𝐍𝐀𝐓̦𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐓𝐄𝐀𝐓𝐑𝐔 𝐈𝐍𝐃𝐄𝐏𝐄𝐍𝐃𝐄𝐍𝐓 Comic 7 B – Festival de teatru / Buzau International Arts Festival!",
-      "summary": "Festivalul aduce o premieră națională, la ediția 2026, și o face sub semnătura unui regizor italian de excepție! La #BIAF2026 , vă veți întâlni cu artiști care și-au construit cariere impresionante pe marile scene ale…",
-      "link": "https://buzaumedia.ro/stiri-buzau/%f0%9d%90%8f%f0%9d%90%91%f0%9d%90%84%f0%9d%90%8c%f0%9d%90%88%f0%9d%90%84%f0%9d%90%91%f0%9d%90%80%cc%86-%f0%9d%90%8d%f0%9d%90%80%f0%9d%90%93%cc%a6%f0%9d%90%88%f0%9d%90%8e%f0%9d%90%8d%f0%9d%90%80/",
-      "source": "Buzău Media",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://buzaumedia.ro/wp-content/uploads/2026/08/777478949_10237732900119589_6646018635065723160_n.jpg",
-      "publishedAt": "2026-08-17T16:07:58.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
     },
     {
       "id": "tanar-din-buzau-arestat-preventiv-intr-un-dosar-de-proxenetism-ar-fi-obtinut-600",
@@ -1056,6 +891,21 @@
       "alsoIn": []
     },
     {
+      "id": "40-de-copii-cu-rezultate-bune-la-invatatura-au-plecat-in-tabere-gratuite-la-colt",
+      "title": "40 de copii cu rezultate bune la învățătură au plecat în tabere gratuite la Colți",
+      "summary": "https://www.observatorulbuzoian.ro/feed/ Patruzeci de copii din județul Buzău participă, în perioada 17–20 august, la două tabere gratuite organizate de Consiliul Județean Buzău în comuna Colți. Programul se adresează…",
+      "link": "https://www.observatorulbuzoian.ro/40-de-copii-cu-rezultate-bune-la-invatatura-au-plecat-in-tabere-gratuite-la-colti/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=40-de-copii-cu-rezultate-bune-la-invatatura-au-plecat-in-tabere-gratuite-la-colti",
+      "source": "Observatorul Buzoian",
+      "scope": "local",
+      "bucket": "buzau",
+      "section": "administratie",
+      "image": "https://www.observatorulbuzoian.ro/wp-content/uploads/2026/08/Tabere-CJ-Buzau-1-627x420.jpg",
+      "publishedAt": "2026-08-17T09:57:50.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
       "id": "cum-a-ajuns-un-buzoian-de-23-de-ani-sa-faca-avere-pe-spatele-unei-tinere-fapta-l",
       "title": "Cum a ajuns un buzoian de 23 de ani să facă avere pe spatele unei tinere. Fapta l-a trimis direct în spatele gratiilor (VIDEO)",
       "summary": "Avere impresionantă adunată prin șantaj emoțional și exploatare! Este ceea ce a făcut un tânăr de 23 de ani din comuna Vadu Pașii, care a ajuns în spatele gratiilor, fiind acuzat că a obținut nu mai puțin de 600.000 de…",
@@ -1126,21 +976,6 @@
       "section": "local",
       "image": "https://stiridebuzau.ro/wp-content/uploads/2025/10/trotinetess-2-300x169.png",
       "publishedAt": "2026-08-17T06:48:29.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "semnal-de-alarma-de-la-maternitatea-buzau-pericolul-din-spatele-unui-test-de-sar",
-      "title": "Semnal de alarmă de la Maternitatea Buzău! Pericolul din spatele unui test de sarcină pozitiv, dar fără simptome clare. Ce trebuie să le trimită pe femei de urgență la medic",
-      "summary": "Un test de sarcină pozitiv este, fără îndoială, o veste bună pentru orice femeie care își dorește să devină mama. Medicii de la Maternitatea Buzău trag însă un semnal de alarmă cu privire la o problemă care…",
-      "link": "https://sansanews.ro/semnal-de-alarma-de-la-maternitatea-buzau-pericolul-din-spatele-unui-test-de-sarcina-pozitiv-dar-fara-simptome-clare-ce-trebuie-sa-le-trimita-pe-femei-de-urgenta-la-medic/",
-      "source": "Șansa News",
-      "scope": "local",
-      "bucket": "buzau",
-      "section": "comunitate",
-      "image": "https://sansanews.ro/wp-content/uploads/2026/08/sarcina-ectopica.jpg",
-      "publishedAt": "2026-08-17T06:31:38.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -1504,23 +1339,129 @@
       "alsoIn": []
     },
     {
-      "id": "fedorov-il-contesta-pe-zelenski-fostul-ministru-al-apararii-din-ucraina-cere-ale",
-      "title": "Fedorov îl contestă pe Zelenski. Fostul ministru al Apărării din Ucraina cere alegeri prezidențiale în timp de război",
-      "summary": "Fostul ministru al Apărării din Ucraina, Mihailo Fedorov, demis recent şi devenit o figură foarte populară, a provocat o undă de şoc marţi seara, când a cerut organizarea de alegeri în timpul războiului. El a ...",
-      "link": "https://www.antena3.ro/externe/fedorov-il-provoaca-pe-zelenski-fostul-ministru-al-apararii-din-ucraina-cere-alegeri-prezidentiale-in-timp-de-razboi-799946.html",
+      "id": "doctor-in-oncologie-pediatrica-muncitor-necalificat-in-constructii-paradoxul-unu",
+      "title": "Doctor în oncologie pediatrică, muncitor necalificat în construcții: paradoxul unui medic din Tulcea",
+      "summary": "Un tânăr medic specialist în oncologie şi hematologie pediatrică din judeţul Tulcea munceşte de aproape un an în construcţii, ca muncitor necalificat, din cauză că specializarea pe care o are nu îi dă...",
+      "link": "https://www.dcnews.ro/doctor-in-oncologie-pediatrica-muncitor-necalificat-in-constructii-paradoxul-unui-medic-din-tulcea_1076883.html",
+      "source": "DC News",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/19/doctor-in-oncologie-pediatrica-muncitor-necalificat-in-constructii-paradoxul-unui-medic-din-tulcea-5438052.jpg",
+      "publishedAt": "2026-08-19T06:38:00.000Z",
+      "promoted": false,
+      "coverage": 3,
+      "alsoIn": [
+        "Digi24",
+        "Antena 3"
+      ],
+      "variants": [
+        {
+          "source": "DC News",
+          "title": "Doctor în oncologie pediatrică, muncitor necalificat în construcții: paradoxul unui medic din Tulcea",
+          "link": "https://www.dcnews.ro/doctor-in-oncologie-pediatrica-muncitor-necalificat-in-constructii-paradoxul-unui-medic-din-tulcea_1076883.html",
+          "publishedAt": "2026-08-19T06:38:00.000Z"
+        },
+        {
+          "source": "Digi24",
+          "title": "Cum a ajuns un medic din Tulcea, specializat în oncologie şi hematologie pediatrică, să lucreze în construcţii, ca muncitor necalificat",
+          "link": "https://www.digi24.ro/stiri/actualitate/sanatate/cum-a-ajuns-un-medic-din-tulcea-specializat-in-oncologie-si-hematologie-pediatrica-sa-lucreze-in-constructii-ca-muncitor-necalificat-3911995",
+          "publishedAt": "2026-08-19T06:28:05.000Z"
+        },
+        {
+          "source": "Antena 3",
+          "title": "Un medic din Tulcea, specializat în oncologie şi hematologie pediatrică, lucrează de un an în construcţii, ca muncitor necalificat",
+          "link": "https://www.antena3.ro/actualitate/un-medic-din-tulcea-specializat-in-oncologie-si-hematologie-pediatrica-lucreaza-de-un-an-in-constructii-ca-muncitor-necalificat-799961.html",
+          "publishedAt": "2026-08-19T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "cea-mai-cunoscuta-fabrica-de-roboti-umanoizi-din-china-a-dat-lovitura-pe-bursa-a",
+      "title": "Cea mai cunoscută fabrică de roboți umanoizi din China a dat lovitura pe bursă: acțiunile au crescut cu peste 600% în ziua lansării",
+      "summary": "Acțiunile Unitree, cel mai cunoscut producător chinez de roboți umanoizi, au înregistrat miercuri un salt de peste 600% la debutul cotațiilor la Bursa de Valori din Shanghai.Este un moment de cotitură pentru...",
+      "link": "https://www.antena3.ro/externe/mapamond/cea-mai-cunoscuta-fabrica-de-roboti-umanoizi-din-china-a-dat-lovitura-pe-bursa-actiunile-au-crescut-cu-peste-600-in-ziua-lansarii-799962.html",
       "source": "Antena 3",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/fedorov-il-provoaca-pe-zelenski-fostul-ministru-al-apararii-din-ucraina-cere-alegeri-prezidentiale-in-timp-de-razboi-1094345.jpg",
-      "publishedAt": "2026-08-19T04:29:00.000Z",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/cea-mai-cunoscuta-fabrica-de-roboti-umanoizi-din-china-a-dat-lovitura-pe-bursa-actiunile-au-crescut-cu-peste-600-in-ziua-lansarii-1094385.jpg",
+      "publishedAt": "2026-08-19T06:26:00.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "HotNews"
+      ],
+      "variants": [
+        {
+          "source": "Antena 3",
+          "title": "Cea mai cunoscută fabrică de roboți umanoizi din China a dat lovitura pe bursă: acțiunile au crescut cu peste 600% în ziua lansării",
+          "link": "https://www.antena3.ro/externe/mapamond/cea-mai-cunoscuta-fabrica-de-roboti-umanoizi-din-china-a-dat-lovitura-pe-bursa-actiunile-au-crescut-cu-peste-600-in-ziua-lansarii-799962.html",
+          "publishedAt": "2026-08-19T06:26:00.000Z"
+        },
+        {
+          "source": "HotNews",
+          "title": "Cel mai mare producător de roboți umanoizi din lume s-a listat pe bursă în China și a uimit în prima zi de tranzacționare",
+          "link": "https://hotnews.ro/cel-mai-mare-producator-de-roboti-umanoizi-din-lume-s-a-listat-pe-bursa-in-china-si-a-uimit-in-prima-zi-de-tranzactionare-2327833",
+          "publishedAt": "2026-08-19T05:57:38.000Z"
+        }
+      ]
+    },
+    {
+      "id": "blocada-din-stramtoarea-ormuz-continua-cum-afecteaza-lipsa-semnalelor-de-redesch",
+      "title": "Blocada din Strâmtoarea Ormuz continuă: cum afectează lipsa semnalelor de redeschidere fluxul comercial internațional",
+      "summary": "Transportul maritim prin Strâmtoarea Ormuz a încetinit, potrivit datelor publicate miercuri, deoarece majoritatea proprietarilor de nave au evitat această cale navigabilă strategică din cauza lipsei unor semnale clare…",
+      "link": "https://www.digi24.ro/stiri/externe/blocada-din-stramtoarea-ormuz-continua-cum-afecteaza-lipsa-semnalelor-de-redeschidere-fluxul-comercial-international-3911947",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE5JTJGMjkxNTEzOF8yOTE1/MTM4X1RyYW5zcG9ydC1pbi1TdHJhbXRv/YXJlYS1Pcm11el8tRm90by1Qcm9maW1l/ZGlhLmpwZyZoYXNoPWE1ODk3M2E1MmM5ZTgzMTZhYWQwNzMzZGU0MmRhYTI1.jpg",
+      "publishedAt": "2026-08-19T06:09:13.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Antena 3"
+      ],
+      "variants": [
+        {
+          "source": "Digi24",
+          "title": "Blocada din Strâmtoarea Ormuz continuă: cum afectează lipsa semnalelor de redeschidere fluxul comercial internațional",
+          "link": "https://www.digi24.ro/stiri/externe/blocada-din-stramtoarea-ormuz-continua-cum-afecteaza-lipsa-semnalelor-de-redeschidere-fluxul-comercial-international-3911947",
+          "publishedAt": "2026-08-19T06:09:13.000Z"
+        },
+        {
+          "source": "Antena 3",
+          "title": "Doar șase nave au traversat Strâmtoarea Ormuz, marți. Transportatorii evită ruta strategică",
+          "link": "https://www.antena3.ro/externe/doar-sase-nave-au-traversat-stramtoarea-ormuz-marti-transportatorii-evita-ruta-strategica-799951.html",
+          "publishedAt": "2026-08-19T05:51:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "contestare-fara-precedent-pentru-zelenski-fostul-ministru-al-aparariii-mihailo-f",
+      "title": "Contestare fără precedent pentru Zelenski: Fostul ministru al Apărăriii Mihailo Fedorov cere organizarea de alegeri",
+      "summary": "Fostul ministru al Apărării din Ucraina, Mihailo Fedorov, îl vrea plecat pe Zelenski din fruntea Ucrainei.",
+      "link": "https://www.dcnews.ro/contestare-fara-precedent-pentru-zelenski-fostul-ministru-al-aparariii-mihailor-fedorov-cere-organizarea-de-alegeri_1076868.html",
+      "source": "DC News",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/19/contestare-fara-precedent-pentru-zelenski-fostul-ministru-al-aparariii-mihailor-fedorov-cere-organizarea-de-alegeri-5438040.jpeg",
+      "publishedAt": "2026-08-19T05:58:00.000Z",
       "promoted": false,
       "coverage": 3,
       "alsoIn": [
-        "HotNews",
-        "Digi24"
+        "Antena 3",
+        "HotNews"
       ],
       "variants": [
+        {
+          "source": "DC News",
+          "title": "Contestare fără precedent pentru Zelenski: Fostul ministru al Apărăriii Mihailo Fedorov cere organizarea de alegeri",
+          "link": "https://www.dcnews.ro/contestare-fara-precedent-pentru-zelenski-fostul-ministru-al-aparariii-mihailor-fedorov-cere-organizarea-de-alegeri_1076868.html",
+          "publishedAt": "2026-08-19T05:58:00.000Z"
+        },
         {
           "source": "Antena 3",
           "title": "Fedorov îl contestă pe Zelenski. Fostul ministru al Apărării din Ucraina cere alegeri prezidențiale în timp de război",
@@ -1532,224 +1473,277 @@
           "title": "Popularul ministru demis de Zelenski cere alegeri în Ucraina și critică „vechiul sistem”: „Se teme de schimbare”",
           "link": "https://hotnews.ro/popularul-ministru-demis-de-zelenski-cere-alegeri-in-ucraina-si-critica-vechiul-sistem-se-teme-de-schimbare-2327738",
           "publishedAt": "2026-08-18T20:55:18.000Z"
-        },
-        {
-          "source": "Digi24",
-          "title": "Mîhailo Fedorov, ministrul apărării demis de Zelenski, cere alegeri în Ucraina: „Democraţia nu poate fi ţinută ostatică de Rusia”",
-          "link": "https://www.digi24.ro/stiri/externe/fedorov-ministrul-apararii-demis-de-zelenski-cere-alegeri-in-timpul-razboiului-democratia-nu-poate-fi-tinuta-ostatica-de-rusia-3911791",
-          "publishedAt": "2026-08-18T20:39:17.000Z"
         }
       ]
     },
     {
-      "id": "pompierii-au-oprit-interventia-in-ostrovul-babina-din-delta-au-ars-700-de-hectar",
-      "title": "Pompierii au oprit intervenția în ostrovul Babina, din Deltă: Au ars 700 de hectare de vegetație uscată",
-      "summary": "Pompierii au sistat, marți seară, intervenția pentru stingerea incendiului izbucnit în ostrovul Babina, din Delta Dunării.",
-      "link": "https://www.dcnews.ro/pompierii-au-oprit-interventia-in-ostrovul-babina-din-delta-au-ars-700-de-hectare-de-vegetatie-uscata_1076832.html",
+      "id": "nasa-publica-noi-imagini-cu-craterul-unde-s-a-prabusit-o-racheta-spacex-pe-luna-",
+      "title": "NASA publică noi imagini cu craterul unde s-a prăbuşit o rachetă SpaceX pe Lună. Cum au fost realizate fotografiile",
+      "summary": "NASA a publicat noi imagini ale craterului format în urma impactului unei rachete SpaceX cu Luna, produs la începutul acestei luni. Agenția spațială americană a precizat că realizarea imaginilor a reprezentat o…",
+      "link": "https://www.digi24.ro/stiri/sci-tech/nasa-publica-noi-imagini-cu-craterul-unde-s-a-prabusit-o-racheta-spacex-pe-luna-cum-au-fost-realizate-fotografiile-3911905",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE5JTJGMjkxNTA3NF8yOTE1/MDc0X2NyYXRlci1MdW5hLUNvcHkuanBn/Jmhhc2g9YWMxNjAyZmJhYWU4NTg0YmUzN2E2YzQzMzFiMzYzZTQ=.jpg",
+      "publishedAt": "2026-08-19T05:24:44.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "HotNews"
+      ],
+      "variants": [
+        {
+          "source": "Digi24",
+          "title": "NASA publică noi imagini cu craterul unde s-a prăbuşit o rachetă SpaceX pe Lună. Cum au fost realizate fotografiile",
+          "link": "https://www.digi24.ro/stiri/sci-tech/nasa-publica-noi-imagini-cu-craterul-unde-s-a-prabusit-o-racheta-spacex-pe-luna-cum-au-fost-realizate-fotografiile-3911905",
+          "publishedAt": "2026-08-19T05:24:44.000Z"
+        },
+        {
+          "source": "HotNews",
+          "title": "NASA dezvăluie imagini cu craterul lăsat de racheta SpaceX pe Lună, după impactul la 8.700 km/h",
+          "link": "https://hotnews.ro/nasa-dezvaluie-imagini-cu-craterul-lasat-de-racheta-spacex-pe-luna-dupa-impactul-la-8-700-km-h-2327802",
+          "publishedAt": "2026-08-19T05:12:43.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sua-au-suspendat-tarifele-de-50-asupra-marfurilor-din-canada-au-ajuns-la-un-acor",
+      "title": "SUA au suspendat tarifele de 50% asupra mărfurilor din Canada: „Au ajuns la un acord”. Condiția lui Trump",
+      "summary": "Preşedintele SUA, Donald Trump, a anunţat că a suspendat, pentru o perioadă de trei zile, aplicarea tarifelor de 50% asupra mărfurilor din Canada - măsuri care ar fi trebuit să intre în vigoare miercuri -, precizând că…",
+      "link": "https://www.digi24.ro/stiri/externe/sua-a-suspendat-tarifele-de-50-asupra-marfurilor-din-canada-au-ajuns-la-un-acord-conditia-lui-trump-3911893",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMSUyRjI3JTJGMjU1ODcwOV8yNTU4/NzA5X3Byb2ZpbWVkaWEtMDk5NTg1NTU2/Ny1zY2FsZWQtMS5qcGcmaGFzaD05ZGRl/OGEyZDY5ZWU2NTBlOTA4ODVhOTVkNjI1YzVmZg==.jpg",
+      "publishedAt": "2026-08-19T04:49:22.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "HotNews"
+      ],
+      "variants": [
+        {
+          "source": "Digi24",
+          "title": "SUA au suspendat tarifele de 50% asupra mărfurilor din Canada: „Au ajuns la un acord”. Condiția lui Trump",
+          "link": "https://www.digi24.ro/stiri/externe/sua-a-suspendat-tarifele-de-50-asupra-marfurilor-din-canada-au-ajuns-la-un-acord-conditia-lui-trump-3911893",
+          "publishedAt": "2026-08-19T04:49:22.000Z"
+        },
+        {
+          "source": "HotNews",
+          "title": "Trump suspendă taxele vamale de 50% cu care amenințase Canada. „Am ajuns la un acord!”",
+          "link": "https://hotnews.ro/trump-suspenda-taxele-vamale-de-50-cu-care-amenintase-canada-am-ajuns-la-un-acord-2327752",
+          "publishedAt": "2026-08-19T04:27:52.000Z"
+        }
+      ]
+    },
+    {
+      "id": "china-recupereaza-pentru-prima-data-pe-uscat-o-treapta-de-racheta-un-pas-importa",
+      "title": "China recuperează pentru prima dată pe uscat o treaptă de rachetă. „Un pas important spre zborurile reutilizabile”",
+      "summary": "China a reușit să recupereze pentru prima dată pe uscat prima treaptă a unei rachete, a relatat miercuri presa de stat, în timp ce țara încearcă să își dezvolte programul spațial, potrivit AP. Deși acesta...",
+      "link": "https://www.antena3.ro/externe/china-recupereaza-pentru-prima-data-pe-uscat-o-treapta-de-racheta-un-pas-important-spre-zborurile-reutilizabile-799966.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/china-recupereaza-pentru-prima-data-pe-uscat-o-treapta-de-racheta-un-pas-important-spre-zborurile-reutilizabile-1094394.jpg",
+      "publishedAt": "2026-08-19T07:00:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "peste-2-000-de-locuri-la-admiterea-de-toamna-a-universitatii-tehnice-gheorghe-as",
+      "title": "Peste 2.000 de locuri la admiterea de toamnă a Universității Tehnice „Gheorghe Asachi” din Iași",
+      "summary": "Universitatea Tehnică „Gheorghe Asachi” din Iași (TUIASI) scoate la concurs peste 2.000 de locuri la licență, master și doctorat în sesiunea de toamnă a admiterii pentru anul universitar 2026–2027, scrie...",
+      "link": "https://www.antena3.ro/actualitate/educatie/peste-2-000-de-locuri-la-admiterea-de-toamna-a-universitatii-tehnice-gheorghe-asachi-din-iasi-799968.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/peste-2-000-de-locuri-la-admiterea-de-toamna-a-universitatii-tehnice-gheorghe-asachi-din-iasi-1094397.jpg",
+      "publishedAt": "2026-08-19T07:00:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "dimian-concursul-de-admitere-la-liceu-nu-este-o-propunere-facuta-acum-prevederea",
+      "title": "Dimian: Concursul de admitere la liceu nu este o propunere făcută acum. Prevederea există în lege din 2023, cu aplicare din 2027",
+      "summary": "Ministrul interimar al Educaţiei, Mihai Dimian, a precizat că organizarea de către licee a concursului de admitere pentru cel mult jumătate din locuri a fost prevăzută în Legea învăţământului preuniversitar votată de…",
+      "link": "https://www.digi24.ro/stiri/actualitate/educatie/dimian-concursul-de-admitere-la-liceu-nu-este-o-propunere-facuta-acum-prevederea-exista-in-lege-din-2023-cu-aplicare-din-2027-3912021",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA3dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjEl/MkYwNiUyRjIwJTJGMTM0MjI5NF8xMzQy/Mjk0X2V2YWx1YXJlLW5hdGlvbmFsYS0y/MDIxLWVsZXZpLXNhbGEtZXhhbWVuLUdl/dHR5SW1hZ2VzLTg4NzMxMzUwNi5qcGcm/aGFzaD04NjcwZDYzNzZmYjMxYzVjYzM1NWIxYjliNDQwNmNiNQ==.jpg",
+      "publishedAt": "2026-08-19T06:59:51.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "imagini-exclusive-cu-momentul-in-care-hotii-din-timisoara-au-fost-ridicati-anten",
+      "title": "Imagini exclusive cu momentul în care hoții din Timișoara au fost ridicați",
+      "summary": "Imagini exclusive cu momentul în care hoții din Timișoara au fost ridicați",
+      "link": "https://www.antena3.ro/videos-antena3-cnn/imagini-exclusive-cu-momentul-in-care-hotii-din-timisoara-au-fost-ridicati-799969.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/imagini-exclusive-cu-momentul-in-care-hotii-din-timisoara-au-fost-ridicati-1094395.png",
+      "publishedAt": "2026-08-19T06:56:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "elvetienii-vor-fi-chemati-la-referendum-pentru-modificarea-neutralitatii-istoric",
+      "title": "Elvețienii vor fi chemați la referendum pentru modificarea neutralității istorice a țării. Ce arată un sondaj",
+      "summary": "Alegătorii elvețieni vor fi chemați la vot luna viitoare pentru într-un referendum care propune o definiție mai strictă a neutralității istorice a țării, care ar împiedica Elveția să impună sancțiuni economice sau să…",
+      "link": "https://hotnews.ro/elvetienii-vor-fi-chemati-la-referendum-pentru-modificarea-neutralitatii-istorice-a-tarii-ce-arata-un-sondaj-2327913",
+      "source": "HotNews",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "",
+      "publishedAt": "2026-08-19T06:54:24.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "blocurile-in-care-bunicii-ajung-prizonieri-in-propriile-apartamente-solutia-preg",
+      "title": "Blocurile în care bunicii ajung „prizonieri” în propriile apartamente. Soluția pregătită pentru 3,8 milioane de români",
+      "summary": "Legea “Lift pentru Viață\" este de astăzi în vigoare.",
+      "link": "https://www.dcnews.ro/blocurile-in-care-bunicii-ajung-prizonieri-in-propriile-apartamente-solutia-pregatita-pentru-3-8-milioane-de-romani_1076889.html",
       "source": "DC News",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/18/pompierii-au-oprit-interventia-in-ostrovul-babina-din-delta-au-ars-700-de-hectare-de-vegetatie-uscata-5437995.jpg",
-      "publishedAt": "2026-08-18T20:55:00.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Digi24"
-      ],
-      "variants": [
-        {
-          "source": "DC News",
-          "title": "Pompierii au oprit intervenția în ostrovul Babina, din Deltă: Au ars 700 de hectare de vegetație uscată",
-          "link": "https://www.dcnews.ro/pompierii-au-oprit-interventia-in-ostrovul-babina-din-delta-au-ars-700-de-hectare-de-vegetatie-uscata_1076832.html",
-          "publishedAt": "2026-08-18T20:55:00.000Z"
-        },
-        {
-          "source": "Digi24",
-          "title": "Incendiul din Delta Dunării: 700 de hectare afectate. „Zona în care se manifestă ultimele focare este greu accesibilă”",
-          "link": "https://www.digi24.ro/stiri/actualitate/evenimente/incendiul-din-delta-dunarii-700-de-hectare-afectate-zona-in-care-se-manifesta-ultimele-focare-este-greu-accesibila-3911777",
-          "publishedAt": "2026-08-18T20:23:33.000Z"
-        }
-      ]
-    },
-    {
-      "id": "anaf-a-colectat-cu-22-4-miliarde-de-lei-mai-mult-in-primele-sase-luni-nazare-rom",
-      "title": "ANAF a colectat cu 22,4 miliarde de lei mai mult în primele șase luni. Nazare: „România nu își permite cheltuieli fără acoperire”",
-      "summary": "Ministrul interimar al Finanţelor, Alexandru Nazare, anunţă, marţi seară, că ANAF a colectat în plus 22,4 mld. lei în prima jumătate de an, ceea ce reconfirmă direcţia de stabilizare a finanţelor României. De asemenea…",
-      "link": "https://www.digi24.ro/stiri/economie/finante-economie/anaf-a-colectat-cu-224-miliarde-de-lei-mai-mult-in-primele-sase-luni-nazare-romania-nu-isi-permite-cheltuieli-fara-acoperire-3911761",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwNSUyRjA0JTJGMjcwNzU1N18yNzA3/NTU3X2FsZXhhbmRydS1uYXphcmUtZm90/by1mYi5qcGcmaGFzaD1mOWZlNGJkMDEwMWQ2ZDhkZGM3ZTE3NzQ5MWUyNDRmZQ==.jpg",
-      "publishedAt": "2026-08-18T20:28:52.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Antena 3"
-      ],
-      "variants": [
-        {
-          "source": "Digi24",
-          "title": "ANAF a colectat cu 22,4 miliarde de lei mai mult în primele șase luni. Nazare: „România nu își permite cheltuieli fără acoperire”",
-          "link": "https://www.digi24.ro/stiri/economie/finante-economie/anaf-a-colectat-cu-224-miliarde-de-lei-mai-mult-in-primele-sase-luni-nazare-romania-nu-isi-permite-cheltuieli-fara-acoperire-3911761",
-          "publishedAt": "2026-08-18T20:28:52.000Z"
-        },
-        {
-          "source": "Antena 3",
-          "title": "ANAF a colectat cu 22,4 miliarde de lei mai mult în primul semestru. Nazare: România nu îşi permite cheltuieli fără acoperire",
-          "link": "https://www.antena3.ro/politica/anaf-a-colectat-cu-22-4-miliarde-de-lei-mai-mult-in-primul-semestru-nazare-romania-nu-isi-permite-cheltuieli-fara-acoperire-799943.html",
-          "publishedAt": "2026-08-18T20:22:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "restrictii-la-aeroportul-international-henri-coanda-parcarea-supraetajata-de-la-",
-      "title": "Restricții la Aeroportul Internaţional 'Henri Coandă': Parcarea supraetajată de la Sosiri se închide pentru consolidare",
-      "summary": "Restricții la Aeroportul Internaţional 'Henri Coandă': Parcarea supraetajată de la Sosiri se închide pentru consolidare Stiripesurse",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWlM5TFFqeTFOaE1vZk1NX09lbnM1THJkc2M2ZlJCQ2J1SjljVFg4QmxZYUJkdTlZQTVmaGtfNkdpS0llbFpObkFQdEllS3B2b3IwUzJ6bHZqV2owRXAzeXloa0VFaGw5azdOeloxYWFFQUFJd2hMSGpqSVo2SEVGUURhNVdnTWc3dm96czNqRGM0UFpGMmUxOWtlYVVGR3dpMlV6WkFoUnpNbmhKT29YU3Y4TXJFRm5Qb0FSY0djY2s3MFEzV0F1S1AtZk1Md1dqS0xpMHdhYXJCenZyTk45em8tNmNoMUU?oc=5",
-      "source": "Stiripesurse.ro",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-18T19:58:25.000Z",
-      "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Antena 3"
-      ],
-      "variants": [
-        {
-          "source": "Stiripesurse.ro",
-          "title": "Restricții la Aeroportul Internaţional 'Henri Coandă': Parcarea supraetajată de la Sosiri se închide pentru consolidare",
-          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWlM5TFFqeTFOaE1vZk1NX09lbnM1THJkc2M2ZlJCQ2J1SjljVFg4QmxZYUJkdTlZQTVmaGtfNkdpS0llbFpObkFQdEllS3B2b3IwUzJ6bHZqV2owRXAzeXloa0VFaGw5azdOeloxYWFFQUFJd2hMSGpqSVo2SEVGUURhNVdnTWc3dm96czNqRGM0UFpGMmUxOWtlYVVGR3dpMlV6WkFoUnpNbmhKT29YU3Y4TXJFRm5Qb0FSY0djY2s3MFEzV0F1S1AtZk1Md1dqS0xpMHdhYXJCenZyTk45em8tNmNoMUU?oc=5",
-          "publishedAt": "2026-08-18T19:58:25.000Z"
-        },
-        {
-          "source": "Antena 3",
-          "title": "Se închide parcarea terminalului \"Sosiri\" de la Aeroportul Otopeni. Stația de taxi se mută la \"Plecări\". Cât vor dura lucrările",
-          "link": "https://www.antena3.ro/actualitate/locale/se-inchide-parcarea-terminalului-sosiri-de-la-aeroportul-otopeni-cat-vor-dura-lucrarile-de-modernizare-si-cum-va-arata-dupa-aceea-799904.html",
-          "publishedAt": "2026-08-18T16:03:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "lavrov-califica-marea-britanie-drept-parte-in-razboiul-impotriva-rusiei-si-o-num",
-      "title": "Lavrov califică Marea Britanie drept parte în războiul împotriva Rusiei. Și o numește „Britania”",
-      "summary": "După ce au apărut informații conform cărora drone de fabricație britanică au fost utilizate în atacurile ucrainene asupra Rusiei, Moscova a vorbit despre posibile consecințe pentru Londra, potrivit declarațiilor…",
-      "link": "https://www.digi24.ro/stiri/externe/lavrov-califica-marea-britanie-drept-parte-in-razboiul-impotriva-rusiei-si-o-numeste-britania-3911883",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjQl/MkYxMiUyRjI2JTJGMjE1NzY0M18yMTU3/NjQzX3Byb2ZpbWVkaWEtMDg1MjYyMjMx/My5qcGcmaGFzaD0zNjIzYjU1ZDg3MDg1NDdiNDc3MDQ1ZDIxOTk4N2IzOQ==.jpg",
-      "publishedAt": "2026-08-19T04:42:02.000Z",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/19/blocurile-in-care-bunicii-ajung-prizonieri-in-propriile-apartamente-solutia-pregatita-pentru-3-8-milioane-de-romani-5438070.jpg",
+      "publishedAt": "2026-08-19T06:51:00.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "cum-avanseaza-noua-cale-de-acces-din-greenfield-dupa-doua-luni-de-la-obtinerea-a",
-      "title": "Cum avansează noua cale de acces din Greenfield, după două luni de la obținerea Autorizației de Construire",
-      "summary": "Au trecut 2 luni de la obținerea autorizației de construire pentru noua cale de acces din cartierul Greenfield Băneasa. Estimată inițial la 2,5 milioane de euro, investiția depășește în prezent 3,5 milioane de euro…",
-      "link": "https://hotnews.ro/cum-avanseaza-noua-cale-de-acces-din-greenfield-dupa-doua-luni-de-la-obtinerea-autorizatiei-de-construire-2327794",
+      "id": "dupa-o-serie-de-incidente-ingrijoratoare-germania-deschide-un-centru-de-securita",
+      "title": "După o serie de incidente îngrijorătoare, Germania deschide un centru de securitate a dronelor",
+      "summary": "Germania deschide marţi un nou Centru Tehnologic de Siguranţă a Dronelor pentru a cerceta şi dezvolta noi tehnologii de securitate a dronelor şi pentru a le testa în condiţii realiste, relatează dpa.",
+      "link": "https://www.digi24.ro/stiri/externe/dupa-o-serie-de-incidente-ingrijoratoare-germania-deschide-un-centru-de-securitate-a-dronelor-3912001",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE5JTJGMjkxNTIzMV8yOTE1/MjMxX0FsZXhhbmRlci1Eb2JyaW5kdF8t/Rm90by1Qcm9maW1lZGlhLmpwZyZoYXNo/PTkwNTFkYjEyM2YwODVkZjQ0YTQ2YjU2NjQyMTBiNDY4.jpg",
+      "publishedAt": "2026-08-19T06:46:25.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "temperaturi-record-in-apele-europei-din-cauza-schimbarilor-climatice-oamenii-de-",
+      "title": "Temperaturi record în apele Europei, din cauza schimbărilor climatice. Oamenii de știință trag un semnal de alarmă",
+      "summary": "Schimbările climatice provocate de om au fost principala cauză a temperaturilor record înregistrate recent în apele din jurul Europei, au declarat miercuri oamenii de ştiinţă, avertizând asupra unor consecinţe grave…",
+      "link": "https://www.digi24.ro/stiri/sci-tech/natura-si-mediu/temperaturi-record-in-apele-europei-din-cauza-schimbarilor-climatice-oamenii-de-stiinta-trag-un-semnal-de-alarma-3911989",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE5JTJGMjkxNTIyOF8yOTE1/MjI4X0dldHR5SW1hZ2VzLTc0NTQ0NTI5/LmpwZyZoYXNoPTZhYmQ0Mjc1MjgxNGY0NjAwMjI0Yzk0MGY5ZTVkODNk.jpg",
+      "publishedAt": "2026-08-19T06:46:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "ft-iranul-ameninta-ca-va-lovi-si-europa-daca-sua-continua-razboiul-vom-iesi-din-",
+      "title": "FT: Iranul amenință că va lovi și Europa, daca SUA continuă războiul. „Vom ieși din regiune”",
+      "summary": "Ideea de a lovi obiective americane și dincolo de Orientul Mijlociu apare într-un moment în care mulți la Teheran văd reluarea conflictului ca fiind inevitabilă.Iranul a luat în calcul atacarea unor ținte...",
+      "link": "https://www.antena3.ro/externe/ft-iranul-ameninta-ca-va-lovi-si-europa-daca-sua-continua-razboiul-vom-iesi-din-regiune-799965.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/ft-iranul-ameninta-ca-va-lovi-si-europa-daca-sua-continua-razboiul-vom-iesi-din-regiune-1094393.jpg",
+      "publishedAt": "2026-08-19T06:43:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "iri-travel-lanseaza-pachete-speciale-pentru-eurovision-2027-in-burgas-bulgaria-d",
+      "title": "IRI Travel lansează pachete speciale pentru Eurovision 2027 în Burgas - Bulgaria",
+      "summary": "IRI Travel, principalul touroperator specializat pe destinația Bulgaria din România, anunță pregătirea unor programe turistice speciale dedicate concursului Eurovision Song Contest 2027, care va avea loc în Burgas.",
+      "link": "https://www.dcnews.ro/iri-travel-lanseaza-pachete-speciale-pentru-eurovision-2027-in-burgas-bulgaria_1076886.html",
+      "source": "DC News",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/19/iri-travel-lanseaza-pachete-speciale-pentru-eurovision-2027-in-burgas-bulgaria-5438055.jpeg",
+      "publishedAt": "2026-08-19T06:40:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "act-de-intimidare-parisul-expulzeaza-doi-diplomati-iranieni-dupa-agresarea-unor-",
+      "title": "„Act de intimidare”. Parisul expulzează doi diplomaţi iranieni după agresarea unor membri ai personalului ambasadei Franţei la Teheran",
+      "summary": "Franţa a acuzat Iranul de agresarea a doi diplomaţi francezi şi expulzează, ca răspuns, doi membri ai personalului ambasadei Republicii Islamice, a anunţat marţi Ministerul de Externe francez.",
+      "link": "https://www.digi24.ro/stiri/externe/act-de-intimidare-parisul-expulzeaza-doi-diplomati-iranieni-dupa-agresarea-unor-membri-ai-personalului-ambasadei-frantei-la-teheran-3911999",
+      "source": "Digi24",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMiUyRjExJTJGMjU4ODA1N18yNTg4/MDU3X01pbmlzdGVydWwtZnJhbmNlei1h/bC1BZmFjZXJpbG9yLUV4dGVybmVfLUlt/YWdpbmUtY3UtY2FyYWN0ZXItaWx1c3Ry/YXRpdi1Gb3RvLVByb2ZpbWVkaWEuanBn/Jmhhc2g9MTA0NzljMjM2OGMyZWM3NTJmNzFhODI5NzQ0ZWE1MTg=.jpg",
+      "publishedAt": "2026-08-19T06:38:52.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "o-cabana-montana-a-fost-luata-cu-asalt-de-turisti-care-au-vazut-gogosile-servite",
+      "title": "O cabană montană a fost luată cu asalt de turiști care au văzut gogoșile servite în Dolomiți: „Am venit doar pentru asta”",
+      "summary": "Sute de oameni au luat cu asalt o cabană montană din Munții Dolomiți ai Italiei, nu pentru priveliștile panoramice, ci în căutarea unor produse de patiserie cremoase, reaprinzând dezbaterea despre supraturismul generat…",
+      "link": "https://hotnews.ro/o-cabana-montana-a-fost-luata-cu-asalt-de-turisti-care-au-vazut-gogosii-pe-care-ii-serveste-in-dolomiti-am-venit-doar-pentru-asta-2327872",
       "source": "HotNews",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
       "image": "",
-      "publishedAt": "2026-08-19T04:37:18.000Z",
+      "publishedAt": "2026-08-19T06:29:52.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "europenii-care-au-uitat-cum-arata-banii-lichizi-suedezii-spun-ca-trec-luni-intre",
-      "title": "Europenii care au uitat cum arată banii lichizi. Suedezii spun că trec luni întregi fără să atingă vreo bancnotă",
-      "summary": "Pe măsură ce unele societăți devin complet digitale, altele se agață cu încăpățânare de siguranța banilor. Ne aflăm în mijlocul unei revoluții economice silențioase, în care forma fizică a banilor cedează treptat locul…",
-      "link": "https://hotnews.ro/europenii-care-au-uitat-cum-arata-banii-lichizi-suedezii-spun-ca-trec-luni-intregi-fara-sa-atinga-vreo-bancnota-2327766",
-      "source": "HotNews",
+      "id": "au-aparut-cele-mai-clare-imagini-cu-craterul-facut-pe-luna-de-racheta-lui-elon-m",
+      "title": "Au apărut cele mai clare imagini cu craterul făcut pe Lună de racheta lui Elon Musk. Două elemente atrag atenția",
+      "summary": "Un vehicul al Agenției spațiale americane, NASA, a furnizat cele mai clare imagini de până acum ale craterului produs de o rachetă SpaceX care s-a prăbușit recent pe astrul nopții, relatează Associated...",
+      "link": "https://www.antena3.ro/life/stiinta/au-aparut-cele-mai-clare-imagini-cu-craterul-facut-pe-luna-de-racheta-lui-elon-musk-doua-elemente-atrag-atentia-799953.html",
+      "source": "Antena 3",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-19T04:29:16.000Z",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/au-aparut-cele-mai-clare-imagini-cu-craterul-facut-pe-luna-de-racheta-lui-elon-musk-doua-elemente-atrag-atentia-1094352.jpg",
+      "publishedAt": "2026-08-19T06:28:00.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "trump-suspenda-taxele-vamale-de-50-cu-care-amenintase-canada-am-ajuns-la-un-acor",
-      "title": "Trump suspendă taxele vamale de 50% cu care amenințase Canada. „Am ajuns la un acord!”",
-      "summary": "Președintele american Donald Trump a anunțat marți seară că va amâna cu trei zile aplicarea tarifelor de 50% asupra unei game largi de produse canadiene, precizând că SUA și Canada pun la punct un acord comercial…",
-      "link": "https://hotnews.ro/trump-suspenda-taxele-vamale-de-50-cu-care-amenintase-canada-am-ajuns-la-un-acord-2327752",
-      "source": "HotNews",
+      "id": "dunarea-ramane-la-un-nivel-extrem-de-scazut-debitul-la-intrarea-in-romania-va-fi",
+      "title": "Dunărea rămâne la un nivel extrem de scăzut. Debitul la intrarea în România va fi de trei ori sub media lunii august",
+      "summary": "Debitul Dunării la intrarea în ţară (secţiunea Baziaş) se menţine la 1300 m3/s în următoarele trei zile, urmând ca, până în 25 august, să ajungă la 1350 m3/s, situându-se sub media multianuală a lunii...",
+      "link": "https://www.antena3.ro/actualitate/dunarea-ramane-la-un-nivel-extrem-de-scazut-debitul-la-intrarea-in-romania-va-fi-de-trei-ori-sub-media-lunii-august-799959.html",
+      "source": "Antena 3",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-19T04:27:52.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "cel-mai-mare-pericol-din-manifestul-lui-mark-zuckerberg-despre-ai-ce-intelege-de",
-      "title": "Cel mai mare pericol din manifestul lui Mark Zuckerberg despre AI. Ce înțelege, de fapt, șeful Meta printr-o „viață mai bună”",
-      "summary": "Mark Zuckerberg încearcă să ne vândă un viitor în care AI-ul dezvoltat de Meta ne va rezolva toate problemele și toată lumea va avea de câștigat. Însă felul în care expune acest viitor utopic trădează o lipsă de…",
-      "link": "https://hotnews.ro/cel-mai-mare-pericol-din-manifestul-lui-mark-zuckerberg-despre-ai-ce-intelege-de-fapt-seful-meta-printr-o-viata-mai-buna-2325378",
-      "source": "HotNews",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-19T04:15:22.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "urina-umana-sursa-de-energie-pentru-masinile-electrice-stiripesurse-ro",
-      "title": "Urina umană, sursă de energie pentru mașinile electrice",
-      "summary": "Urina umană, sursă de energie pentru mașinile electrice Stiripesurse",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYjJpOUJDMWptREdrb1VWWlk1b3BsbXRSa3o0T3ZMOE83eUdHOW5EdndKclZ3bG0zdkI3bl9qeFQ0SnhtYlJfb2JIbDV2Yk4yQXlQTHEzbWtTLW40ZGtOTmtCWkZEdjVQMTk0REw5ZExSVmhkOV9WV3pIZVpndVNLclhHd28yVkpqenc?oc=5",
-      "source": "Stiripesurse.ro",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-19T04:15:02.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "de-ce-vrea-ucraina-neaparat-sa-loveasca-in-miliardara-preferata-a-lui-putin-este",
-      "title": "De ce vrea Ucraina neapărat să lovească în „miliardara preferată a lui Putin”. Este cea mai bogată femeie din Rusia",
-      "summary": "În noaptea de sâmbătă spre duminică, 600 de drone ucrainene au fost lansate pentru a ataca sediul Wildberries din Moscova. Prin atacul asupra gigantului rus al vânzărilor online, Kievul nu vizează doar imperiul Tatianei…",
-      "link": "https://www.digi24.ro/stiri/externe/de-ce-vrea-ucraina-neaparat-sa-loveasca-in-miliardara-preferata-a-lui-putin-este-cea-mai-bogata-femeie-din-rusia-3910911",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxMzkxOV8yOTEz/OTE5X1RhdGlhbmEtS2ltXy1Gb3RvLVBy/b2ZpbWVkaWEuanBnJmhhc2g9ZGExZjZi/ODI0Nzg4YzM4ODRkNWQ3ZWY4YTI1MDA3OGI=.jpg",
-      "publishedAt": "2026-08-19T04:05:35.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "experienta-a-doi-neozeelandezi-in-sulina-la-granita-cu-razboiul-din-ucraina-sa-f",
-      "title": "Experiența a doi neozeelandezi în Sulina, la graniță cu războiul din Ucraina: „Să fiu sincer, este un sentiment ciudat”",
-      "summary": "Cei doi ecologiști neozeelandezi care au povestit pentru Digi24.ro experiența de a pedala 3.000 de kilometri pe lângă Dunăre „de la izvor până la mare” au explicat cum percep ei ceea ce se întâmplă din perspectiva…",
-      "link": "https://www.digi24.ro/stiri/actualitate/experienta-a-doi-neozeelandezi-in-sulina-la-granita-cu-razboiul-din-ucraina-sa-fiu-sincer-este-un-sentiment-ciudat-3911273",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxNDAzMV8yOTE0/MDMxXzIwMjYwODAyXzE0NDkyMC5qcGcm/aGFzaD05MjIzNzYwYjdmYTA5YTRmNGVjM2QzMzg0NmYwM2VhZA==.jpg",
-      "publishedAt": "2026-08-19T04:00:56.000Z",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/dunarea-ramane-la-un-nivel-extrem-de-scazut-debitul-la-intrarea-in-romania-va-fi-de-trei-ori-sub-media-lunii-august-1094388.jpg",
+      "publishedAt": "2026-08-19T06:25:00.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
@@ -1764,276 +1758,296 @@
       "bucket": "tara",
       "section": "national",
       "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxMzk3NF8yOTEz/OTc0X0N1bS1yZWN1bm9hc3RlbS1yYXBp/ZC11bi1hY2NpZGVudC12YXNjdWxhci1j/ZXJlYnJhbF8tRm90by1HZXR0eS1JbWFn/ZXMuanBnJmhhc2g9MzE5M2MyNGNhM2M5ZGQzZDIyZThjMDBjOTI5NjM0YjM=.jpg",
-      "publishedAt": "2026-08-19T04:00:49.000Z",
+      "publishedAt": "2026-08-19T06:24:58.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "fortele-armate-austriece-avertizeaza-soldatii-cu-privire-la-contactul-cu-21-de-p",
-      "title": "Forțele armate austriece avertizează soldații cu privire la contactul cu 21 de presupuși agenți ai Kremlinului",
-      "summary": "Cel puțin 20 de diplomați ruși din Austria au, se pare, legături cu serviciile de informații ale statului. Pe lângă ambasadă, sunt afectate și misiuni importante pe lângă organizații internaționale. Aceasta este…",
-      "link": "https://www.digi24.ro/stiri/externe/fortele-armate-austriece-avertizeaza-soldatii-cu-privire-la-contactul-cu-21-de-presupusi-agenti-ai-kremlinului-3911027",
-      "source": "Digi24",
+      "id": "trei-probleme-ale-soferului-roman-un-specialist-in-psihologie-comportamentala-ex",
+      "title": "Trei probleme ale şoferului român. Un specialist în psihologie comportamentală explică unde greşesc românii / video",
+      "summary": "Şoferii români au trei probleme majore, arată un specialist în psihologie comportamentală şi expert în siguranţă rutieră.",
+      "link": "https://www.dcnews.ro/trei-probleme-ale-soferului-roman-un-specialist-in-psihologie-comportamentala-explica-unde-gresesc-romanii-video_1076850.html",
+      "source": "DC News",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjA1JTJGMjg5NDE1OF8yODk0/MTU4X1ZpZW5hXy1JbWFnaW5lLWN1LWNh/cmFjdGVyLWlsdXN0cmF0aXZfLUZvdG8t/UHJvZmltZWRpYS5qcGcmaGFzaD1iNDgy/NmVlZjkyMzNhYjZlZGZlM2YyY2U5MTdmZTBmNA==.jpg",
-      "publishedAt": "2026-08-19T04:00:48.000Z",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/19/trei-probleme-ale-soferului-roman-un-specialist-in-psihologie-comportamentala-explica-unde-gresesc-romanii-video-5438043.jpg",
+      "publishedAt": "2026-08-19T06:24:00.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "cum-verifici-online-daca-angajatorul-ti-a-declarat-contributiile-pentru-pensie-p",
-      "title": "Cum verifici online dacă angajatorul ți-a declarat contribuțiile pentru pensie. Perioadele care pot lipsi din evidența CNPP",
-      "summary": "Prin intermediul portalului Casei Naționale de Pensii Publice, salariații pot verifica datele transmise de angajatori în declarațiile nominale și pot identifica din timp eventualele intervale neînregistrate sau…",
-      "link": "https://www.digi24.ro/stiri/actualitate/social/cum-verifici-online-daca-angajatorul-ti-a-declarat-contributiile-pentru-pensie-perioadele-care-pot-lipsi-din-evidenta-cnpp-3910881",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxMzU3Ml8yOTEz/NTcyX0NvbnRyaWJ1dGlpLWxhLXBlbnNp/ZV8tRm90by1HZXR0eS1JbWFnZXMuanBn/Jmhhc2g9ZDI2MTNiNzc3NmI4MzMwZmY3N2EyNjhkZTk3NTkzMzU=.jpg",
-      "publishedAt": "2026-08-19T04:00:48.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "programul-scoala-dupa-scoala-2026-2027-cand-este-estimat-sa-inceapa-si-ce-activi",
-      "title": "Programul „Școala după școală” 2026-2027. Când este estimat să înceapă și ce activități pot fi organizate pentru elevi",
-      "summary": "Programul „Școala după școală” le oferă elevilor posibilitatea de a rămâne într-un mediu supravegheat înainte sau după cursuri, unde pot primi ajutor la teme și pot participa la activități educative, remediale ori…",
-      "link": "https://www.digi24.ro/stiri/actualitate/educatie/programul-scoala-dupa-scoala-2026-2027-cand-este-estimat-sa-inceapa-si-ce-activitati-pot-fi-organizate-pentru-elevi-3910917",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxMzY1Ml8yOTEz/NjUyX1Byb2dyYW11bC1fU2NvYWxhLWR1/cGEtc2NvYWxhXy1Gb3RvLUdldHR5LUlt/YWdlcy5qcGcmaGFzaD0xNDEyZDhiYzlhMGQ4YTZlM2VkNWQwNTJmZDBiZGE1Ng==.jpg",
-      "publishedAt": "2026-08-19T04:00:47.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "topul-cartierelor-de-lux-din-romania-unde-ajungi-sa-platesti-astazi-peste-5-500-",
-      "title": "Topul cartierelor de lux din România: unde ajungi să plătești astăzi peste 5.500 euro/metru pătrat util. „E foarte scump!”",
-      "summary": "Harta imobiliară din România este plină de discrepanțe. Un apartament de 70 de metri pătrați poate costa cu aproape 300 de mii de euro mai mult în unul din cele mai scumpe cartiere din București, față de unul similar…",
-      "link": "https://www.digi24.ro/stiri/actualitate/social/topul-cartierelor-de-lux-din-romania-unde-ajungi-sa-platesti-astazi-peste-5-500-euro-metru-patrat-util-e-foarte-scump-3911651",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxNDkyMV8yOTE0/OTIxX0dldHR5SW1hZ2VzLTExMzI3OTAz/NDUuanBnJmhhc2g9Y2VmMzM2YWMzNTllNTZjMDdiYjg3NjgzMWEzZjg4ZTE=.jpg",
-      "publishedAt": "2026-08-19T04:00:41.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "rezultatele-finale-la-bacalaureat-2026-sesiunea-de-toamna-cand-se-afiseaza-notel",
-      "title": "Rezultatele finale la bacalaureat 2026, sesiunea de toamnă: Când se afișează notele după contestații",
-      "summary": "Rezultatele finale ale examenului național de bacalaureat 2026, sesiunea de toamnă, vor fi afișate luni, 24 august, după soluționarea contestațiilor. Candidații își vor putea consulta notele pe platforma oficială…",
-      "link": "https://www.digi24.ro/stiri/actualitate/educatie/rezultatele-finale-la-bacalaureat-2026-sesiunea-de-toamna-cand-se-afiseaza-notele-dupa-contestatii-3910963",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxMzczM18yOTEz/NzMzX0NhbmQtc2UtYWZpc2VhemEtcmV6/dWx0YXRlbGUtZmluYWxlLWR1cGEtY29u/dGVzdGF0aWktaW4tY2FkcnVsLXNlc2l1/bmlpLWRlLXRvYW1uYV8tRm90by1HZXR0/eS1JbWFnZXMuanBnJmhhc2g9OTI1Y2U2/YWE0N2Y1ZWVlOTkwN2NkN2RiYTE5YjI4NTg=.jpg",
-      "publishedAt": "2026-08-19T04:00:40.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "alerte-de-furtuna-in-locul-celor-de-politie-pe-waze-planul-b-al-soferilor-romani",
-      "title": "Alerte de furtună în locul celor de poliție pe Waze. „Planul B” al șoferilor români dacă avertizările vor fi restricționate",
-      "summary": "Alertele de poliție de pe Waze au stârnit dezbateri în rândul șoferilor români, în urma informațiilor conform cărora acestea ar putea fi restricționate. În timp ce Poliția Română și reprezentanții comunității Waze…",
-      "link": "https://www.digi24.ro/stiri/actualitate/alerte-de-furtuna-in-locul-celor-de-politie-pe-waze-planul-b-al-soferilor-romani-daca-avertizarile-vor-fi-restrictionate-3911327",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxNDQ2Ml8yOTE0/NDYyX04xNy1DT05UUk9WRVJTQS1XQVpF/LVBPTElUSUUtQkVUQS0xODA4MjZfMDAw/MDAuanBnJmhhc2g9YTRmMTM1NjQ0MDdmMzU3NDBjOTU4ZjQ0YzljM2Q5NWU=.jpg",
-      "publishedAt": "2026-08-19T04:00:35.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "ayatollahul-desfigurat-si-lupta-interna-pentru-putere-de-la-teheran-extremistii-",
-      "title": "Ayatollahul desfigurat și lupta internă pentru putere de la Teheran: extremiștii care resping pacea cu SUA vs. moderatul Pezeshkian",
-      "summary": "O călătorie nocturnă cu mașina și șapte ore de discuții de criză cu liderul suprem desfigurat al Iranului nu au rezolvat o diviziune profundă, în timp ce susținătorii liniei dure blochează un acord de pace cu SUA…",
-      "link": "https://www.digi24.ro/stiri/externe/ayatollahul-desfigurat-si-lupta-interna-pentru-putere-de-la-teheran-extremistii-care-resping-pacea-cu-sua-vs-moderatul-pezeshkian-3911685",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxNDk1MV8yOTE0/OTUxX3Byb2ZpbWVkaWEtMTEyMTU0MjUw/NS5qcGcmaGFzaD05YzI1ZGI3ZGYyZjEzYjVjOWQyOGI1ODYwOTIwZjZjYw==.jpg",
-      "publishedAt": "2026-08-19T04:00:25.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "navele-comerciale-nu-mai-intra-in-porturile-din-odesa-ce-inseamna-acest-lucru-pe",
-      "title": "Navele comerciale nu mai intră în porturile din Odesa. Ce înseamnă acest lucru pentru exporturile de cereale ale Ucrainei (Kyiv Post)",
-      "summary": "Traficul maritim către zona Portului Odesa s-a prăbușit după ce atacurile rusești cu drone și rachete s-au intensificat: doar șapte nave au intrat în primele 11 zile din august, comparativ cu 169 în luna iulie…",
-      "link": "https://www.digi24.ro/stiri/externe/navele-comerciale-nu-mai-intra-in-porturile-din-odesa-ce-inseamna-acest-lucru-pentru-exporturile-de-cereale-ale-ucrainei-kyiv-post-3910969",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwNyUyRjI3JTJGMjg2ODM0NF8yODY4/MzQ0X3Byb2ZpbWVkaWEtMTExNzM3NDEy/My5qcGcmaGFzaD1hMTQwMDA0NTU5YzczMTA0ZDgyZmExZDA3MWJlNjE5OA==.jpg",
-      "publishedAt": "2026-08-19T04:00:25.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "flacari-ascunse-sub-pamant-copaci-care-iau-foc-din-senin-cum-a-devenit-lunca-mur",
-      "title": "Flăcări ascunse sub pământ, copaci care iau foc din senin. Cum a devenit Lunca Mureșului scena unui fenomen care îi sperie pe localnici",
-      "summary": "Specialiștii, geologii și pompierii din Arad se luptă cu o situație neobișnuită în Parcul Natural Lunca Mureșului, în zona dintre Pecica și Arad. Copacii par să ardă de la rădăcini către exterior, iar focul nu poate fi…",
-      "link": "https://www.digi24.ro/stiri/flacari-ascunse-sub-pamant-copaci-care-iau-foc-din-senin-cum-a-devenit-lunca-muresului-scena-unui-fenomen-care-ii-sperie-pe-localnici-3910927",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxNDQ2N18yOTE0/NDY3X2ZvYy1wYWR1cmUtYXJhZC5qcGcm/aGFzaD1hZjg3ZjBiMjczZTViOTYzMTM3NTIzMzdiMjEzNjlhMQ==.jpg",
-      "publishedAt": "2026-08-19T04:00:24.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "ce-culori-de-masini-prefera-romanii-atunci-cand-cumpara-un-autoturism-nou-sau-se",
-      "title": "Ce culori de mașini preferă românii atunci când cumpără un autoturism nou sau second hand",
-      "summary": "Datele Registrului Auto Român au arătat culorile preferate ale românilor atunci când decid să își cumpere un autoturism.",
-      "link": "https://www.digi24.ro/stiri/actualitate/ce-culori-de-masini-prefera-romanii-atunci-cand-cumpara-un-autoturism-nou-sau-second-hand-3911395",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMiUyRjA1JTJGMjU3OTExMV8yNTc5/MTExX0dldHR5SW1hZ2VzLTExODQyOTg3/NzQuanBnJmhhc2g9NzhjZDM0YmFmZjJiYzBkZWI2NTU4ZGRjOGRlYjBjYmY=.jpg",
-      "publishedAt": "2026-08-19T04:00:23.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "serviciile-de-informatii-de-la-kiev-avertizeaza-ca-rusia-nu-se-pregateste-de-pac",
-      "title": "Serviciile de informații de la Kiev avertizează că Rusia nu se pregătește de pace. Ce planuri are Moscova",
-      "summary": "Rusia nu dă niciun semn că se pregătește să pună capăt războiului împotriva Ucrainei și nu intenționează să ajungă la un acord de pace până la sfârșitul anului 2026, susține Vadîm Skibițki, adjunctul șefului Direcției…",
-      "link": "https://www.digi24.ro/stiri/externe/serviciile-de-informatii-de-la-kiev-avertizeaza-ca-rusia-nu-se-pregateste-de-pace-ce-planuri-are-moscova-3910973",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxMzkxOF8yOTEz/OTE4X3Byb2ZpbWVkaWEtMTA2NTM5ODc4/OC5qcGcmaGFzaD00ZjQzOWFkOGU4N2RmNTFjNzdjMDAyMDc0MzBmNjc5Yg==.jpg",
-      "publishedAt": "2026-08-19T04:00:08.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "misterioasa-moarte-a-legendarului-rapper-tupac-in-proces-dupa-30-de-ani-care-a-f",
-      "title": "Misterioasa moarte a legendarului rapper Tupac, în proces după 30 de ani. Care a fost motivul crimei: „Fapta cerea o reacţie”",
-      "summary": "Fostul membru al unei bande acuzat că a orchestrat asasinarea lui Tupac Shakur a acţionat din „răzbunare”, deoarece nutrea o „furie viscerală” împotriva rapperului pentru că i-a umilit nepotul, şi a mărturisit totul de…",
-      "link": "https://www.digi24.ro/stiri/externe/sua/misterioasa-moarte-a-legendarului-rapper-tupac-in-proces-dupa-30-de-ani-care-ar-fi-fost-motivul-crimei-fapta-cerea-o-reactie-3910869",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjMl/MkYwOSUyRjMwJTJGMTgwODgzN18xODA4/ODM3X2tlZmZlLWQtdHVwYWMuanBnJmhh/c2g9MmY1NTI1MDJhNDQ4ODE3Y2U5ZDhjZGVhZWYzZmU0MGI=.jpg",
-      "publishedAt": "2026-08-19T04:00:06.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "cat-timp-trebuie-pastrate-taloanele-de-pensie-documentele-pe-care-romanii-nu-ar-",
-      "title": "Cât timp trebuie păstrate taloanele de pensie. Documentele pe care românii nu ar trebui să le arunce: Situațiile în care pot fi cerute",
-      "summary": "Deși legislația nu stabilește pentru pensionari obligația de a arhiva pe termen nelimitat toate exemplarele primite, documentul nu ar trebui aruncat imediat. Cel mai recent cupon poate fi solicitat în anumite proceduri…",
-      "link": "https://www.digi24.ro/stiri/actualitate/social/cat-timp-trebuie-pastrate-taloanele-de-pensie-documentele-pe-care-romanii-nu-ar-trebui-sa-le-arunce-situatiile-in-care-pot-fi-cerute-3910849",
-      "source": "Digi24",
-      "scope": "tara",
-      "bucket": "tara",
-      "section": "national",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwOCUyRjE4JTJGMjkxMzQ5NV8yOTEz/NDk1X1RhbG9uLWRlLXBlbnNpZV8tSW5x/dWFtLVBob3Rvcy1PY3Rhdi1HYW5lYS5q/cGcmaGFzaD03YjkyZTVkMThjYzhiYzZiM2NkZGIyMWYxNjczYzY5Yg==.jpg",
-      "publishedAt": "2026-08-19T04:00:00.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "cat-de-mult-ii-foloseste-rusiei-sa-recruteze-un-inspector-scolar-dintr-o-tara-na",
-      "title": "Cât de mult îi folosește Rusiei să recruteze un inspector școlar dintr-o țară NATO",
-      "summary": "După ce a devenit din nou campion european, David Popovici a fost invitat de unul dintre rivalii săi, Egor Kornev, să meargă în Rusia ca să conducă o mașină de viteză „repede pe drum drept”. Prima observație, des…",
-      "link": "https://hotnews.ro/cine-omoara-ursul-2327606",
+      "id": "iubitul-lui-hayden-panettiere-si-fratele-lui-au-sunat-la-911-din-apartamentul-un",
+      "title": "Iubitul lui Hayden Panettiere și fratele lui au sunat la 911 din apartamentul unde actrița a murit. Ce arată raportul poliției",
+      "summary": "Iubitul lui Hayden Panettiere și fratele acestuia au sunat la 911 pentru a anunța că actrița nu mai dădea semne de viață duminică, într-un complex de apartamente din Carolina de Sud, unde medicii au constatat decesul…",
+      "link": "https://hotnews.ro/iubitul-lui-hayden-panettiere-si-fratele-sau-au-sunat-la-911-din-apartamentul-unde-actrita-a-murit-ce-arata-raportul-politiei-2327834",
       "source": "HotNews",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
       "image": "",
-      "publishedAt": "2026-08-19T03:58:01.000Z",
+      "publishedAt": "2026-08-19T06:23:06.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "singurul-judet-din-romania-cu-700-000-de-locuitori-nu-mai-are-medic-de-garda-la-",
-      "title": "Singurul județ din România cu 700.000 de locuitori nu mai are medic de gardă la Neurologie. „Trimitem pacienți cu AVC zeci de kilometri cu ambulanța”",
-      "summary": "La aproximativ 70 de kilometri de București, un spital de urgență – singurul dintr-un județ cu 750.000 de locuitori ­- nu mai are de câțiva ani medici neurologi care să facă gărzi. Chiar și în timpul zilei, există…",
-      "link": "https://hotnews.ro/singurul-judet-din-romania-cu-700-000-de-locuitori-nu-mai-are-medic-de-garda-la-neurologie-trimitem-pacienti-cu-avc-zeci-de-kilometri-cu-ambulanta-2323957",
-      "source": "HotNews",
+      "id": "un-sofer-roman-de-tir-a-fost-jefuit-in-timp-ce-dormea-in-bulgaria-hotul-i-a-fura",
+      "title": "Un șofer român de TIR a fost jefuit în timp ce dormea, în Bulgaria. Hoțul i-a furat 200 de litri de motorină",
+      "summary": "Un șofer român de TIR, în vârstă de 59 de ani, a rămas fără aproximativ 200 de litri de motorină după ce un hoț i-a golit rezervoarele camionului în timp ce acesta se odihnea la o oprire de pe drumul...",
+      "link": "https://www.antena3.ro/externe/un-sofer-roman-de-tir-a-fost-jefuit-in-timp-ce-dormea-in-bulgaria-hotul-i-a-furat-200-de-litri-de-motorina-799960.html",
+      "source": "Antena 3",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-19T03:56:44.000Z",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/un-sofer-roman-de-tir-a-fost-jefuit-in-timp-ce-dormea-in-bulgaria-hotul-i-a-furat-200-de-litri-de-motorina-1094386.jpg",
+      "publishedAt": "2026-08-19T06:23:00.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "putini-patroni-stiu-asta-angajatii-romani-sunt-cei-mai-eficienti-din-europa-arat",
-      "title": "Puțini patroni știu asta! Angajații români sunt cei mai eficienți din Europa, arată un studiu recent",
-      "summary": "Puțini patroni știu asta! Angajații români sunt cei mai eficienți din Europa, arată un studiu recent Stiripesurse",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONmM2YUhfd1EzU1Z2aEptZ1RaNi16MWdlYmdKM00zRUNwYnVmVWUzWjg4SkpxaEJMdE56WUx6eTlfTEpIcmZPMkQ5MzZRNnR0TXhSNzlEQnNsOG1YeXpjeGhCYjhfY2dESGpNT0N0dVBzU2praUxKN3RTUGJKalJhNVNsZDJJQXJVQVRNV1RMVWY3dWRBSHVuWTY1cUNkVmVZaDFEWGRxUFpMcUI0YU4xTzFERUVYUzh0VUhQRlpqZ0FSUU01bTA5UTlKQXNFNVE?oc=5",
+      "id": "a-ucis-un-sarpe-care-i-a-intrat-in-casa-iar-acum-risca-sa-ajunga-la-inchisoare-p",
+      "title": "A ucis un șarpe care i-a intrat în casă iar acum riscă să ajungă la închisoare. Povestea unui bărbat din Argeș",
+      "summary": "După ce a omorât un șarpe care i-a intrat în casă, un bărbat a ajuns să fie cercetat și riscă să fie sancționat penal.",
+      "link": "https://www.dcnews.ro/a-ucis-un-sarpe-care-i-a-intrat-in-casa-iar-acum-risca-sa-ajunga-la-inchisoare-povestea-unui-barbat-din-arges_1076877.html",
+      "source": "DC News",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.dcnews.ro/thumbs/landscape/2026/08/19/a-ucis-un-sarpe-care-i-a-intrat-in-casa-iar-acum-risca-sa-ajunga-la-inchisoare-povestea-unui-barbat-din-arges-5438049.jpg",
+      "publishedAt": "2026-08-19T06:20:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "melaniei-nu-i-plac-speculatiile-cine-e-natalie-harp-consiliera-lui-trump-care-a-",
+      "title": "\"Melaniei nu-i plac speculațiile\". Cine e Natalie Harp, consiliera lui Trump care a mers și într-un portbagaj doar ca să-l însoțească",
+      "summary": "Natalie Harp, una dintre cele mai apropiate și loiale consiliere ale președintelui american Donald Trump, a mers la un moment dat în portbagajul unui SUV pentru a-l putea însoți la tribunal, relatează CNN....",
+      "link": "https://www.antena3.ro/externe/melaniei-nu-i-plac-speculatiile-cine-e-natalie-harp-consiliera-lui-trump-care-a-mers-si-intr-un-portbagaj-doar-ca-sa-l-insoteasca-799957.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/melaniei-nu-i-plac-speculatiile-cine-e-natalie-harp-consiliera-lui-trump-care-a-mers-si-intr-un-portbagaj-doar-ca-sa-l-insoteasca-1094384.jpg",
+      "publishedAt": "2026-08-19T06:14:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "fost-consilier-al-lui-anthony-fauci-recunoaste-ca-a-incercat-sa-ascunda-document",
+      "title": "Fost consilier al lui Anthony Fauci recunoaște că a încercat să ascundă documente despre finanțarea cercetărilor COVID-19",
+      "summary": "Fost consilier al lui Anthony Fauci recunoaște că a încercat să ascundă documente despre finanțarea cercetărilor COVID-19 Stiripesurse",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQcVBQb0MtMWRSd2NqVjN1ZWs5cmY2TnlpYUxrY3A2X29nZU5FNkZBLXlWbG9zbk9VMm43VmZMQzIwWnVYcTR0Z1VuTlMzRERDc2pGdC1mSGJ3Qm51Zm5hZUJ2WmEtOWdZQmJSdTJZcFZuMTVENkh6bDhuemthRlppUXprb3BMc1FaYm1OMTBSTUZOWllmamFfbDRDY0R0RVR0YW9XdkZMUTlnTlNrYi1kczlBQXRKcXh1VjBGSjQtX1hnR0dsSmFuVWVoMTVWY3hrR1BDekJoOU1JWlN5VFF2Qm9ZSzA0aVNzaU8yRzhn?oc=5",
       "source": "Stiripesurse.ro",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
       "image": "",
-      "publishedAt": "2026-08-19T03:45:16.000Z",
+      "publishedAt": "2026-08-19T06:13:57.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "50-de-centi-au-declansat-un-proces-care-ar-putea-schimba-regulile-intr-o-tara-in",
-      "title": "50 de cenți au declanșat un proces care ar putea schimba regulile într-o țară întreagă: „Lui i s-a permis gratuit, eu a trebuit să plătesc la toaletă”",
-      "summary": "50 de cenți au declanșat un proces care ar putea schimba regulile într-o țară întreagă: „Lui i s-a permis gratuit, eu a trebuit să plătesc la toaletă” Stiripesurse",
-      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNUXRicGhQWkdFUVYzQm1hNFUzalh1MXdqSVdDZ3VuSnYxd2Zaa2VNVUNMMmIwOS1XR3g2TDhnTk42cjBTMjEzMF9PdFRXYy1Kc2lPSVNkV3lSOTgyTmhCUS1na2FrYi0yajFhNDk5ODBETkpZZWNxYWdPdDl1SXV3RXBNcFFEWHBmYlZsQ3NadkxvRjF6N1VNbElwekc0S1RYT045dVoySTV3cXZoMHhSU2VYTDZKSm5jdzZhV2dKQjRDUXBGSmVCS21NSVhOQjJHTzZmQnplcEVIZHpXOWJYQUtubzRkV09kZ25qc3BTTll0QkdhaEJndjZoSWgxVHNUZkNUUU5CZkdxUlNGMnVF?oc=5",
-      "source": "Stiripesurse.ro",
+      "id": "nu-exista-peste-dar-nava-sta-acolo-de-doua-saptamani-ce-fac-navele-spion-ale-rus",
+      "title": "„Nu există pește, dar nava stă acolo de două săptămâni”. Ce fac navele-spion ale Rusiei în apele Europei",
+      "summary": "Uniunea Europeană a sancționat în 2025 două companii de pescuit acuzate că fac parte din aparatul de supraveghere și sabotaj al Rusiei. Experții avertizează că tot mai multe astfel de nave patrulează în apele...",
+      "link": "https://www.antena3.ro/externe/nu-exista-peste-dar-nava-sta-acolo-de-doua-saptamani-ce-fac-navele-spion-ale-rusiei-in-apele-europei-799958.html",
+      "source": "Antena 3",
       "scope": "tara",
       "bucket": "tara",
       "section": "national",
-      "image": "",
-      "publishedAt": "2026-08-19T03:15:11.000Z",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/nu-exista-peste-dar-nava-sta-acolo-de-doua-saptamani-ce-fac-navele-spion-ale-rusiei-in-apele-europei-1094366.jpg",
+      "publishedAt": "2026-08-19T06:02:00.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "mutu-dezvaluiri-despre-perioada-petrecuta-la-cfr-cluj-jucatorii-au-vrut-sa-scape",
-      "title": "Mutu, dezvăluiri despre perioada petrecută la CFR Cluj: „Jucătorii au vrut să scape de mine! Am vrut să-i dau afară pe trei, unul e și acum”",
-      "summary": "După ce a vorbit despre negocierile cu CFR Cluj, dezvăluind că a fost un moment în care își dăduse acordul să preia formația, Adrian Mutu a făcut o acuzație incredibilă. Precedentul mandat al lui Adrian Mutu pe banca…",
+      "id": "sua-pregatesc-o-schimbare-majora-in-orientul-mijlociu-dupa-razboiul-cu-iranul-pe",
+      "title": "SUA pregătesc o schimbare majoră în Orientul Mijlociu după războiul cu Iranul. Pentagonul analizează retragerea trupelor din Golf",
+      "summary": "Pentagonul își evaluează prezența militară în Orientul Mijlociu, într-un prim semn al efectelor războiului cu Iranul asupra prezenței SUA în regiune, potrivit surselor citate de The Washngton Post. Unul...",
+      "link": "https://www.antena3.ro/externe/sua-pregatesc-o-schimbare-majora-in-orientul-mijlociu-dupa-razboiul-cu-iranul-pentagonul-analizeaza-retragerea-trupelor-din-golf-799955.html",
+      "source": "Antena 3",
+      "scope": "tara",
+      "bucket": "tara",
+      "section": "national",
+      "image": "https://www.antena3.ro/thumbs/landscape/2026/08/19/sua-pregatesc-o-schimbare-majora-in-orientul-mijlociu-dupa-razboiul-cu-iranul-pentagonul-analizeaza-retragerea-trupelor-din-golf-1094363.jpg",
+      "publishedAt": "2026-08-19T06:00:00.000Z",
+      "promoted": false,
+      "coverage": 1,
+      "alsoIn": []
+    },
+    {
+      "id": "a-zis-bine-gigi-ca-a-mai-luat-o-teapa-noul-transfer-de-la-fcsb-a-fost-facut-praf",
+      "title": "„A zis bine Gigi, că a mai luat o țeapă” » Noul transfer de la FCSB a fost făcut praf de Adrian Mutu",
+      "summary": "Adrian Mutu (47 de ani), fostul mare internațional român, a vorbit despre prestația lui Aymen Boutoutaou (25 de ani), noul transfer al celor de la FCSB, din timpul victoriei dramatice cu FC Botoșani, scor 3-2. Fostul…",
+      "link": "https://www.gsp.ro/fotbal/liga-1/noul-transfer-fcsb-aymen-boutoutaou-facut-praf-adrian-mutu-971192.html",
+      "source": "GSP",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/19082026/2189629a-93b5-4cfa-9df8-1119b3ca5573.jpg?width=290&height=208",
+      "publishedAt": "2026-08-19T06:52:15.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Digi Sport"
+      ],
+      "variants": [
+        {
+          "source": "GSP",
+          "title": "„A zis bine Gigi, că a mai luat o țeapă” » Noul transfer de la FCSB a fost făcut praf de Adrian Mutu",
+          "link": "https://www.gsp.ro/fotbal/liga-1/noul-transfer-fcsb-aymen-boutoutaou-facut-praf-adrian-mutu-971192.html",
+          "publishedAt": "2026-08-19T06:52:15.000Z"
+        },
+        {
+          "source": "Digi Sport",
+          "title": "Adrian Mutu, despre CFR Cluj: ”Singura soluție”",
+          "link": "https://www.digisport.ro/fotbal/liga-1/adrian-mutu-despre-cfr-cluj-singura-solutie-4438387",
+          "publishedAt": "2026-08-19T06:31:02.000Z"
+        }
+      ]
+    },
+    {
+      "id": "jose-mourinho-prima-reactie-dupa-ce-barcelona-l-a-furat-pe-rodri-real-madrid-nu-",
+      "title": "Jose Mourinho, prima reacție după ce Barcelona l-a „furat” pe Rodri: „Real Madrid nu poate accepta asta”",
+      "summary": "Jose Mourinho, antrenorul lui Real Madrid, a vorbit în premieră despre Rodri, fotbalist dorit de formația blanco, dar care a ajuns la rivala Barcelona. Real Madrid și Rodri au negociat intens pentru transferul…",
+      "link": "https://www.gsp.ro/international/campionate/jose-mourinho-prima-reactie-dupa-ce-barcelona-l-a-furat-pe-rodri-real-madrid-nu-poate-accepta-asta-971186.html",
+      "source": "GSP",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/19082026/9a39cd1d-33dc-4aaf-b5b5-5adc87815580.jpg?width=290&height=208",
+      "publishedAt": "2026-08-19T05:59:45.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Digi Sport"
+      ],
+      "variants": [
+        {
+          "source": "GSP",
+          "title": "Jose Mourinho, prima reacție după ce Barcelona l-a „furat” pe Rodri: „Real Madrid nu poate accepta asta”",
+          "link": "https://www.gsp.ro/international/campionate/jose-mourinho-prima-reactie-dupa-ce-barcelona-l-a-furat-pe-rodri-real-madrid-nu-poate-accepta-asta-971186.html",
+          "publishedAt": "2026-08-19T05:59:45.000Z"
+        },
+        {
+          "source": "Digi Sport",
+          "title": "Diferență considerabilă! Cât oferise Real Madrid pentru transferul lui Rodri, care a ales-o pe Barcelona",
+          "link": "https://www.digisport.ro/fotbal/la-liga/diferenta-considerabila-cat-oferise-real-madrid-pentru-transferul-lui-rodri-care-a-ales-o-pe-barcelona-4438847",
+          "publishedAt": "2026-08-19T05:01:27.000Z"
+        }
+      ]
+    },
+    {
+      "id": "razvan-marin-integralist-in-levski-aek-ce-nota-a-primit-romanul-prosport",
+      "title": "Răzvan Marin, integralist în Levski – AEK. Ce notă a primit românul",
+      "summary": "Răzvan Marin (29 de ani) a fost titular și a jucat toate minutele pentru AEK Atena în meciul cu Levski Sofia, din turul play-off-ului Champions League. Partida disputată în Bulgaria s-a terminat la egalitate, scor 0-0…",
+      "link": "https://www.prosport.ro/fotbal-extern/liga-campionilor/razvan-marin-integralist-in-levski-aek-ce-nota-a-primit-romanul-20506252",
+      "source": "Prosport",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/razvan-marin-integralist-in-levski-aek-ce-nota-a-primit-romanul.webp",
+      "publishedAt": "2026-08-19T05:54:13.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Digi Sport"
+      ],
+      "variants": [
+        {
+          "source": "Prosport",
+          "title": "Răzvan Marin, integralist în Levski – AEK. Ce notă a primit românul",
+          "link": "https://www.prosport.ro/fotbal-extern/liga-campionilor/razvan-marin-integralist-in-levski-aek-ce-nota-a-primit-romanul-20506252",
+          "publishedAt": "2026-08-19T05:54:13.000Z"
+        },
+        {
+          "source": "Digi Sport",
+          "title": "Răzvan Marin, în play-off-ul Champions League: nota primită, după Levski - AEK",
+          "link": "https://www.digisport.ro/fotbal/champions-league/razvan-marin-in-play-off-ul-champions-league-nota-primita-dupa-levski-aek-4438739",
+          "publishedAt": "2026-08-18T21:05:54.000Z"
+        }
+      ]
+    },
+    {
+      "id": "conducerea-lui-bayern-a-surprins-dupa-ce-musiala-a-lesinat-a-doua-oara-pe-teren-",
+      "title": "Conducerea lui Bayern a surprins, după ce Musiala a leșinat a doua oară pe teren în decurs de 3 zile",
+      "summary": "Conducerea lui Bayern a surprins, după ce Musiala a leșinat a doua oară pe teren în decurs de 3 zile",
+      "link": "https://www.digisport.ro/fotbal/conducerea-lui-bayern-a-surprins-dupa-ce-musiala-a-lesinat-a-doua-oara-pe-teren-in-decurs-de-3-zile-4438945",
+      "source": "Digi Sport",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxNSUyRjI5MDk0MjRfMjkwOTQyNF9w/cm9maW1lZGlhLTExMjM1OTExNjYuanBn/Jmhhc2g9YzYwMWVhNTRkOTZkOWU5ZTRlZGEyMzgxNGIyOWM0Njc=.jpg",
+      "publishedAt": "2026-08-19T05:51:50.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "GSP"
+      ],
+      "variants": [
+        {
+          "source": "Digi Sport",
+          "title": "Conducerea lui Bayern a surprins, după ce Musiala a leșinat a doua oară pe teren în decurs de 3 zile",
+          "link": "https://www.digisport.ro/fotbal/conducerea-lui-bayern-a-surprins-dupa-ce-musiala-a-lesinat-a-doua-oara-pe-teren-in-decurs-de-3-zile-4438945",
+          "publishedAt": "2026-08-19T05:51:50.000Z"
+        },
+        {
+          "source": "GSP",
+          "title": "Scrisoarea lui Musiala după ce a oferit din nou scene dramatice: „Ăsta e diagnosticul! La prima vedere poate părea înfricoșător”",
+          "link": "https://www.gsp.ro/international/campionate/scrisoare-jamal-musiala-bayern-scene-dramatice-amical-971128.html",
+          "publishedAt": "2026-08-18T19:33:39.000Z"
+        }
+      ]
+    },
+    {
+      "id": "mercato-real-madrid-pregateste-inca-un-transfer-pustiul-de-19-ani-care-poate-aju",
+      "title": "MERCATO Real Madrid pregătește încă un transfer: puștiul de 19 ani care poate ajunge pe „Santiago Bernabeu” pentru doar trei milioane de euro",
+      "summary": "După ce a umplut vestiarul de pe „Santiago Bernabeu” cu vedete, Real Madrid mai poate face un transfer în această vară. Un mijlocaș central de perspectivă, în vârstă de 19 ani, ar putea ajunge sub comanda portughezului…",
+      "link": "https://www.prosport.ro/fotbal-extern/campionate-externe/spania/real-madrid-transfer-pusti-19-ani-trei-milioane-de-euro-20506247",
+      "source": "Prosport",
+      "scope": "sport",
+      "bucket": "sport",
+      "section": "sport",
+      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/real-madrid-transfer-pusti-19-ani-trei-milioane-de-euro-1400x933.jpg",
+      "publishedAt": "2026-08-19T05:41:36.000Z",
+      "promoted": false,
+      "coverage": 2,
+      "alsoIn": [
+        "Digi Sport"
+      ],
+      "variants": [
+        {
+          "source": "Prosport",
+          "title": "MERCATO Real Madrid pregătește încă un transfer: puștiul de 19 ani care poate ajunge pe „Santiago Bernabeu” pentru doar trei milioane de euro",
+          "link": "https://www.prosport.ro/fotbal-extern/campionate-externe/spania/real-madrid-transfer-pusti-19-ani-trei-milioane-de-euro-20506247",
+          "publishedAt": "2026-08-19T05:41:36.000Z"
+        },
+        {
+          "source": "Digi Sport",
+          "title": "”O bijuterie”. Real Madrid e gata să mai facă un transfer",
+          "link": "https://www.digisport.ro/fotbal/la-liga/o-bijuterie-real-madrid-e-gata-sa-mai-faca-un-transfer-4437953",
+          "publishedAt": "2026-08-18T21:00:13.000Z"
+        }
+      ]
+    },
+    {
+      "id": "adrian-mutu-ii-acuza-frontal-ca-au-trantit-meciul-nu-si-au-aparat-corect-sansele",
+      "title": "Adrian Mutu îi acuză frontal că au trântit meciul: „Nu și-au apărat corect șansele”",
+      "summary": "Adrian Mutu dezvăluie fapte grave care s-ar fi petrecut în mandatul lui de antrenor la CFR Cluj. Aventura lui Adrian Mutu pe banca ardelenilor s-a încheiat în aprilie 2024, după o mare rușine: 0-4 cu divizionara secundă…",
       "link": "https://www.gsp.ro/fotbal/liga-1/adrian-mutu-acuze-jucatori-cfr-cluj-ioan-varga-971180.html",
       "source": "GSP",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/19082026/333966a8-bc77-4a26-978e-34d6dd5c387e.jpg?width=290&height=208",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/19082026/689f4102-a57d-4459-be7e-e2317793856c.jpg?width=290&height=208",
       "publishedAt": "2026-08-19T04:32:22.000Z",
       "promoted": false,
       "coverage": 2,
@@ -2043,266 +2057,107 @@
       "variants": [
         {
           "source": "GSP",
-          "title": "Mutu, dezvăluiri despre perioada petrecută la CFR Cluj: „Jucătorii au vrut să scape de mine! Am vrut să-i dau afară pe trei, unul e și acum”",
+          "title": "Adrian Mutu îi acuză frontal că au trântit meciul: „Nu și-au apărat corect șansele”",
           "link": "https://www.gsp.ro/fotbal/liga-1/adrian-mutu-acuze-jucatori-cfr-cluj-ioan-varga-971180.html",
           "publishedAt": "2026-08-19T04:32:22.000Z"
         },
         {
           "source": "Digi Sport",
-          "title": "Adrian Mutu a rupt tăcerea, după ce acceptase s-o preia pe CFR Cluj și s-a răzgândit în ultimul moment",
-          "link": "https://www.digisport.ro/fotbal/liga-1/adrian-mutu-a-rupt-tacerea-dupa-ce-acceptase-s-o-preia-pe-cfr-cluj-si-s-a-razgandit-in-ultimul-moment-4438383",
-          "publishedAt": "2026-08-18T17:26:44.000Z"
+          "title": "Adrian Mutu, acuzații grave: ”Nu și-au apărat corect șansele! Am spus că aș vrea ca acești trei jucători să plece imediat”",
+          "link": "https://www.digisport.ro/fotbal/liga-1/adrian-mutu-acuzatii-grave-nu-si-au-aparat-corect-sansele-am-spus-ca-as-vrea-ca-acesti-trei-jucatori-sa-plece-imediat-4438405",
+          "publishedAt": "2026-08-18T20:47:27.000Z"
         }
       ]
     },
     {
-      "id": "dat-afara-de-la-cfr-cluj-antonio-folha-acuza-vehement-nu-am-primit-niciun-euro-n",
-      "title": "Dat afară de la CFR Cluj, Antonio Folha acuză vehement: „Nu am primit niciun euro! Ne-au mințit când au cerut rezilierea contractului”",
-      "summary": "Dat afară după un început dezamăgitor, portughezul Antonio Folha (55 de ani) a vorbit despre perioada petrecută la CFR Cluj. Doar 6 meciuri a rezistat Antonio Folha pe banca ardelenilor, fiind dat afară și înlocuit cu…",
-      "link": "https://www.gsp.ro/fotbal/liga-1/cfr-cluj-antonio-folha-acuzatii-datorii-probleme-financiare-971178.html",
+      "id": "imagini-antologice-patronul-a-intrat-in-vestiar-cu-punga-de-bani-dupa-ce-au-elim",
+      "title": "Imagini antologice: patronul a intrat în vestiar cu punga de bani, după ce au eliminat-o pe Auda!",
+      "summary": "A fost bucurie mare în vestiarul lui Dinamo Tirana, după ce echipa albaneză a eliminat-o pe Auda în preliminariile Conference League, 4-0 la retur, 0-1 în tur. Joia trecută, Dinamo Tirana, locul 4 în campionatul…",
+      "link": "https://www.gsp.ro/international/conference-league/dinamo-tirana-patron-imagini-antologice-971189.html",
       "source": "GSP",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/19082026/19034a8b-3ab3-4fe5-a712-5022ded119d7.jpg?width=290&height=208",
-      "publishedAt": "2026-08-19T03:54:31.000Z",
+      "image": "https://sportal365images.com/autocrop/smp-images-production/gsp.ro/19082026/84e31cdc-66f0-4e3e-9113-3ee3d293938e.jpg?width=290&height=208",
+      "publishedAt": "2026-08-19T06:58:20.000Z",
       "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "Digi Sport"
-      ],
-      "variants": [
-        {
-          "source": "GSP",
-          "title": "Dat afară de la CFR Cluj, Antonio Folha acuză vehement: „Nu am primit niciun euro! Ne-au mințit când au cerut rezilierea contractului”",
-          "link": "https://www.gsp.ro/fotbal/liga-1/cfr-cluj-antonio-folha-acuzatii-datorii-probleme-financiare-971178.html",
-          "publishedAt": "2026-08-19T03:54:31.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "CFR Cluj a fost reclamată la FIFA pentru 250.000€: ”Nu am primit niciun ban”",
-          "link": "https://www.digisport.ro/fotbal/liga-1/cfr-cluj-a-fost-reclamata-la-fifa-pentru-250-000e-nu-am-primit-niciun-ban-4438207",
-          "publishedAt": "2026-08-18T19:49:54.000Z"
-        }
-      ]
+      "coverage": 1,
+      "alsoIn": []
     },
     {
-      "id": "radu-naum-si-a-pus-mainile-in-cap-adrian-mutu-a-ras-de-octavian-popescu-apoi-l-a",
-      "title": "Radu Naum și-a pus mâinile în cap: Adrian Mutu a râs de Octavian Popescu, apoi l-a ”desființat” în direct",
-      "summary": "Radu Naum și-a pus mâinile în cap: Adrian Mutu a râs de Octavian Popescu, apoi l-a ”desființat” în direct",
-      "link": "https://www.digisport.ro/fotbal/liga-1/radu-naum-si-a-pus-mainile-in-cap-adrian-mutu-a-ras-de-octavian-popescu-apoi-l-a-desfiintat-in-direct-4438441",
+      "id": "play-off-uefa-champions-league-celtic-lask-linz-hapoel-beer-sheva-sabah-22-00-di",
+      "title": "Play-off UEFA Champions League: Celtic - LASK Linz / Hapoel Beer Sheva - Sabah, 22:00, Digi Sport 2 și 4",
+      "summary": "Play-off UEFA Champions League: Celtic - LASK Linz / Hapoel Beer Sheva - Sabah, 22:00, Digi Sport 2 și 4",
+      "link": "https://www.digisport.ro/fotbal/champions-league/play-off-uefa-champions-league-celtic-lask-linz-hapoel-beer-sheva-sabah-2200-digi-sport-2-si-4-4437253",
       "source": "Digi Sport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxOCUyRjI5MTQ4MjhfMjkxNDgyOF9T/Y3JlZW5zaG90LTIwMjYtMDgtMTgtMjEw/MTE0LnBuZyZoYXNoPTkzZTQwZTBhZGEyYzczNTk1ZDFlMjNhZThkNDBkYzll.png",
-      "publishedAt": "2026-08-18T20:18:38.000Z",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxOCUyRjI5MTI3NDhfMjkxMjc0OF9j/b2xhai1taWVyY3VyaS11Y2wucG5nJmhh/c2g9Y2QxYmM2NDRhZjQxOTIxYzAwM2JiYzcxYjI2NTU3MDM=.png",
+      "publishedAt": "2026-08-19T06:57:26.000Z",
       "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "GSP"
-      ],
-      "variants": [
-        {
-          "source": "Digi Sport",
-          "title": "Radu Naum și-a pus mâinile în cap: Adrian Mutu a râs de Octavian Popescu, apoi l-a ”desființat” în direct",
-          "link": "https://www.digisport.ro/fotbal/liga-1/radu-naum-si-a-pus-mainile-in-cap-adrian-mutu-a-ras-de-octavian-popescu-apoi-l-a-desfiintat-in-direct-4438441",
-          "publishedAt": "2026-08-18T20:18:38.000Z"
-        },
-        {
-          "source": "GSP",
-          "title": "„Nu-l ajută mintea” » L-a SPULBERAT în direct pe Tavi Popescu: „Becali să ia un par și să îl bată pe spate”",
-          "link": "https://www.gsp.ro/fotbal/liga-1/adrian-mutu-octavian-popescu-fcsb-critici-971118.html",
-          "publishedAt": "2026-08-18T18:57:38.000Z"
-        }
-      ]
+      "coverage": 1,
+      "alsoIn": []
     },
     {
-      "id": "dupa-ce-a-lesinat-pe-teren-de-doua-ori-in-decurs-de-trei-zile-jamal-musiala-a-an",
-      "title": "După ce a leșinat pe teren de două ori în decurs de trei zile, Jamal Musiala a anunțat ce diagnostic i-au pus medicii",
-      "summary": "După ce a leșinat pe teren de două ori în decurs de trei zile, Jamal Musiala a anunțat ce diagnostic i-au pus medicii",
-      "link": "https://www.digisport.ro/fotbal/bundesliga/dupa-ce-a-lesinat-pe-teren-de-doua-ori-in-decurs-de-trei-zile-jamal-musiala-a-anuntat-ce-diagnostic-i-au-pus-medicii-4438589",
+      "id": "nebunie-in-vestiar-patronul-a-intrat-cu-o-geanta-de-bani-si-a-trantit-o-in-fata-",
+      "title": "Nebunie în vestiar! Patronul a intrat cu o geantă de bani și a trântit-o în fața jucătorilor. Ce a urmat",
+      "summary": "Nebunie în vestiar! Patronul a intrat cu o geantă de bani și a trântit-o în fața jucătorilor. Ce a urmat",
+      "link": "https://www.digisport.ro/fotbal/fotbal-international/nebunie-in-vestiar-patronul-a-intrat-cu-o-geanta-de-bani-si-a-trantit-o-in-fata-jucatorilor-ce-a-urmat-4438999",
       "source": "Digi Sport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxOCUyRjI5MTQ5NTlfMjkxNDk1OV9w/cm9maW1lZGlhLTExMjUzMTkwNDkuanBn/Jmhhc2g9YzA4ZDUzNGZmODMxODBjMWMxYWU5NTQ5MWZjNzBlODM=.jpg",
-      "publishedAt": "2026-08-18T19:41:46.000Z",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxOSUyRjI5MTUxNzNfMjkxNTE3M19w/YXRyb24tYmF0dW1pLnBuZyZoYXNoPWY2/MDM3ZDAwNzFjNjNiMzk0NDg0MTk5NGNkZWQ3NDgy.png",
+      "publishedAt": "2026-08-19T06:55:58.000Z",
       "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "GSP"
-      ],
-      "variants": [
-        {
-          "source": "Digi Sport",
-          "title": "După ce a leșinat pe teren de două ori în decurs de trei zile, Jamal Musiala a anunțat ce diagnostic i-au pus medicii",
-          "link": "https://www.digisport.ro/fotbal/bundesliga/dupa-ce-a-lesinat-pe-teren-de-doua-ori-in-decurs-de-trei-zile-jamal-musiala-a-anuntat-ce-diagnostic-i-au-pus-medicii-4438589",
-          "publishedAt": "2026-08-18T19:41:46.000Z"
-        },
-        {
-          "source": "GSP",
-          "title": "Scrisoarea lui Musiala după ce a oferit din nou scene dramatice: „Ăsta e diagnosticul! La prima vedere poate părea înfricoșător”",
-          "link": "https://www.gsp.ro/international/campionate/scrisoare-jamal-musiala-bayern-scene-dramatice-amical-971128.html",
-          "publishedAt": "2026-08-18T19:33:39.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "Clipe de panică la Bayern! Jamal Musiala a leșinat din nou pe teren, în decurs de 3 zile",
-          "link": "https://www.digisport.ro/fotbal/bundesliga/clipe-de-panica-la-bayern-jamal-musiala-a-lesinat-din-nou-pe-teren-in-decurs-de-3-zile-4438431",
-          "publishedAt": "2026-08-18T18:17:05.000Z"
-        }
-      ]
+      "coverage": 1,
+      "alsoIn": []
     },
     {
-      "id": "csm-resita-petrolul-ploiesti-2-3-gazarii-au-dat-lovitura-in-prelungiri-si-au-reu",
-      "title": "CSM Reșița - Petrolul Ploiești 2-3. ”Găzarii” au dat lovitura în prelungiri și au reușit calificarea în grupele Cupei României",
-      "summary": "CSM Reșița - Petrolul Ploiești 2-3. ”Găzarii” au dat lovitura în prelungiri și au reușit calificarea în grupele Cupei României",
-      "link": "https://www.digisport.ro/fotbal/cupa-romaniei/csm-resita-petrolul-ploiesti-2-3-gazarii-au-dat-lovitura-in-prelungiri-si-au-reusit-calificarea-in-grupele-cupei-romaniei-4438369",
+      "id": "revenire-la-universitatea-craiova-pentru-meciul-cu-ararat-armenia-din-play-off-u",
+      "title": "Revenire la Universitatea Craiova pentru meciul cu Ararat-Armenia din play-off-ul Europa League",
+      "summary": "Revenire la Universitatea Craiova pentru meciul cu Ararat-Armenia din play-off-ul Europa League",
+      "link": "https://www.digisport.ro/fotbal/europa-league/revenire-la-universitatea-craiova-pentru-meciul-cu-ararat-armenia-din-play-off-ul-europa-league-4439031",
       "source": "Digi Sport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxOCUyRjI5MTQ3NzVfMjkxNDc3NV9w/ZXRyb2x1bC0yLmpwZyZoYXNoPTdiNGNl/MzdhZmQwNTg3MzU3NmVmOTliOTQ2MjAwM2Fj.jpg",
-      "publishedAt": "2026-08-18T17:20:00.000Z",
+      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxMyUyRjI5MDcwNDZfMjkwNzA0Nl9V/TklWRVJTSVRBVEVBLUNSQUlPVkEtS1VQ/Uy1LVU9QSU8tVUVGQS1FVVJPUEEtTEVB/R1VFLTEzXzA4XzIwMjYuanBnJmhhc2g9/ODA5NzU4YWZjMjliNzU1NGJiMzE1ZTc1OWFhOWUyYTc=.jpg",
+      "publishedAt": "2026-08-19T06:55:09.000Z",
       "promoted": false,
-      "coverage": 2,
-      "alsoIn": [
-        "GSP"
-      ],
-      "variants": [
-        {
-          "source": "Digi Sport",
-          "title": "CSM Reșița - Petrolul Ploiești 2-3. ”Găzarii” au dat lovitura în prelungiri și au reușit calificarea în grupele Cupei României",
-          "link": "https://www.digisport.ro/fotbal/cupa-romaniei/csm-resita-petrolul-ploiesti-2-3-gazarii-au-dat-lovitura-in-prelungiri-si-au-reusit-calificarea-in-grupele-cupei-romaniei-4438369",
-          "publishedAt": "2026-08-18T17:20:00.000Z"
-        },
-        {
-          "source": "GSP",
-          "title": "Play-off-ul Cupei României Betano » Calificări dramatice: victorie după prelungiri + meci decis după loviturile de departajare",
-          "link": "https://www.gsp.ro/fotbal/cupa-romaniei/play-off-ul-cupei-romaniei-betano-calificari-dramatice-victorie-dupa-prelungiri-meci-decis-dupa-loviturile-de-departajare-971016.html",
-          "publishedAt": "2026-08-18T17:15:50.000Z"
-        }
-      ]
+      "coverage": 1,
+      "alsoIn": []
     },
     {
-      "id": "stefan-baiaram-salvat-de-familia-care-l-ar-fi-putut-duce-la-cersit-in-spania-ar-",
-      "title": "Ștefan Baiaram, salvat de familia care l-ar fi putut duce la cerșit în Spania! „Ar fi cântat pe străzi în Barcelona și Madrid”",
-      "summary": "Nu multă lume știe că Ștefan Baiaram (23 de ani) a fost abandonat de mama sa la naștere, iar mai apoi a fost adoptat de către o familie originară din Craiova. Ulterior, pe când avea deja aproape 14 ani, a fost la un pas…",
-      "link": "https://www.prosport.ro/fotbal-intern/superliga/stefan-baiaram-salvat-familie-cersit-spania-strazi-cantat-barcelona-madrid-20506228",
+      "id": "extra-paige-spiranac-dezvaluire-neasteptata-despre-viata-ei-asta-ma-face-fericit",
+      "title": "EXTRA Paige Spiranac, dezvăluire neașteptată despre viața ei: „Asta mă face fericită”",
+      "summary": "Ex-jucătoarea de golf Paige Spiranac (33 de ani), desemnată în 2022 „cea mai sexy femeie din lume” de către revista Maxim, a dezvăluit ce o face fericită. După ce a renunțat la sportul profesionist, americanca și-a…",
+      "link": "https://www.prosport.ro/diverse/paige-spiranac-dezvaluire-neasteptata-despre-viata-ei-20506266",
       "source": "Prosport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/stefan-baiaram-salvat-de-familia-care-l-ar-fi-putut-duce-la-cersit-in-spania-ar-fi-cantat-pe-strazi-in-barcelona-si-madrid.jpg",
-      "publishedAt": "2026-08-19T04:45:54.000Z",
+      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/paige-spiranac-dezvaluire-neasteptata-despre-viata-ei-e1787122352659-1400x809.jpg",
+      "publishedAt": "2026-08-19T06:53:09.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
     },
     {
-      "id": "dan-alexa-s-a-agravat-sa-ne-rugam-pentru-ea-ca-e-mult-mai-greu-i-se-face-un-trat",
-      "title": "Dan Alexa: ”S-a agravat, să ne rugăm pentru ea, că e mult mai greu. I se face un tratament revoluționar”",
-      "summary": "Dan Alexa: ”S-a agravat, să ne rugăm pentru ea, că e mult mai greu. I se face un tratament revoluționar”",
-      "link": "https://www.digisport.ro/special/dan-alexa-s-a-agravat-sa-ne-rugam-pentru-ea-ca-e-mult-mai-greu-i-se-face-un-tratament-revolutionar-4438545",
-      "source": "Digi Sport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI1JTJGMDgl/MkYyOCUyRjIzMzc1MjBfMjMzNzUyMF9k/YW4tYWxleGEuanBnJmhhc2g9NTlkMGU3/MDhmNGNiZWZmNTM3NGE5ZDc0MDI2NTIwMzI=.jpg",
-      "publishedAt": "2026-08-19T04:41:14.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "gica-craioveanu-fara-dubii-scorul-corect-la-universitatea-craiova-ararat-armenia",
-      "title": "Gică Craioveanu, fără dubii: scorul corect la Universitatea Craiova - Ararat-Armenia",
-      "summary": "Gică Craioveanu, fără dubii: scorul corect la Universitatea Craiova - Ararat-Armenia",
-      "link": "https://www.digisport.ro/fotbal/europa-league/gica-craioveanu-fara-dubii-scorul-corect-la-universitatea-craiova-ararat-armenia-4438427",
-      "source": "Digi Sport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDEl/MkYyOSUyRjI1NjI4MzdfMjU2MjgzN19n/aWNhLWNyYWlvdmVhbnUyLnBuZyZoYXNo/PTg1ZWQxMDYxOWVhZGEwZTVjOGJhOTJlNDBlNjgwZTlm.png",
-      "publishedAt": "2026-08-19T04:34:22.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "adrian-mutu-a-acceptat-oferta-lui-nelu-varga-de-a-antrena-cfr-cluj-sandra-mutu-s",
-      "title": "Adrian Mutu a acceptat oferta lui Nelu Varga de a antrena CFR Cluj! Sandra Mutu, soția „Briliantului”, a intervenit în forță",
-      "summary": "Adrian Mutu a dezvăluit cum au decurs negocierile cu Nelu Varga și ce sfat i-a dat soția sa, Sandra, înainte să semneze actele cu CFR. Gruparea din Gruia a rămas fără al doilea antrenor în decurs de doar câteva luni…",
-      "link": "https://www.prosport.ro/fotbal-intern/superliga/adrian-mutu-reactie-oferta-cfr-20506213",
+      "id": "florin-talpan-a-fost-internat-de-urgenta-la-spitalul-militar-ce-a-patit-juristul",
+      "title": "Florin Talpan a fost internat de urgență la Spitalul Militar! Ce a pățit juristul CSA Steaua",
+      "summary": "Florin Talpan, juristul celor de la CSA Steaua, a fost internat de urgență la Spitalul Militar din București. Potrivit informațiilor apărute, acesta se confruntă cu probleme serioase de sănătate la plămâni, iar starea…",
+      "link": "https://www.prosport.ro/fotbal-intern/liga-2/florin-talpan-a-fost-internat-de-urgenta-20506267",
       "source": "Prosport",
       "scope": "sport",
       "bucket": "sport",
       "section": "sport",
-      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/adrian-mutu-reactie-oferta-cfr-1400x1050.png",
-      "publishedAt": "2026-08-19T04:30:14.000Z",
+      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/florin-talpan-a-fost-internat-de-urgenta.webp",
+      "publishedAt": "2026-08-19T06:48:20.000Z",
       "promoted": false,
       "coverage": 1,
       "alsoIn": []
-    },
-    {
-      "id": "giovanni-becali-a-intermediat-transferul-soc-al-mijlocasului-roman-de-la-inter-m",
-      "title": "Giovanni Becali a intermediat transferul șoc al mijlocașului român de la Inter Milano la AC Milan: „A plătit 13 milioane de euro!”",
-      "summary": "Giovanni Becali a dezvăluit cum a intermediat transferul unuia dintre cei mai talentați jucători români de la Inter Milano la AC Milan. În 2008, Cristian Daminuță ajungea la echipa de tineret a celor de laa Inter. După…",
-      "link": "https://www.prosport.ro/fotbal-extern/giovanni-becali-reactie-transfer-daminuta-ac-milan-20506192",
-      "source": "Prosport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://www.prosport.ro/wp-content/uploads/2026/08/giovanni-becali-reactie-transfer-daminuta-ac-milan-1400x933.png",
-      "publishedAt": "2026-08-19T04:00:04.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "mercato-in-europa-toate-transferurile-verii-sunt-aici-rodri-a-semnat-digi-sport",
-      "title": "MERCATO în Europa. Toate transferurile verii sunt AICI! Rodri a semnat",
-      "summary": "Perioada de MERCATO din vara lui 2026 se anunță a fi una spectaculoasă, cu multe transferuri de răsunet.",
-      "link": "https://www.digisport.ro/fotbal/mercato-in-europa-toate-transferurile-verii-sunt-aici-rodri-a-semnat-4292761",
-      "source": "Digi Sport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDYl/MkYwMyUyRjI3NTg5OTNfMjc1ODk5M19z/aXRlMy5wbmcmaGFzaD1hMzdkNDFhN2E1MDU0YzJkMTkzOGU5MTVhNTllMGM1Mg==.png",
-      "publishedAt": "2026-08-18T21:07:44.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": []
-    },
-    {
-      "id": "razvan-marin-in-play-off-ul-champions-league-nota-primita-dupa-levski-aek-digi-s",
-      "title": "Răzvan Marin, în play-off-ul Champions League: nota primită, după Levski - AEK",
-      "summary": "Răzvan Marin, în play-off-ul Champions League: nota primită, după Levski - AEK",
-      "link": "https://www.digisport.ro/fotbal/champions-league/razvan-marin-in-play-off-ul-champions-league-nota-primita-dupa-levski-aek-4438739",
-      "source": "Digi Sport",
-      "scope": "sport",
-      "bucket": "sport",
-      "section": "sport",
-      "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxZGlnaXMucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDI2JTJGMDgl/MkYxOSUyRjI5MTUwMDJfMjkxNTAwMl9y/YXp2YW4tbWFyaW4uanBnJmhhc2g9ZTQ0/ZWNiYmRjMTVmNzEzYjg0NGU5NjI1NmEyOTk1OWI=.jpg",
-      "publishedAt": "2026-08-18T21:05:54.000Z",
-      "promoted": false,
-      "coverage": 1,
-      "alsoIn": [],
-      "variants": [
-        {
-          "source": "Digi Sport",
-          "title": "Răzvan Marin, în play-off-ul Champions League: nota primită, după Levski - AEK",
-          "link": "https://www.digisport.ro/fotbal/champions-league/razvan-marin-in-play-off-ul-champions-league-nota-primita-dupa-levski-aek-4438739",
-          "publishedAt": "2026-08-18T21:05:54.000Z"
-        },
-        {
-          "source": "Digi Sport",
-          "title": "Play-off UEFA Champions League: Levski - AEK 0-0 / Fenerbahce - Lyon 1-1 / Zagreb - Viking 2-2",
-          "link": "https://www.digisport.ro/fotbal/champions-league/play-off-uefa-champions-league-levski-aek-0-0-fenerbahce-lyon-1-1-zagreb-viking-2-2-4437253",
-          "publishedAt": "2026-08-18T21:00:16.000Z"
-        }
-      ]
     }
   ]
 }
