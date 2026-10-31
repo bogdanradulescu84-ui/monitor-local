@@ -21,7 +21,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # `ref: main` e esential cand workflow-ul e chemat de collect.yml: altfel
+      # checkout ia commit-ul cu care a PORNIT rularea, adica dinainte de
+      # commit-ul cu datele noi, si site-ul ramane mereu cu o colectare in urma.
+      # Push-ul robotului nu declanseaza un deploy nou (GitHub blocheaza asta
+      # pentru a evita buclele), deci intarzierea nu se recupera niciodata.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
